@@ -1,0 +1,6 @@
+1) Persižiūrėti viską ką šiandieną nuveikėme.
+2) Pasikonspektuoti šiandieną išmoktus dalykus.
+3) Pabandyti atkartoti "./images/HTML_task.PNG" esančios nuotraukos vaizdą svetainėje. (galima tame pačiame html faile, kuriame dirbome kartu)
+
+4 extra) Pasibandyti panaudoti arba pasidomėti apie kitus mūsų šiandieną išvardintus, bet dar neišbandytus tag'us.
+5 extra) Pasibandyti CSS'ą. Pasidomėti kas kaip kada ir kur rašoma ir t.t.
