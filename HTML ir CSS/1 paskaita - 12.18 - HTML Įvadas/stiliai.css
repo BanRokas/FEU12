@@ -1,0 +1,23 @@
+*{
+  color: green;
+}
+
+h4{
+  color: #5d095d;
+}
+
+.blueText{
+  color: blue;
+}
+
+#orangeText{
+  color: orange;
+}
+
+p{
+  font-size: 10px;
+}
+
+h5, h6{
+  border: 3px dashed orange;
+}
