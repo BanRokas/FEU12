@@ -1,0 +1,29 @@
+.externalPvz{
+  color: green;
+}
+li{
+  text-decoration: underline;
+}
+#idKazkoksVardas{
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(198, 240, 201),
+    rgb(233, 171, 171),
+    rgb(240, 207, 144),
+    rgb(216, 134, 194)
+  );
+}
+
+.superBigText{
+  font-size: 50px;
+}
+.greenText{
+  color: green;
+}
+
+#uniqOne{
+  color: orange;
+}
+#uniqTwo{
+  background-color: grey;
+}

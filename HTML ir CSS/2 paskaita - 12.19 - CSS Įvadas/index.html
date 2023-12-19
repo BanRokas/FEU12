@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 paskaita - CSS Įvadas</title>
+  <link rel="stylesheet" href="./main.css">
+  <style>
+    .internalPvz{
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <header></header>
+  <main>
+    <div> <!-- CSS rašymo būdai -->
+      <h1>CSS rašymo būdai</h1>
+      <ul>
+        <li>Inline</li>
+        <li>Internal</li>
+        <li>External</li>
+      </ul>
+      <div> <!-- Inline -->
+        <h1>Inline</h1>
+        <p>Inline yra CSS rašymo būdas, kai stilius yra suteikiamas elementui jį aprašant style atributo viduje.</p>
+        <p>Šitas CSS rašymo būdas naudojamas norint kažką pasitikrinti arba esant reikalui kažką perrašyti nepaisant prioritetų.</p>
+        <p style="color:red; border: 1px solid black">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div> <!-- Internal -->
+        <h1>Internal</h1>
+        <p>Internal yra CSS rašymo būdas, kai stiliai yra aprašomi tame pačiame HTML faile, style tag'o viduje, kuris talpinamas head tag'o viduje. Sintaksė tokia pati kaip External CSS'o.</p>
+        <p>Šitas CSS rašymo būdas yra naudojamas norint kažką pasitikrinti arba esant atskiram mažam HTML'o failui, kuriam reikalingas unikalus CSS'as.</p>
+        <p class="internalPvz">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div> <!-- External -->
+        <h1>External</h1>
+        <p>External yra CSS rašymo būdas, kai stiliai yra aprašomi atskirame CSS faile, kuris yra prijungiamas prie HTML'o.</p>
+        <p>Šitas CSS būdas yra naudojamas dažniausiai. Jo didžiausi pliusai yra perpanaudojimas ir tvarkingumas.</p>
+        <p class="externalPvz">Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+    <div id="idKazkoksVardas"> <!-- CSS Selektoriai -->
+      <h1>CSS Selektoriai</h1>
+      <ul>
+        <li>* - visko selektorius</li>
+        <li>tagName - tag'o selektorius</li>
+        <li>.className - klasės selektorius</li>
+        <li>#idName - id selektorius</li>
+      </ul>
+      <p><b>*</b> - parenka visiškai visus elementus</p>
+      <p><b>tagName</b> - parenka visus elementus su nurodytu tag'o pavadinimu</p>
+      <div> <!-- class -->
+        <h1 class="greenText superBigText">Klasė</h1>
+        <p><b>.className</b> - parenka visus elementus, kurie turi klasės atributą su tokiu pačiu vardu.</p>
+        <p class="greenText">Viena klasė, gali būti priskirta daugeliui elementų.</p>
+        <p>Vienas elementas, gali turėti daugelį klasių.</p>
+      </div>
+      <div> <!-- id -->
+        <h1 id="uniqOne">ID</h1>
+        <p><b>#idName</b> - parenka visus elementus, kurie turi id atributą su tokiu pačiu vardu.</p>
+        <p id="uniqOne">Vienas ID, gali būti priskirtas TIK VIENAM elementui.</p>
+        <p id="uniqOne uniqTwo">Vienas elementas, gali turėti TIK VIENĄ ID.</p>
+      </div>
+    </div>
+    <div> <!-- Pavadinimų kūrimas -->
+      <h1>Pavadinimų kūrimas</h1>
+      
+    </div>
+  </main>
+  <footer></footer>
+</body>
+</html>
