@@ -210,7 +210,7 @@
           <div>Static 4</div>
         </div>
       </div>
-      <div> <!-- relative -->
+      <div> <!-- Relative -->
         <h1>Relative</h1>
         <p>
           Relative nustatymas suteikia elementui galimybę naudotis z-index, top, right, bottom, left nustatymais.<br>
@@ -234,7 +234,35 @@
         <div class="positionContainer relative">
           <div>Static 1</div>
           <div>Static 2</div>
-          <div class="absolute bottom80 right50">Absolute 3</div>
+          <div class="absolute bottom80 right50 z5">Absolute 3</div>
+          <div>Static 4</div>
+        </div>
+      </div>
+      <div> <!-- Fixed -->
+        <h1>Fixed</h1>
+        <p>Fixed nustatymas suteikia elementui galimybę naudotis z-index, top, right, bottom, left nustatymais.</p>
+        <p>
+          Elementas su fixed pozicija išeina iš puslapio tėkmės.<br>
+          Fixed elementas užsifiksuoja vienoje ekrano vietoje ir kad ir kiek būtų scroll'inama, jis juda kartu.<br>
+          Top, right, bottom, left nustatymai nurodo per kokį atstumą, nuo kurios viewport kraštinės jis atsitraukia ir užsifiksuoja.
+        </p>
+        <div class="positionContainer relative">
+          <div>Static 1</div>
+          <div class="fixed top20 right50 z999">Fixed 2</div>
+          <div>Static 3</div>
+          <div>Static 4</div>
+        </div>
+      </div>
+      <div> <!-- Sticky -->
+        <h1>Sticky</h1>
+        <p>Fixed nustatymas suteikia elementui galimybę naudotis z-index, top, right, bottom, left nustatymais.</p>
+        <p>
+          Sticky poziciją turintis elementas prilimpa prie ekrano (viewport) kraštų per nurodytą atstumą ir atkimba tik pasiekęs tėvinio elemento ribas arba grįžęs į savo originalią poziciją.
+        </p>
+        <div class="positionContainer">
+          <div>Static 1</div>
+          <div>Static 2</div>
+          <div class="sticky top20">Sticky 3</div>
           <div>Static 4</div>
         </div>
       </div>
