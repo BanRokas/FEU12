@@ -1,0 +1,10 @@
+0) Per naują persiskaityti šiandienos info, pasidaryti konspektą, plačiau pasidomėti internete apie šiandieną mokintasis temas.
+
+1) Naudojant div'us ir reikalingus stilius atvaizduoti bent 3 skirtingas vėliavas.
+  1.1 extra) Sukurti sudėtingesnes vėliavas (su simboliu vėliavos viduryje, vėliavas kurios nėra brūkšniai, herbą...)
+
+2) Pabandyti atkurti (./images/HTML_uzduotis.PNG) pavaizduotą vaizdą.
+3) Pabandyti atkurti (./images/CSS_uzduotis.PNG) pavaizduotą vaizdą.
+
+4 extra) Sukurti puslapiui menu, kurio pagalba galima būtų naviguotis per šiandieną mokintasis potemes.
+  4.1 extra extra) Sukurti dropdown menu potemių skiltims.
