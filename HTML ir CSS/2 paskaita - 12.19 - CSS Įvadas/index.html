@@ -182,13 +182,62 @@
           <li>audio</li>
           <li>iframe</li>
         </ul>
-        <div> <!-- pvz -->
-          po pietų pertaukos
+        <div class="displaysPvz ib"> <!-- pvz -->
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
         </div>
       </div>
     </div>
     <div> <!-- Positions -->
-
+      <h1>Positions</h1>
+      <ul>
+        <li>static</li>
+        <li>relative</li>
+        <li>absolute</li>
+        <li>fixed</li>
+        <li>sticky</li>
+      </ul>
+      <p>Suteikus elementui betkurią apart static pozicijos, jis įgauna galimybę naudotis šiais stiliais: z-index, top, right, bottom, left;</p>
+      <p>z-index nusako elemento eilės sluoksnį ekrane (kaip arti / toli nuo vartotojo yra elementas (katras elementas katrą užstos))</p>
+      <div> <!-- static -->
+        <h1>Static</h1>
+        <p>Static nustatymas nesuteikia jokių ypatybių. Net galimybės naudotis: z-index, top, right, bottom, left;</p>
+        <div class="positionContainer">
+          <div>Static 1</div>
+          <div class="right50">Static 2</div>
+          <div class="bottom80 left100">Static 3</div>
+          <div>Static 4</div>
+        </div>
+      </div>
+      <div> <!-- relative -->
+        <h1>Relative</h1>
+        <p>
+          Relative nustatymas suteikia elementui galimybę naudotis z-index, top, right, bottom, left nustatymais.<br>
+          Top, right, bottom, left nustatymai pastumia elementą nuo nurodytos kraštinės per nurodytą atstumą nuo elemento originalios pozicijos.<br>
+          Elemento viduje esantis absolute pozicijos elementas, atsitraukia nuo elemento kraštų jei šis turi relative poziciją.
+        </p>
+        <div class="positionContainer">
+          <div>Static 1</div>
+          <div>Static 2</div>
+          <div class="relative z5">Relative 3</div>
+          <div class="relative top20 right50 z6">Relative 4</div>
+        </div>
+      </div>
+      <div> <!-- Absolute -->
+        <h1>Absolute</h1>
+        <p>
+          Absolute nustatymas suteikia elementui galimybę naudotis z-index, top, right, bottom, left nustatymais.<br>
+          Top, right, bottom, left nustatymai nurodo per kokį atstumą elementas atsitrauks nuo artimiausio protėvinio elemento, turinčio relative poziciją, ribų.<br>
+          Elementas turintis absolute pozicija išeina iš puslapio tėkmės. (jo pozicijos neįtakoja puslapyje išsidėstę elementai)
+        </p>
+        <div class="positionContainer relative">
+          <div>Static 1</div>
+          <div>Static 2</div>
+          <div class="absolute bottom80 right50">Absolute 3</div>
+          <div>Static 4</div>
+        </div>
+      </div>
     </div>
   </main>
   <footer></footer>
