@@ -18,11 +18,12 @@ li{
   font-size: 50px;
 }
 .greenText{
-  color: green;
+  color: rgb(63, 185, 63);
 }
 
 #uniqOne{
-  color: orange;
+  /* color: #ffa600; */
+  color: #f90;
 }
 #uniqTwo{
   background-color: grey;
