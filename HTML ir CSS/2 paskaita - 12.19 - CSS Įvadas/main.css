@@ -28,3 +28,12 @@ li{
 #uniqTwo{
   background-color: grey;
 }
+
+/* Displays */
+.displaysPvz > * {
+  border: 3px solid black;
+  padding: 5px;
+  margin: 20px;
+  width: 100px;
+  height: 50px;
+}
