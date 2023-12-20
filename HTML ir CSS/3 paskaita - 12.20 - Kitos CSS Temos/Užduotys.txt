@@ -1,1 +1,11 @@
+0) Pasikartoti tai ką šiandien mokinomės: 
+  0.1) Semantika
+  0.2) Box model
+  0.3) Selectors
+Internete pasiieškoti papildomų pavyzdžių/informacijos apie šiandienos temas (jeigu yra reikalo/noro).
+Pasikonspektuoti ką šiandien išmokote.
+
 1) Įveikti 14 lygių žaidime https://flukeout.github.io/
+
+2) Pabandyti atkartoti (./MC_PageTask.png) esančiame paveiksliuke pavaizduotą svetainės vaizdą su veikiančia navigacija.
+3) Pabandyti atkartoti (./maximaPageTask.png) esančiame paveiksliuke pavaizduotą svetainės vaizdą su veikiančia navigacija.
