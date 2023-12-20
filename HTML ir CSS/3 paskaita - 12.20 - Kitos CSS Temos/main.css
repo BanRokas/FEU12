@@ -1,5 +1,15 @@
-body{
-  height: 500vh;
+html{
+  scroll-behavior: smooth;
+}
+header{
+  height: 50px;
+  background-color: #8c7de2;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+section{
+  scroll-margin-top: 50px;
 }
 
 /* Selectors */
@@ -89,8 +99,8 @@ h4 ~ h5{
   /* background-repeat: no-repeat; */
   background-size: cover;
   background-position: center bottom;
-  /* position: relative;
-  z-index: -1; */
+  position: relative;
+  /* z-index: -1; */
 }
 .bgTransparent{
   width: 100%;
