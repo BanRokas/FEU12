@@ -65,3 +65,48 @@ h4 ~ h5{
 
   margin: 30px 100px;
 }
+
+/* Background */
+#bg > div{
+  width: 100%;
+  height: 80vh;
+}
+
+.vienspalvis{
+  background-color: #7ca8d4;
+}
+.gradient{
+  background-image: radial-gradient(
+    circle at center,
+    rgb(247, 147, 147),
+    rgb(154, 232, 154),
+    rgb(154, 154, 239)
+  );
+}
+.image1{
+  /* background-image: url('https://....jpg'); */
+  background-image: url('./images/nature5.jpg');
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center bottom;
+  /* position: relative;
+  z-index: -1; */
+}
+.bgTransparent{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* z-index: -1; */
+
+  background-color: rgba(240, 248, 255, 0.381);
+}
+.z5{
+  position: relative;
+  z-index: 5;
+}
+.bgAttached{
+  background-image: url('./images/nature3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
