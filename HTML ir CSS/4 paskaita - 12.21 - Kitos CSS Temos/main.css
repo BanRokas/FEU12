@@ -1,0 +1,16 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+#inheritance{
+  color: red;
+  background-color: #ebce98;
+  border: 10px solid black;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 20px 50px;
+  width: 1000px;
+  height: 500px;
+}
+span{
+  font-size: 40px;
+}

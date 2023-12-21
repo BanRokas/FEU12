@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 paskaita - Kitos CSS Temos</title>
+  <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
+
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <!-- Paveldimumas; User Agent Stylesheets; CSS Priorities; Google Fonts; Icons (CSS bibliotekos); Multimediją -->
+  <main>
+    <section id="inheritance"> <!-- Paveldimumas Inheritance -->
+      <h1>Vaikinis <span>ir</span> Tėvinis elementas</h1>
+      <h2>Vaikinis <span>ir</span> Tėvinis elementas</h2>
+      <p>Elementas gali turėti DAUG vaikinių elementų.</p>
+      <p>Elementas TURI tik vieną tėvinį elementą.</p>
+
+      <h1>Paveldimumas</h1>
+      <p>Elementai paveldi stilius iš tėvinio elemento.</p>
+      <p>Elementai perduoda stilius savo vaikiniams elementams.</p>
+    </section>
+    <section> <!-- User Agent Stylesheets -->
+      <h1>Naršyklės numatytieji stiliai</h1>
+      <p>
+        Kiekvienas (beveik) tag'as turi savo numatytuosius naršyklės stilius, kurie pakeičia jo vaizdą.<br>
+        Skirtingos naršyklės gali turėti skirtingus numatytuosius stilius tiems patiems tag'ams.<br>
+        Tam, kad tag'ų stiliai būtų vienodi arba būtų panaikinami nenaudingi naršyklių stiliai, yra naudojami Reset arba Normalize CSS'ai.
+      </p>
+      <p><b><a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">Reset CSS</a></b> - suvienodina visų tag'ų stilius per visas naršykles. (asmeniškai nesiūlau naudoti)</p>
+      <p><b><a href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" target="_blank">Normalize CSS</a></b> - suvienodina vienodų tag'ų stilius tarp skirtingų naršyklių ir panaikina nenaudingus naršyklių stilius. (asmeniškai siūlau naudoti)</p>
+    </section>
+  </main>
+  <footer></footer>
+  <script>
+    console.dir(document.querySelector('#inheritance'));
+  </script>
+</body>
+</html>
