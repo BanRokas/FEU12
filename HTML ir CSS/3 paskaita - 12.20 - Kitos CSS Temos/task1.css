@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+}
+
+.darkGreenBG{
+  background-color: #0b670b;
+}
+
+/* Header */
+.headerLogo{
+  background-color: #fff;
+}
+.headerLogo > img{
+  display: block;
+  margin: 0 auto;
+}
+nav{
+  text-align: center;
+  padding: 10px 0;
+}
+nav > a{
+  color: white;
+  text-decoration: none;
+  /* font-weight: bold; */
+  font-size: 20px;
+  /* padding: 0 20px; */
+  margin: 0 20px;
+}
+
+/* Main */
+/* about */
+#about{
+  background-color: #eee;
+  padding: 15px;
+}
+#about > img{
+  width: 100%;
+  height: auto;
+}
+#about > h1, #contact > h1{
+  padding: 10px;
+  color: #fff;
+}
+
+/* Footer */
+#contact{
+  background-color: #d7ffd7;
+  padding: 15px;
+}
