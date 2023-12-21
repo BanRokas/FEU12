@@ -1,0 +1,9 @@
+0) Pasikartoti tai ką šiandien mokinomės. Internete pasiieškoti papildomų pavyzdžių/informacijos apie šiandienos temas (jeigu yra reikalo/noro). Pasikonspektuoti ką šiandien išmokote.
+
+1) Jau susipažinome su HTML ir CSS pagrindais bei sukūrėme keletą puslapių pagal apibrėžtus reikalavimus. Šį kartą kursime asmeninę svetainę, todėl turėsite daug laisvės.
+  Galimas, bet neprivalomas turinys: vardas, pavardė, išsilavinimas, įdomi istorija, hobiai ar pan.
+  Rašykite HTML semantiškai, naudokite  - <header>, <main>, <article>, <section> ir kitus semantinius elementus
+  Panaudokite pasirinktą šriftą iš  https://fonts.google.com/
+  Visą stilių sudėkite į style.css ir susiekite su HTML
+
+2 extra) Pabandyti atkurti ./images/Movies_Page.png puslapį.
