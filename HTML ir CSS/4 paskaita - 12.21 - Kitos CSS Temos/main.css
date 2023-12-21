@@ -1,5 +1,9 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 
+body{
+  height: 500vh;
+}
+
 #inheritance{
   color: red;
   background-color: #ebce98;
@@ -13,4 +17,19 @@
 }
 span{
   font-size: 40px;
+}
+
+/* Prioritetai */
+#priorities{
+  color: orange;
+}
+
+div h1#prio{
+  border: 2px solid #941414;
+}
+h1.border.hihi{
+  border: 2px solid black;
+}
+h1{
+  border: 5px dashed orange !important;
 }

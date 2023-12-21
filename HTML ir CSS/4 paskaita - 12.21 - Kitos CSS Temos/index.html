@@ -10,7 +10,7 @@
 </head>
 <body>
   <header></header>
-  <!-- Paveldimumas; User Agent Stylesheets; CSS Priorities; Google Fonts; Icons (CSS bibliotekos); Multimediją -->
+  <!-- Google Fonts; Icons (CSS bibliotekos); Multimediją -->
   <main>
     <section id="inheritance"> <!-- Paveldimumas Inheritance -->
       <h1>Vaikinis <span>ir</span> Tėvinis elementas</h1>
@@ -31,6 +31,29 @@
       </p>
       <p><b><a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">Reset CSS</a></b> - suvienodina visų tag'ų stilius per visas naršykles. (asmeniškai nesiūlau naudoti)</p>
       <p><b><a href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" target="_blank">Normalize CSS</a></b> - suvienodina vienodų tag'ų stilius tarp skirtingų naršyklių ir panaikina nenaudingus naršyklių stilius. (asmeniškai siūlau naudoti)</p>
+    </section>
+    <section id="priorities"> <!-- CSS Priorities -->
+      <h1>CSS Prioritetai</h1>
+      <ol>
+        <li>!important</li>
+        <li>Inline style</li>
+        <li>Specifikacija
+          <ol>
+            <li>id 100</li>
+            <li>class 010</li>
+            <li>tag 001</li>
+          </ol>
+        </li>
+        <li>Eiliškumas</li>
+        <li>User Agent Stylesheets</li>
+        <li>Inheritance</li>
+      </ol>
+      <div class="prioPvz">
+        <h1 class="border hihi" id="prio" style="border:2px solid purple">Prioritetų Pavyzdys</h1>
+        <a href="#">Nuoroda</a>
+      </div>
+      <p>Esant dviems selektoriams, kurie selektina tą patį elementą, turi vienodą prioritetą ir keičia tą patį stilių yra atsižvelgiama į tų selektorių eiliškumą. Vėliau aprašyto tokio selektoriaus stiliai turi prioritetą.</p>
+      <p><span class="doNot">Jeigu įmanoma - nenaudoti!!!</span> !important prierašo. !important ignoruoja visas specifikacijas, visus eiliškumus, visus prioritetus ir suteikia nurodytą stilių (stiliausVardas: stiliausNustatymas !important;). Vienintelis būdas perrašyti !important yra naudojant kitą !important...</p>
     </section>
   </main>
   <footer></footer>
