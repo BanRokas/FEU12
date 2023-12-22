@@ -5,4 +5,16 @@ td, th{
   border: 1px solid black;
   text-align: center;
   padding: 5px 10px;
+  /* margin: 10px; neveikia ant td,th */
+}
+td:hover, th:hover{
+  background-color: black;
+  color: white;
+}
+
+.fonoSpalva{
+  background-color: aquamarine;
+}
+.textRight{
+  text-align: right;
 }
