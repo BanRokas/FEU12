@@ -1,3 +1,4 @@
+/* Lentelė */
 table{
   border-collapse: collapse;
 }
@@ -11,10 +12,43 @@ td:hover, th:hover{
   background-color: black;
   color: white;
 }
-
 .fonoSpalva{
   background-color: aquamarine;
 }
 .textRight{
   text-align: right;
+}
+
+/* Selektoriai */
+/* link */
+a:link{
+  color: #006eff;
+  border: 5px solid #006eff;
+}
+a:visited{
+  color: #ff7300;
+}
+a:hover{
+  color: #034b03;
+  border-color: #034b03;
+}
+a:active{
+  color: red;
+  border-color: red;
+}
+
+/* nth and child and type */
+ol > :nth-child(3), tbody > tr:nth-child(2n+1){
+ background-color: orange;
+}
+
+/* tbody > tr:nth-child(2n+1) > *{
+  border-bottom-width: 5px;
+} */
+
+tbody > tr:nth-child(1) > td:not(:first-child){
+  border-top-width: 5px;
+}
+tbody > tr > :first-child{
+  border-right-width: 5px;
 }
