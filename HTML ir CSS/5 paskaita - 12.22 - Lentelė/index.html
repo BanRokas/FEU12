@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 paskaita - Lentelė</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <!-- Lentelės, Selektoriai, Kortelės -->
+    <section> <!-- Lentelė -->
+      <h1>Lentelės</h1>
+      <ul>
+        <li>table</li>
+        <li>thead</li>
+        <li>tbody</li>
+        <li>tfoot</li>
+        <li>tr - table row</li>
+        <li>th - table heading</li>
+        <li>td - table data</li>
+        <li>caption - lentelės pavadinimas</li>
+        <li>colgroup</li>
+        <li>col</li>
+      </ul>
+      <table>
+        <caption>Bandomės lenteles</caption>
+        <thead>
+          <tr>
+            <th rowspan="2">Nr.</th>
+            <th rowspan="2">Vardas</th>
+            <th colspan="2">Matmenys</th>
+            <!-- <th></th> -->
+            <th rowspan="2">Akių spalva</th>
+          </tr>
+          <tr>
+            <!-- <th></th> -->
+            <!-- <th></th> -->
+            <th>Ūgis</th>
+            <th>Svoris</th>
+            <!-- <th></th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1</th>
+            <td>Rokas</td>
+            <td>186</td>
+            <td>78</td>
+            <td>Mėlyna</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>Petras</td>
+            <td>150</td>
+            <td>80</td>
+            <td rowspan="2">Ruda</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Kazys</td>
+            <td>190</td>
+            <td>90</td>
+            <!-- <td>Ruda</td> -->
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <!-- <td></td>
+            <td></td>
+            <td></td> -->
+            <td colspan="4">Ūgio vidurkis</td>
+            <td colspan="1">175</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
