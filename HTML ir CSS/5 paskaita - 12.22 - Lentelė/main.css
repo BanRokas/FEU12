@@ -72,10 +72,13 @@ tbody > tr > :first-child{
     height: auto;
   }
   > p{
-    height: 36%;
+    display: -webkit-box;
+    -webkit-line-clamp: 11;
+    -webkit-box-orient: vertical;
     text-align: justify;
     overflow: hidden;
-    /* text-overflow: ellipsis;
+    /* height: 36%;
+    text-overflow: ellipsis;
     white-space: nowrap; */
   }
   > div {
