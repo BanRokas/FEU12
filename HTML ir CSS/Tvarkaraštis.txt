@@ -1,0 +1,16 @@
+1 savaitė:
+  1 paskaita - 12.18 - HTML Įvadas
+  2 paskaita - 12.19 - CSS Įvadas
+  3 paskaita - 12.20 - Kitos CSS Temos (Semantika, Selektoriai, Model Box, Fonai)
+  4 paskaita - 12.21 - Kitos CSS Temos (Paveldimumas, Naršyklės stiliai, Prioritetai, Fonts, Icons, Iframe)
+  5 paskaita - 12.22 - Lentelės ir CSS Selektoriai
+2 savaitė:
+  6 paskaita - 12.27 - Formas ir CSS Selektoriai
+  7 paskaita - 12.28 - Flex
+  8 paskaita - 12.29 - Grid
+3 savaitė:
+  9 paskaita - 01.02 - Grid ir Flex praktika
+
+
+
+  15 paskaita - ??? - HTML ir CSS atsiskaitymas
