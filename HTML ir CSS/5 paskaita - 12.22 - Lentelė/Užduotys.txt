@@ -1,0 +1,16 @@
+Table:
+  1) Sukurkite lentelę, kurioje būtų informacija apie 5 jūsų mėgstamiausias vietas (kur norėtumėte nuvykti, kur jau buvote ir t.t.). Informacija apie vietas: Eilės numeris; Pavadinimas; Šalis; Buvau/Nebuvau; Paveiksliukas; Nuoroda;
+  2) (nebūtina, nes beveik tas pats kas 3, bet lengviau) Susikurti lentelę (laisva tema, apie ką norite), kuri būtų bent 5 eilučių ir 5 stulpelių.
+    2.1) Pirmo ir paskutinio stulpelio elementai turėtų kitokią teksto spalvą.
+    2.2) Viršutinė/pirmoji (tableHead) eilutė būtų kitokios fono spalvos.
+    2.3) Kas antra lentelės kūno eilutė būtų skirtingos fono spalvos.
+  3) Pasidaryti lentelę (laisva tema (kitokia nei pirma), apie ką norite), kuri būtų bent 5 eilučių ir 5 stulpelių.
+    3.1) Padaryti, kad užėjus ant lentelės elemento, jo fono ir teksto spalva pasikeistų.
+    3.2) Padaryti, kad užėjus ant lentelės elemento, viso to elemento eilutės fono ir teksto spalva pasikeistų.
+    3.3 extra) Padaryti, kad užėjus ant lentelės elemento, viso to elemento stulpelio fono spalva pasikeistų. (naudoti ::before arba ::after ir pozicijas) (galų gale just google)
+Bent vieną:
+  4) Sukurti lentelę, kuri pavaizduota ./images/simpleTableTask.png paveikslėlyje.
+  5) Sukurti lentelę, kuri pavaizduota ./images/tableNice.png paveikslėlyje.
+Bent vieną:
+  6) Sukurti puslapį, kuris pavaizduotas ./images/avivaTablePage.png
+  7) Sukurti puslapį, kuris pavaizduotas ./images/premierLeagueTablePage.png
