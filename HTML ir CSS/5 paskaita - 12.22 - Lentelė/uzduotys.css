@@ -14,9 +14,34 @@
 #table1 tbody > tr > :nth-child(5){
   font-size: 0; /* white space quick not great fix */
 }
-#table1 tbody tr:nth-child(2n){
+/* #table1 tbody tr:nth-child(2n){
   background-color: #7fffd4;
 }
 #table1 tbody tr:nth-child(2n+1){
   background-color: #80fe72;
+} */
+
+
+td:hover, th:hover{
+  background-color: black;
+  color: white;
 }
+#table1 > table > thead > tr:hover, #table1 > table > tbody > tr:hover{
+  background-color: #4008a8;
+}
+th, td{
+  position: relative;
+}
+table{
+  overflow: hidden;
+}
+th:hover::before, td:hover::before{
+  content: "";
+  position: absolute;
+  height: 10000px;
+  top: -5000px;
+  left: 0;
+  right: 0;
+  background-color: #808080;
+  z-index: -1;
+} 
