@@ -1,0 +1,22 @@
+#table1 table{
+  border-collapse: collapse;
+}
+#table1 th, #table1 td{
+  border: 1px solid #000;
+}
+
+#table1 tr :first-child, #table1 tr :last-child{
+  color: #f00;
+}
+#table1 thead tr:first-child{
+  background-color: #808080;
+}
+#table1 tbody > tr > :nth-child(5){
+  font-size: 0; /* white space quick not great fix */
+}
+#table1 tbody tr:nth-child(2n){
+  background-color: #7fffd4;
+}
+#table1 tbody tr:nth-child(2n+1){
+  background-color: #80fe72;
+}
