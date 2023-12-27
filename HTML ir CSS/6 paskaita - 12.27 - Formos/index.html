@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>6 paskaita - Formos</title>
   <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" defer></script>
 </head>
 <body>
   <header></header>
   <main>
     <section> <!-- Formos -->
       <h1>Formos</h1>
-      <div>
+      <div class="vienasSaliaKito">
         <div>
           <h3>Formos tag'ai</h3>
           <ul>
@@ -36,23 +37,48 @@
                 <li>text - paprastas tekstas</li>
                 <li>password - slaptažodis (slepiamas tekstas)</li>
                 <li>email - elektroninis paštas</li>
-                <li>submit - formos pateikimas</li>
+                <li>number - skaičius</li>
                 <li>url - nuoroda</li>
                 <li>file - failas iš įrenginio</li>
                 <li>checkbox - multi variantų pasirinkimas (privalo turėti vienodas name atributų reikšmes ir skirtingas value atributų reikšmes)</li>
                 <li>radio - vieno iš keletos variantų pasirinkimas (privalo turėti vienodas name atributų reikšmes ir skirtingas value atributų reikšmes)</li>
-                <li></li>
+                <li>date - datos pasirinkimas (metų, mėnesio, dienos)</li>
+                <li>datetime-local - datos ir laiko pasirinkimas (metų, mėnesio, dienos, valandų ir minučių)</li>
+                <li>month - mėnesio pasirinkimas</li>
+                <li>week - savaitės pasirinkimas</li>
+                <li>time - laiko pasirinkimas</li>
+                <li>color - spalvos pasirinkimas</li>
+                <li>button - mygtukas be funkcionalumo</li>
+                <li>submit - formos pateikimo input'as mygtuko pavidalu</li>
+                <li>image - formos pateikimo input'as paveiksliuko pavidalu</li>
+                <li>hidden - paslepia įvestį, bet reikšmė yra pateikiama</li>
+                <li>range - slenkančios juostos skaičiaus pasirinkimas</li>
+                <li>reset - mygtukas išvalantis formos įvestis</li>
+                <li>search - paieškos laukas</li>
+                <li>tel - telefono įvesties laukas</li>
               </ul>
             </li>
             <li>required - privalomas įvesties laukas (be jo neleis pateikti formos)</li>
+            <li>min - minimali reikšmė (skaičiaus)</li>
+            <li>max - maksimali reikšmė (skaičiaus)</li>
+            <li>step - žingsnis (skaičiaus)</li>
+            <li>type - failo tipas ar tipai, kuriuos leidžiama pateikti</li>
+            <li>pattern - kokia seka kažkas turi būti parašyta (regex :))</li>
+            <li>placeholder - tekstas atvaizduojamas input'o arba textarea viduje</li>
+            <li>checked - iš anksto pažymėtas radio arba checkbox</li>
+            <li>cols - textarea dydžio nustatymai</li>
+            <li>rows - textarea dydžio nustatymai</li>
+            <li>value - įvesties reikšmė</li>
+            <li>selected - iš anksto parinktas option'as</li>
+            <li>disabled - neleidžiamas pasirinkti option'as</li>
           </ul>
         </div>
       </div>
       <h2>Formos pavyzdys</h2>
-      <form>
+      <form id="bandymas">
         <div>
           <label for="vardas">Vardas:</label>
-          <input type="text" id="vardas" name="vardas">
+          <input type="text" id="vardas">
         </div>
         <div>
           <label for="pavarde">Pavardė:</label>
@@ -60,23 +86,41 @@
         </div>
         <div>
           <label for="">Tekstas:</label>
-          <input type="text" name="tekstas"><br>
+          <input type="text" name="tekstas" placeholder="Čia rašyti vardą..."><br>
           <label for="">Slaptažodis:</label>
           <input type="password" name="slaptazodis"><br>
           <label for="">Email:</label>
           <input type="email" name="elPastas"><br>
+          <label for="">Number</label>
+          <input type="number" name="numeris" step="0.01"><br>
           <label for="">Nuoroda:</label>
           <input type="url" name="nuoroda"><br>
           <label for="">Failas:</label>
           <input type="file" name="failas"><br>
           <label for="">Checkbox</label>
-          <label>value1<input type="checkbox" name="checkboxName" value="value1"></label>
+          <label>value1<input type="checkbox" name="checkboxName" value="value1" checked></label>
           <span>value2</span><input type="checkbox" name="checkboxName" value="value2">
           <label>value3</label><input type="checkbox" name="checkboxName" value="value3"><br>
           <label for="">Radio</label>
           <label>value10<input type="radio" name="radioName" value="value10"></label>
-          <span>value20</span><input type="radio" name="radioName" value="value20">
+          <span>value20</span><input type="radio" name="radioName" value="value20" checked>
           <label>value30</label><input type="radio" name="radioName" value="value30"><br>
+          <label for="">Date</label>
+          <input type="date" name="pilnaData"><br>
+          <label for="">Datetime Local</label>
+          <input type="datetime-local" name="pilnaDataIrLaikas"><br>
+          <label for="">Month</label>
+          <input type="month" name="menuo"><br>
+          <label for="">Week</label>
+          <input type="week" name="savaite"><br>
+          <label for="">Time</label>
+          <input type="time" name="valanda"><br>
+          <label for="">Color</label>
+          <input type="color" value="#245374" name="spalva"><br>
+          <label for="">Range</label>
+          <input type="range" name="judantiJuosta"><br>
+          <label for="">Telephone</label>
+          <input type="tel" name="telefonas"><br>
         </div>
         <div>
           <label for="">Aprašymas:</label>

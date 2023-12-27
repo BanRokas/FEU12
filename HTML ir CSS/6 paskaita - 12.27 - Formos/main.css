@@ -1,3 +1,8 @@
 body{
   height: 500vh;
 }
+
+.vienasSaliaKito > div{
+  display: inline-block;
+  width: 45%;
+}
