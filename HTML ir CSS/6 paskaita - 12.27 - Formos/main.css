@@ -74,3 +74,14 @@ p::selection{
   background-color: black;
   color: orange;
 }
+
+/* custom input */
+#customInputs input[type='radio']{
+  display: none;
+}
+#customInputs input[type='radio'] + label{
+  background-color: grey;
+}
+#customInputs input[type='radio']:checked + label{
+  background-color: green;
+}
