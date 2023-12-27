@@ -1,0 +1,21 @@
+  Peržvelgti viską ką šiandien nuveikėm.
+  Extra info ir pavyzdžių pasižiūrėti internete (jei yra reikalo).
+  Pasikonspektuoti ką reikia.
+
+Selectors:
+  1) Pasibaigti likusius CSS Diner (CSS Selectors žaidimo) lygius. https://flukeout.github.io/
+
+Formos:
+  1) Pabandyti atkurti kuo panašesnę formą į ./images/simpleForm1.PNG
+  2+) Pabandyti atkurti kuo panašesnę formą į ./images/simpleForm2.PNG
+  3+) Pabandyti atkurti kuo panašesnį custom input į ./images/cutonInput.PNG
+  4++) Pabandyti atkurti kuo panašesnę formą į ./images/niceForm.png
+  5+) Sukurti pavaizduotą formą (./images/pseudoForm.PNG)
+    Reikalavimai:
+      Readonly laukelis - pilkas fonas
+      Required laukeliai pažymėti specialiu stiliumi
+      Age reikšmė turi būti nuo 18 iki 65 (imtinai)
+      Age laukelio rėmelio spalva keičiasi priklausomai ar jis yra in range ar out of range
+      Užvedus ant “Register” mygtuko patamsėja jo fonas
+      Paspaudus checkbox pasikeičia “I agree with the Terms & Conditions” spalva į mėlyną
+      Ant neteisingai įvestų laukelių uždedamas raudonas rėmelis, ant teisingai įvestų - žalias
