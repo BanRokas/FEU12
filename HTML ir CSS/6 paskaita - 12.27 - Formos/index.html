@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>6 paskaita - Formos</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Formos -->
+      <h1>Formos</h1>
+      <div>
+        <div>
+          <h3>Formos tag'ai</h3>
+          <ul>
+            <li>form - forma</li>
+            <li>label - etiketė įvesties laukui</li>
+            <li>input - įvairus įvesties laukas</li>
+            <li>textarea - teksto (didelio kiekio) įvesties laukas</li>
+            <li>select - pasirinkimo variantai (mažai)</li>
+            <li>datalist - pasirinkimo variantai (daug)</li>
+            <li>option - pasirinkimo variantas</li>
+            <!-- <li>button</li> -->
+          </ul>
+        </div>
+        <div>
+          <h3>Formos atributai</h3>
+          <ul>
+            <li>for - etiketės atributas skirtas ją sujungti su įvestimi</li>
+            <li>id - label sujungimui su įvestimi (turi būti toks pats tekstas kaip ir for)</li>
+            <li>name - priskiria įvesčiai vardą (dažniausiai toks pats kaip ir id)</li>
+            <li>type - skirtas nurodyti input'o paskirtį
+              <ul>
+                <li>text - paprastas tekstas</li>
+                <li>password - slaptažodis (slepiamas tekstas)</li>
+                <li>email - elektroninis paštas</li>
+                <li>submit - formos pateikimas</li>
+                <li>url - nuoroda</li>
+                <li>file - failas iš įrenginio</li>
+                <li>checkbox - multi variantų pasirinkimas (privalo turėti vienodas name atributų reikšmes ir skirtingas value atributų reikšmes)</li>
+                <li>radio - vieno iš keletos variantų pasirinkimas (privalo turėti vienodas name atributų reikšmes ir skirtingas value atributų reikšmes)</li>
+                <li></li>
+              </ul>
+            </li>
+            <li>required - privalomas įvesties laukas (be jo neleis pateikti formos)</li>
+          </ul>
+        </div>
+      </div>
+      <h2>Formos pavyzdys</h2>
+      <form>
+        <div>
+          <label for="vardas">Vardas:</label>
+          <input type="text" id="vardas" name="vardas">
+        </div>
+        <div>
+          <label for="pavarde">Pavardė:</label>
+          <input type="text" id="pavarde" name="pavarde">
+        </div>
+        <div>
+          <label for="">Tekstas:</label>
+          <input type="text" name="tekstas"><br>
+          <label for="">Slaptažodis:</label>
+          <input type="password" name="slaptazodis"><br>
+          <label for="">Email:</label>
+          <input type="email" name="elPastas"><br>
+          <label for="">Nuoroda:</label>
+          <input type="url" name="nuoroda"><br>
+          <label for="">Failas:</label>
+          <input type="file" name="failas"><br>
+          <label for="">Checkbox</label>
+          <label>value1<input type="checkbox" name="checkboxName" value="value1"></label>
+          <span>value2</span><input type="checkbox" name="checkboxName" value="value2">
+          <label>value3</label><input type="checkbox" name="checkboxName" value="value3"><br>
+          <label for="">Radio</label>
+          <label>value10<input type="radio" name="radioName" value="value10"></label>
+          <span>value20</span><input type="radio" name="radioName" value="value20">
+          <label>value30</label><input type="radio" name="radioName" value="value30"><br>
+        </div>
+        <div>
+          <label for="">Aprašymas:</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+          <label for="">Pasirinkimai Select:</label>
+          <select name="" id="">
+            <option value="nemato">Reikšmė 1</option>
+            <option value="nemato">Reikšmė 2</option>
+            <option value="nemato">Reikšmė 3</option>
+            <option value="nemato">Reikšmė 4</option>
+          </select>
+        </div>
+        <div>
+          <label for="">Pasirinkimai DataList:</label>
+          <input list="mokinames">
+          <datalist id="mokinames">
+            <option value="Reikšmė 1">Paaiškinimas</option>
+            <option value="Reikšmė 2"></option>
+            <option value="Reikšmė 3"></option>
+            <option value="Reikšmė 4"></option>
+            <option value="Reikšmė 5"></option>
+            <option value="Reikšmė 6"></option>
+            <option value="Reikšmė 10"></option>
+            <option value="Reikšmė 11"></option>
+            <option value="Reikšmė 12"></option>
+            <option value="Reikšmė 13"></option>
+            <option value="Reikšmė 14"></option>
+            <option value="Reikšmė 15"></option>
+            <option value="Reikšmė 16"></option>
+          </datalist>
+        </div>
+        <input type="submit" value="Pateikti formą">
+      </form>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
