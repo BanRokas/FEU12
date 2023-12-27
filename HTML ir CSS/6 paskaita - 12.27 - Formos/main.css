@@ -1,8 +1,76 @@
 body{
-  height: 500vh;
+  height: 700vh;
 }
 
 .vienasSaliaKito > div{
   display: inline-block;
   width: 45%;
+}
+
+/* [class$='3']{
+  color: red;
+} */
+
+input[type='checkbox']{
+  width: 100px;
+  height: 50px;
+}
+:checked{
+  background-color: red;
+  border: 5px solid green;
+}
+:default{
+  background-color: black;
+  border: 2px solid black;
+}
+:focus{
+  /* background-color: rgb(213, 238, 238); */
+  font-size: 30px;
+}
+:in-range{
+  color: green;
+}
+:out-of-range{
+  color: red;
+}
+
+:valid{
+  color: rgb(11, 0, 128);
+}
+:invalid{
+  color: rgb(255, 255, 0);
+}
+input[type='text']{
+  padding: 0;
+}
+::placeholder{
+  color: orange;
+  background-color: aquamarine;
+  text-transform: capitalize;
+}
+
+li::before{
+  content: ':) ';
+  color: red;
+  font-size: 20px;
+  background-color: aqua;
+}
+li::after{
+  content: ' :(';
+}
+
+p:first-letter{
+  font-size: 50px;
+}
+p:first-line{
+  color: orange;
+}
+li li::marker{
+  color: red;
+  font-size: 30px;
+}
+
+p::selection{
+  background-color: black;
+  color: orange;
 }

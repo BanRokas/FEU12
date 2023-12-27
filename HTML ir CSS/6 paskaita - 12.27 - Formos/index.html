@@ -157,6 +157,74 @@
         <input type="submit" value="Pateikti formą">
       </form>
     </section>
+    <section> <!-- Selector -->
+      <h1>Selectors</h1>
+      <ul>
+        <li>Atributai
+          <ul>
+            <li>[atributas] - atributo vardas</li>
+            <li>[atributas="reiksme"] - atributas su reikšme</li>
+            <li>[atributas~="reiksme"] - atributas su žodžiu reikšmėje</li>
+            <li>[atributas*="reiksme"] - ... žodžio dalimi reikšmėje</li>
+            <li>[atributas|="reiksme"] - ... lygus "reiksme" arba prasidedantis su "reiksme-"</li>
+            <li>[atributas^="reiksme"] - ... prasideda "reiksme"</li>
+            <li>[atributas$="reiksme"] - ... pasibaigia "reiksme"</li>
+          </ul>
+        </li>
+        <li>Pseudo klasės formoms
+          <ul>
+            <li>input:checked - ar input'as pažymėtas</li>
+            <li>input:default - pradinis pažymėtas imput'as</li>
+            <li>input:disabled - formos elementas turintis disabled atributą</li>
+            <li>input:enabled - formos elementas neturintis disabled atributo</li>
+            <li>input:focus - šiuo metu aktvus input'as</li>
+            <li>input:in-range - įvestis ribose</li>
+            <li>input:out-of-range - įvestis už ribų</li>
+            <li>input:indeterminate - nenustatyta reikšmė (nesvarbus)</li>
+            <li>input:valid - teisinga įvestis</li>
+            <li>input:invalid - neteisinga įvestis</li>
+            <li>input:optional - neturi required atributo</li>
+            <li>input:required - turi required atributą</li>
+            <li>input::placeholder - galimybė redaguoti placeholder tekstą</li>
+            <li>input:read-only - turintis readonly atributą</li>
+            <li>input:read-write - neturintis readonly atributo</li>
+          </ul>
+        </li>
+        <li>Pseudo elementai
+          <ul>
+            <li>::before - sukuria turinį prieš elementą</li>
+            <li>::after - sukuria turinį už elemento</li>
+            <li>::first-letter - pirmoji elemento raidė</li>
+            <li>::first-line - pirmoji elemento teksto eilutė</li>
+            <li>::marker - rikiuotų/nerikiuotų sąrašo elementų žymės</li>
+            <li>::selection - pažymėto turinio stilius</li>
+            <li>::-webkit...</li>
+            <li>::-webkit-scrollbar...</li>
+            <li>...</li>
+          </ul>
+        </li>
+      </ul>
+      <div>
+        <h2>Pavyzdžiai</h2>
+        <div>
+          <p class="sm-col-6">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium blanditiis iusto est sunt ipsa fugit, id obcaecati qui odit commodi, quidem repellendus dignissimos expedita perferendis corporis, odio quo voluptates quis tempora optio ut eius! Veritatis quidem necessitatibus, harum ipsam ipsum quae consequuntur ad provident distinctio. Id, iusto! Consectetur, non est.</p>
+          <p class="sm-col-3">Lorem ipsum dolor sit amet.</p>
+          <p class="md-col-3">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <form>
+          <input type="checkbox">
+          <input type="checkbox">
+          <input type="email" name="" id="">
+          <input type="number" min=5 max=50 name="" id="">
+          <input type="text" placeholder="ivesk ta ar ana">
+          <select name="" id="">
+            <option value="">Pirmas</option>
+            <option value="" selected>Antras</option>
+            <option value="">Trečias</option>
+          </select>
+        </form>
+      </div>
+    </section>
   </main>
   <footer></footer>
 </body>
