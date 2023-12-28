@@ -1,0 +1,18 @@
+0) Dar kartą peržvelgti naują informaciją.
+0.1) Extra info/pavyzdžiai internete.
+0.2) Pasikonspektuoti.
+
+1) Įveikti flex žaidimukus internete:
+  1.1) https://flexboxfroggy.com/
+  1.2) http://www.flexboxdefense.com/ (nebūtina)
+  1.3) https://codingfantasy.com/games/flexboxadventure/play (nebūtina)
+
+2) Atkurti ./images/Flex1.PNG pateiktą vaizdą naudojant flex.
+3) Atkurti ./images/FlexPage1.PNG pavaizduotą svetainę.
+4) Atkurti ./images/FlexPage2.PNG pavaizduotą svetainės menu (extra - galima ir visą puslapį).
+5) Atkurti ./images/toDoApp.PNG pavaizduotą ToDo aplikacijos vaizdą (jokio funkcionalumo nereik :D)
+
+Videos:
+  https://youtu.be/u044iM9xsWU - Flex tutorial KevinPowell
+  https://youtu.be/3YW65K6LcIA - Flex tutorial TraversyMedia
+  https://youtu.be/fYq5PXgSsbE - Flex tutorial WebDevSimplified
