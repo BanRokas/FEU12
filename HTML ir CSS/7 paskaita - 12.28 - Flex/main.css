@@ -52,3 +52,43 @@ section > h1{
   order: 2;
   align-self: flex-end;
 }
+
+/* menu */
+header{
+  background-color: bisque;
+  height: 80px;
+  padding: 0 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  > img{
+    height: 80%;
+    width: auto;
+  }
+  /* > nav{
+    width: 50%;
+  } */
+
+  > nav > ul{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 10px;
+    list-style: none;
+
+    > li > a{
+      background-color: aquamarine;
+      border-radius: 10px / 4px;
+      padding: 2px 5px;
+      color: black;
+      text-decoration: none;
+    }
+    > li a:hover{
+      background-color: black;
+      color: red;
+    }
+  }
+  
+}
