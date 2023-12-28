@@ -16,7 +16,15 @@ section > h1{
   border: 1px solid black;
   height: 500px;
   display: flex;
-  
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* row-gap: 10px;
+  column-gap: 10px; */
+  gap: 10px;
 }
 
 .flexPvzContainer > div{
@@ -27,4 +35,20 @@ section > h1{
   font-size: 26px;
   border: 3px solid black;
   background-color: burlywood;
+  /* flex-grow: 1; */
+}
+
+.flexPvzContainer > div:nth-child(6){
+  order: 1;
+}
+
+.flexPvzContainer > div:nth-child(3){
+  order: 1;
+  /* flex-grow: 2; */
+  /* flex: 2; */
+}
+
+.flexPvzContainer > div:nth-child(1){
+  order: 2;
+  align-self: flex-end;
 }
