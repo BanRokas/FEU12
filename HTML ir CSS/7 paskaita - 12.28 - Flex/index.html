@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 paskaita - Flex</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- flex -->
+      <h1>
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flex</a>
+      </h1>
+      <div class="lists">
+        <div>
+          <h3>Container</h3>
+          <ul>
+            <li>display: flex; - suteikiamas flex atvaizdavimas</li>
+            <li>flex-direction: row (default) | row-reverse | column | column-reverse;</li>
+            <li>flex-wrap: nowrap (default) | wrap | wrap-reverse;</li>
+            <li>flex-flow: flex-direction flex-wrap;</li>
+            <li>justify-content: flex-start (default) | flex-end | center | space-between | space-around | space-evenly;</li>
+            <li>align-items: flex-start | flex-end | center | stretch (default) | baseline;</li>
+            <li>align-content: flex-start | flex-end | center | stretch | space-between | space-around | space-evenly;</li>
+            <li>gap: px;</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Item</h3>
+          <ul>
+            <li>order: number; - nurodo elemento eiliškumą išdėstyme</li>
+            <li>flex-grow: number;</li>
+            <li>flex-shrink: number;</li>
+            <li>flex-basis: width;</li>
+            <li>flex: flex-grow flex-shrink flex-basis;</li>
+            <li>align-self: flex-start | flex-end | center | stretch (default) | baseline;</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section> <!-- flex pavyzdys -->
+      <h1>Flex veikimo pavyzdys</h1>
+      <div class="flexPvzContainer">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
