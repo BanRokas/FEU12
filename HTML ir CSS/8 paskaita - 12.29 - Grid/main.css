@@ -21,17 +21,85 @@ section > h1{
 .gridPvzContainer{
   margin: 0 auto;
   width: 800px;
-  height: 600px;
+  /* height: 600px; */
   border: 5px dashed black;
   display: grid;
-  /* grid-template-columns: 2fr 1fr 1fr 200px;
-  grid-template-rows: 100px 200px 50px 100px; */
-  grid-template: 100px 200px 50px 100px / 20px 100px 50px 200px;
+  grid-template-columns: 2fr 1fr 1fr 200px 50px; 
+  grid-template-rows: 100px 200px 50px 100px 50px;
+  /* grid-template: 100px 200px 50px 100px / 20px 100px 50px 200px; */
   gap: 5px;
   /* align-items: center;
   justify-items: stretch; */
   place-items: stretch stretch;
-  /* align-content: end;
+  /* align-content: start;
   justify-content: space-around; */
-  place-content: end space-around;
+  /* place-content: start space-around; */
+  /* grid-auto-rows: 100px 200px; */
+  /* grid-auto-columns: 100px; */
+  /* grid-auto-flow: row dense; */
+
 }
+
+.gridPvzContainer > div:nth-child(3){
+  grid-row-start: 3;
+  grid-column-start: 2;
+  /* grid-row-end: 6; */
+  /* grid-row-end: span 3; */
+  grid-row-end: -1;
+  /* grid-column-end: 4; */
+  grid-column-end: span 2;
+}
+
+.gridPvzContainer > div:nth-child(6){
+  grid-row: 1 / 3;
+  grid-column: 3 / 6;
+}
+
+.gridPvzContainer > div:nth-child(1){
+  grid-area: 2 / 2 / 4 / 5;
+  z-index: 1;
+}
+
+.lists{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* card */
+.card{
+  border: 1px solid black;
+  height: 400px;
+  width: 850px;
+
+  display: grid;
+  /* grid-template-rows: 2fr 5fr 1fr;
+  grid-template-columns: 2fr repeat(3, 1fr); */
+  grid-template: 2fr 5fr 1fr / 2fr repeat(3, 1fr);
+}
+.card > *{
+  overflow: hidden;
+}
+.card > img{
+  grid-area: 1 / 1 / -1 / 2;
+  /* height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center; */
+  align-self: center;
+}
+.card > h1{
+  grid-column-end: span 3;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  place-self: center;
+}
+.card > p{
+  grid-column-end: span 3;
+  padding: 5px 10px;
+  text-align: justify;
+}
+/* last child, nth-child(5), last-of-type*/
+/* .card > span:nth-of-type(2){ 
+  grid-column-end: -1;
+} */
