@@ -1,0 +1,22 @@
+0) Dar kartą peržvelgti naują informaciją.
+0.1) Extra info/pavyzdžiai internete.
+0.2) Pasikonspektuoti.
+
+1) Įveikti žaidimus:
+  1.1) https://cssgridgarden.com/
+  1.2) https://codingfantasy.com/games/css-grid-attack/play (nebūtinas)
+
+2) Atkurti ./images/grid1.PNG vaizdą naudojant grid display.
+3) Atkurti ./images/grid2.PNG vaizdą naudojant grid display.
+4) Atkurti ./images/grid3.PNG vaizdą naudojant grid display (nereikia atkurti mėlynų vertikalių juostų).
+5) Atkurti ./images/gridOverlap.png pavaizduotą grid'ų perdengimą.
+6 extra) Sukurti periodinę elementų lentelę naudojant Grid sistemą (pvz. paveiksliukas ./images/periodicTable.PNG).
+
+
+Videos:
+  https://youtu.be/rg7Fvvl3taU - KevinPowell
+  https://youtu.be/0xMQfnTU6oo - TraversyMedia
+  https://youtu.be/9zBsdzdE4sM - WebDevSimplified
+  https://youtu.be/xPuYbmmPdEM?list=PL4cUxeGkcC9hk02lFb6EkdXF2DYGl4Gg4 - NetNinja
+
+  https://www.freecodecamp.org/news/css-grid-tutorial-with-cheatsheet/
