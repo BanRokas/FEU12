@@ -1,0 +1,13 @@
+1) Pasibaigti nebaigtus Flex ir Grid darbus.
+
+2) Per savaitę (ar iki pavasario) atkartoti ./images/gridFlexTASK.jpg atvaizduotus išdėstymus, tiek su Flex, tiek su Grid'u (po 20, bendrai 40).
+
+3) Pasirinkite 1 iš 3 svetainių, kurią bandysite atkartoti:
+  1 - lengviausia ir trumpiausia
+  2 - vidutinė su nemažai turinio
+  3 - sunkesnė su nemažai turinio
+
+  Bandykite atkartoti puslapį kuo panašesnį į pavaizduotą.
+  Nereikia jokių funkcionalumų (nebent menu nuorodos).
+  Nesukite galvos dėl ekranų dydžių.
+  Nuotraukos ir tekstai, neturi būti identiški pavaizduotoms svetainėms.
