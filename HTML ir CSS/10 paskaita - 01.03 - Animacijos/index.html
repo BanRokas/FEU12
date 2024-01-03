@@ -76,6 +76,34 @@
       </div>
       <div class="kitimas1"></div>
     </section>
+    <section> <!-- animation -->
+      <h1>Animacija</h1>
+      <h3>Animacijos nustatymai</h3>
+      <ul>
+        <li>animation-name - animacijai suteiktas vardas</li>
+        <li>animation-duration - animacijos trukmė</li>
+        <li>animation-iteration-count - kiek sykių vyks animacija (default 1)</li>
+        <li>animation-play-state - animacijos būsena (vykdoma ar ne)</li>
+        <li>animation-timing-function - kaip pasikeitimo laikas yra paskirstytas (ease)</li>
+        <li>animation-direction - kryptis</li>
+        <li>animation-delay - animacijos uždelsimas</li>
+        <li>animation-fill-mode - ką daryti prieš/po animacijos</li>
+        <li>animation-composition - ką daryti su stiliais kurie turi kelis nustatymus</li>
+        <li>animation - apjungimas (duration, delay, ...)</li>
+      </ul>
+      <h3>Animacijos aprašymas (veiksmai / žingsniai)</h3>
+      <p>Animacjos žingsniai aprašomi naudojant keyframes. Keyframes gali būti nurodomi specifiniais žodžiais arba procentais. Nuo 0 iki 100. From -> to. Kiek procentų žingsniui yra skiriama - tiek apytiksliai laiko iš duration'o ir bus suteikiama tam žingsniui atlikti.</p>
+      <pre>
+        @keyframes animation-name{
+          0%{
+          } x% {
+          } y% {
+          } ...% {
+          } 100% {
+          }
+        }
+      </pre>
+    </section>
   </main>
   <footer></footer>
 </body>
