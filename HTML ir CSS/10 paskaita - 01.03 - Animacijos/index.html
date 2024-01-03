@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 paskaita - Animacjos</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- transform -->
+      <h1>Transformacija</h1>
+      <p>Transformacija nurodo kaip kinta elementas. Elementas gali kisti 3-5 būdais.</p>
+      <ul>
+        <li>translate - judina elementą nurodytoje ašyje
+          <ul>
+            <li>translate(x, y)</li>
+            <li>translate3d(x, y, z)</li>
+            <li>translateX(x)</li>
+            <li>translateY(y)</li>
+            <li>translateZ(z)</li>
+          </ul>
+        </li>
+        <li>rotate - rotuoja
+          <ul>
+            <li>rotate(z)</li>
+            <li>rotate3d(x, y, z, a)</li>
+            <li>rotateX(x)</li>
+            <li>rotateY(y)</li>
+            <li>rotateZ(z)</li>
+          </ul>
+        </li>
+        <li>scale - keičia dydį / tempia/spaudžia
+          <ul>
+            <li>scale(x, y)</li>
+            <li>scale3d(x, y, z)</li>
+            <li>scaleX(x)</li>
+            <li>scaleY(y)</li>
+            <li>scaleZ(z)</li>
+          </ul>
+        </li>
+        <li>skew - tampo kampus
+          <ul>
+            <li>skew(x, y)</li>
+            <li>skewX(x)</li>
+            <li>skewY(y)</li>
+          </ul>
+        </li>
+        <li>matrix - universalus</li>
+        <li>matrix3d - universalus3d</li>
+        <li>perspective - perspektyvos keitimas</li>
+      </ul>
+      <p>Kartu su transform gali būti naudojamas ir <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin" target="_blank">transform-origin</a>, kuris nusako transformacijos pradinį tašką. Default yra centras.</p>
+      <div id="transformPavyzdziai">
+        <div>Original</div>
+        <div>translate</div>
+        <div>rotate</div>
+        <div>rotate origin top right</div>
+        <div>scale</div>
+        <div>skew</div>
+        <div>translate ir rotate</div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
