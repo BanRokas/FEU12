@@ -2,6 +2,24 @@ body{
   height: 500vh;
 }
 
+section[id]{
+  scroll-margin-top: 30px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(236, 184, 184),
+    rgb(189, 189, 238)
+  );
+}
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 60px;
+  background-color: #51aa54;
+  width: 90%;
+}
+
 #transformPavyzdziai > div{
   width: 200px;
   height: 100px;
