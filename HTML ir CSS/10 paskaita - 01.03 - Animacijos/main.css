@@ -96,3 +96,64 @@ body{
     transform: translateX(100px);
   }
 }
+
+/* animacija */
+.anim1{
+  width: 200px;
+  height: 200px;
+  border: 3px dashed black;
+  background-color: #51aa54;
+
+  /* animation-name: betkas;
+  animation-duration: 5s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-delay: 1s;
+  animation-fill-mode: both; */
+  animation: betkas 5s infinite linear alternate 1s both;
+
+  /* animation-composition: accumulate; */
+
+  &:hover{
+    animation-play-state: paused;
+  }
+}
+input#animControl{
+  display: none;
+}
+input#animControl + label{
+  padding: 10px 20px;
+  background-color: #51aa54;
+
+  > :nth-child(2){
+    display: none;
+  }
+}
+input#animControl:checked + label{
+  background-color: #ae3636;
+  > :nth-child(1){
+    display: none;
+  }
+  > :nth-child(2){
+    display: unset;
+  }
+}
+input#animControl:checked ~ div.anim1{
+  animation-play-state: paused;
+}
+
+@keyframes betkas{
+  0%{
+    transform: translate(100px, 0px);
+    background-color: #5160aa;
+  } 50% {
+    transform: translate(200px, 50px) rotate(360deg);
+    background-color: #a659cd;
+    border-radius: 0%;
+  } 100% {
+    border-radius: 50%;
+    background-color: #a659cd;
+    transform: translate(200px, 50px) rotate(0deg);
+  }
+}
