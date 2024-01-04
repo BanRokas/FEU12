@@ -12,8 +12,8 @@
   9 paskaita - 01.02 - Grid ir Flex praktika
   10 paskaita - 01.03 - Transformacija, Tranzicija ir Animacija
   11 paskaita - 01.04 - Media Queries
-  12 paskaita - 01.05 - Kartu svetainė / Kitos Temos
+  12 paskaita - 01.05 - Kitos Temos / Kartu svetainė
 4 savaitė:
-  13 paskaita - 01.08 - Kartu svetainė / Kitos Temos
+  13 paskaita - 01.08 - Kartu svetainė
   14 paskaita - 01.09 - Savarankiškas ruošimasis
   15 paskaita - 01.10 - HTML ir CSS atsiskaitymas
