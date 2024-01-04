@@ -1,0 +1,9 @@
+Tasks:
+  1) Atkartoti images/responsiveTask1.PNG esančius kortelių išdėstymus naudojant MobileFirst dizaino principą.
+  2) Atkartoti images/responsiveTask2.jpg esančius ekrano išdėstymus naudojant MobileFirst dizaino principą.
+  3) Atkartoti ./images/simpleResponsiveLayout.PNG esantį išdėstymą naudojant MobileFirst dizaino principą.
+
+Pages:
+  1) Atkartoti 1 iš 3 ./images/pages/responsiveDesign__.jpg puslapių naudojant MobileFirst dizaino principą.
+  2) Atkartoti images/pages/GreyCloud_____.PNG mobile ir desktop variantus naudojant mobileFirst dizaino principą.
+  3+) Atkartoti ./images/pages/blockChain_____.png puslapio dizainą naudojant MobileFirst dizaino principą. (galima sugalvoti ir pridėti kokį nors tablet variantą)
