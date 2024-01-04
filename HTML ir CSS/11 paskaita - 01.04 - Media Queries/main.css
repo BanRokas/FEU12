@@ -1,0 +1,90 @@
+/* no media iki 576px */ /* portretiniam telefonui */
+
+body{
+  margin: 0;
+}
+#media{
+  background-color: antiquewhite;
+  padding: 20px;
+
+  > h1{
+    text-align: center;
+  }
+  > p{
+    text-align: justify;
+  }
+  > img{
+    display: none;
+  }
+
+  > .skiltys{
+
+    > div{
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+  }
+}
+
+@media (min-width: 576px){ /* peizažiniam telefonui ir plančetei */
+  #media{
+    .skiltys{
+      display: grid;
+      grid-template: auto auto / 1fr 1fr;
+  
+      > div:nth-child(1){
+        grid-column: span 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      > div:nth-child(2), div:nth-child(3){
+        border: none;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        padding: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 992px){ /* kompiuterių ekranai */
+  #media{
+    position: relative;
+    >p{
+      text-align: center;
+    }
+    > img{
+      display: unset;
+      width: 180px;
+      position: absolute;
+      top: -20px;
+      left: -20px;
+    }
+    .skiltys{
+      grid-template: none / 1fr 1fr 1fr;
+
+      > div{
+        > h3{
+          text-align: center;
+        }
+      }
+
+      > div:nth-child(1){
+        grid-column: unset;
+        display: unset;
+        border: none;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+
+/* @media (min-width:1000px){
+
+}
+@media (max-width:1000px){
+
+} */

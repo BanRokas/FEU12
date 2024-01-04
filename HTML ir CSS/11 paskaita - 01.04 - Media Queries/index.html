@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11 paskaita - Media Queries</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section id="media"> <!-- Media Queries -->
+      <h1>Media Queries</h1>
+      <p>
+        Media Queries yra naudojami norint svetainei suteikti skirtingus stilius esant skirtingiems ekranų dydžiams.<br>
+        CSS'e yra rašoma @media (min arba max-width: ...px){ ribos kur rašomas CSS tam ekrano dydžiui }
+      </p>
+      <img src="./images/rock.gif" alt="flying rock gif">
+      <div class="skiltys">
+        <div>
+          <h3>Media Queries ekrano lūžio taškai (breakpoints)</h3>
+          <ul>
+            <li>no media mažesniam negu 576px - telefonai portretiniai</li>
+            <li>didesniam negu 576px - telefonai peizažiniai</li>
+            <li>didesniam negu 768px - plančetės</li>
+            <li>didesniam negu 992px - maži desktop (laptop)</li>
+            <li>didesniam negu 1200px - desktop</li>
+            <li>didesniam negu 1400px - large desktop</li>
+          </ul>
+        </div>
+        <div>
+          <h3>No media, kodėl?</h3>
+          <p>
+            Pradiniai stiliai turi būti rašomi be jokio media querie. Nes media querie dažniausiai pakeičia tik elementų išdėstymą arba atvaizdavimą/neatvaizdavimą, bet ne kažkokius bendrus stilius (fono spalvą, rėmelius, teksto spalvą, šriftą...). Bendri stiliai yra taikomi visiems ekranų dydžiams, tai kad jų nekartoti kiekviename media query - juos aprašai be media querie ir tuomet jie taikomi visiems ekranų dydžiams.
+          </p>
+        </div>
+        <div>
+          <h3>Mobile First</h3>
+          <p>
+            Mobile First dizaino principas nusako, kad svetaines pradžiai rašome ir stilizuojame mobiliesiems telefonas, kodėl?<br>
+            Nes didžioji dalis svetainių lankytojų yra mobiliųjų įrenginių vartotojai.<br>
+            Esant mažam ekranui - yra mažai vietos atvaizduoti turinį, dėl to jis būna konkretesnis. O plečiantis ekranui galima pridėti papildomos informacijos ar funkcionalumų...<br>
+            Papildomai skaitytis:<br> 
+            <a href="https://www.invisionapp.com/inside-design/mobile-first-design/" target="_blank">What does mobile-first design mean for digital designers?</a><br>
+            <a href="https://www.bairesdev.com/blog/what-is-mobile-first-css-is-it-necessary/" target="_blank">What Is Mobile-First CSS, and Is It Really Necessary?</a><br>
+            <a href="https://alistapart.com/article/mobile-first-css-is-it-time-for-a-rethink/" target="_blank">Mobile-First CSS: Is It Time for a Rethink?</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
