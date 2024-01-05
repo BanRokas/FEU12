@@ -92,6 +92,21 @@
       <h1>Git ir Github</h1>
       <p><b>Git</b> - programa, kuri versijuoja kodą.</p>
       <p><b>Github</b> - svetainė, kurioje keliamas (versijuojamas) kodas.</p>
+      <h3>Git ir GitHub setup</h3>
+      <ol>
+        <li>Įsirašyti <a href="https://git-scm.com/" target="_blank">Git'ą</a> į kompiuterį</li>
+        <li>Pasitikrinti ar tikrai įsirašė git'as. Terminale panaudoti komandą "git -v".</li>
+        <li>Susikurti <a href="https://github.com" target="_blank">Github</a> paskyrą.</li>
+        <li>Konfigūruoti git'ą globaliai (visame įrenginyje)
+          <ul>
+            <li>git config --global user.name GitHubUserName</li>
+            <li>git config --global user.email GitHubEmail</li>
+            <li>git config --global core.editor "code"</li>
+            <li>git config --global core.autocrlf true|input (true jeigu windows | input jeigu mac/linux)</li>
+          </ul>
+        </li>
+        <li>Patikrinti ar teisingai config'inta. Terminale panaudoti komandą "git config --global --edit"</li>
+      </ol>
     </section>
   </main>
   <footer></footer>
