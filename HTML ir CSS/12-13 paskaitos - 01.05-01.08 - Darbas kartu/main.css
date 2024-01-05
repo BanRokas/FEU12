@@ -2,10 +2,11 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 html{
-  background-color: bisque;
+  background-color: white;
 }
 body{
   font-family: Arial, Helvetica, sans-serif;
+  height: 500vh;
 }
 
 header {
@@ -49,7 +50,7 @@ main{
     background-image: url('./media/heroBg.jpg');
     background-size: cover;
     background-position: center;
-    padding: 0 50px;
+    padding: 0 50px 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,7 +77,47 @@ main{
     }
   }
   > #pirmosKorteles{
-    
+    padding: 0 30px;
+    margin-top: -80px;
+
+    > div.container{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      > div.card{
+        padding: 30px;
+        border: 2px solid #d9e9e7;
+        border-radius: 10px;
+        background-color: white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        > img{
+          width: 32px;
+          height: 32px;
+        }
+        > p{
+          text-align: center;
+        }
+        > button{
+          width: 100%;
+          padding: 10px 15px;
+          border: 2px solid black;
+          background-color: white;
+          border-radius: 5px;
+          text-align: center;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          word-spacing: 3px;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
 
@@ -129,7 +170,18 @@ main{
         max-width: 700px;
       }
     }
+    > #pirmosKorteles{
+      > div.container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
 
+        > div.card{
+          box-sizing: border-box;
+          width: 350px;
+        }
+      }
+    }
 
   }
 
