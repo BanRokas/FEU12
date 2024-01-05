@@ -1,0 +1,26 @@
+/* :root{
+  --raudona-spalva: blue;
+  --raudona-spalva-tamsi: rgb(29, 1, 156);
+  --raudona-spalva-sviesi: rgb(79, 56, 250);
+}
+
+p{
+  color: var(--raudona-spalva);
+}
+h1{
+  color: var(--raudona-spalva-tamsi);
+} */
+
+/* :root{
+  font-size: 10px;
+}
+h1{
+  font-size: 2rem;
+}
+
+section{
+  font-size: 30px;
+}
+h1{
+  font-size: 2em;
+} */
