@@ -1,0 +1,5 @@
+Pasikartoti/pasikonspektuoti/pasieiškoti extra info apie buvusias temas.
+Pasibaigti nebaigtas užduotis iš buvusių temų.
+Pridėti buvusių puslapių užduotims responsive dizainą.
+Pasibaigti kartu darytą svetainę.
+Atkurti ./media/____Travel.png pavaizduotą svetainę naudojant mobile first dizaino principą.
