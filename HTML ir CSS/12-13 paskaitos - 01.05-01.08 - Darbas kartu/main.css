@@ -42,6 +42,13 @@ header {
     }
   }
 }
+button{
+  transition: 0.3s;
+}
+button:hover{
+  box-shadow: 0 5px 10px 2px #0004;
+  transform: translateY(-3px);
+}
 
 main{
 
@@ -75,6 +82,9 @@ main{
       text-transform: uppercase;
       letter-spacing: 1px;
     }
+    /* > button:hover{
+      box-shadow: 0 5px 10px 2px orange;
+    } */
   }
   > #pirmosKorteles{
     padding: 0 30px 50px;
