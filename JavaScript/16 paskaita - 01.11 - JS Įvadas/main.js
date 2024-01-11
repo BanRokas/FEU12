@@ -41,8 +41,8 @@ console.log('Kodas iš atskiro failo');
 console.groupCollapsed('Kintamieji');
 let skaicius = 5;
 let kitasSkaicius = 10;
-let sk1 = 654-87*1+3/5;
-let sk2 = skaicius*kitasSkaicius;
+let sk01 = 654-87*1+3/5;
+let sk02 = skaicius*kitasSkaicius;
 let randomSkaicius = Math.random(); // grąžina skaičių nuo 0 iki 1
 console.log(randomSkaicius);
 console.log(skaicius);
@@ -71,3 +71,46 @@ console.groupEnd();
   window.prompt(); - išmeta alert tipo lentelę su klausimu ir vieta atsakymui
   Mokinsimės ateityje: innerHTML/innerText/append...
 */
+
+/*        Aritmetika
+  Veiksmai su duomenimis
+
+  x+y       - sudėtis
+  x-y       - atimtis
+  x*y       - daugyba
+  x/y       - dalyba
+  x**y      - laipsnio kėlimas
+  x**(1/y)  - šaknies traukimas
+  x%y       - liekana
+
+  Visi aritmetiniai veiksmai APART sudėties gali būti atliekami TIK su skaičiais
+
+  string + number   = string
+  string + boolean  = string
+  boolean + number  = number
+  boolean + boolean = number
+*/
+
+let sk1 = 5;
+let sk2 = 23;
+let neSk = '654';
+let zod = 'doggo';
+let neMelas = true;
+
+console.group('Aritmetika');
+  console.log('5 + 23 =', sk1+sk2); // 28
+  console.log('5 - 23 =', sk1-sk2); // -18
+  console.log('5 * 23 =', sk1*sk2); // 115
+  console.log('5 / 23 =', sk1/sk2); // 0.217...
+  console.log('23 ** 5 =', sk2**sk1); // 6436343
+  console.log('23 ** (1/5) =', sk2**(1/sk1)); // 1.87...
+  console.log('23 % 5 =', sk2%sk1); // 3
+  console.log('', zod+sk1); // 'doggo5'
+  console.log('', zod-sk1); // NaN
+  console.log('', zod*sk1); // NaN
+  console.log('', neSk+sk2); // '65423'
+  console.log('', sk2+neSk); // '23654'
+  console.log('', neSk-sk2); // 631
+  console.log('', neSk*sk2); // 15042
+  console.log('', neSk/sk2); // 28.434...
+console.groupEnd();
