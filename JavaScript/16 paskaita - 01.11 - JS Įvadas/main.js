@@ -97,7 +97,7 @@ let neSk = '654';
 let zod = 'doggo';
 let neMelas = true;
 
-console.group('Aritmetika');
+console.groupCollapsed('Aritmetika');
   console.log('5 + 23 =', sk1+sk2); // 28
   console.log('5 - 23 =', sk1-sk2); // -18
   console.log('5 * 23 =', sk1*sk2); // 115
@@ -113,4 +113,69 @@ console.group('Aritmetika');
   console.log('', neSk-sk2); // 631
   console.log('', neSk*sk2); // 15042
   console.log('', neSk/sk2); // 28.434...
+console.groupEnd();
+
+/*        Prilyginimai ir Palyginimai
+
+        Prilyginimai
+  Naujos reikšmės priskyrimas
+    let kintamasis = 10;
+    .........
+    kintamasis = 25; arba kintamasis = 'kito tipo reikšmė';
+
+  Trumpiniai:
+    kintamasis++              - padidina kintamąjį vienetu
+    kintamasis--              - sumažina kintamąjį vienetu
+    ++kintamasis              - padidina kintamąjį vienetu
+    --kintamasis              - sumažina kintamąjį vienetu
+    kintamasis+=skaicius      - padidina kintamąjį nurodytu skaičiumi
+    kintamasis-=skaicius      - sumažina kintamąjį nurodytu skaičiumi
+    kintamasis*=skaicius      - padaugina kintamąjį iš nurodyto skaičiaus
+    kintamasis/=skaicius      - padalina kintamąjį iš nurodyto skaičiaus
+    kintamasis**=skaicius     - pakelia kintamąjį nurodytu skaičiaus laipsniu
+    kintamasis**=(1/skaicius) - ištraukia nurodyto laipsnio šaknį iš kintamojo ir jį prilygina atsakymui
+    kintamasis%=skaicius      - randa liekaną dalinant iš nurodyto skaičiaus ir prilygina tam kintamajam
+
+      Palyginimai
+  x > y   - ar x daugiau už y
+  x < y   - ar x mažiau už y
+  x >= y  - x daugiau ARBA lygus y
+  x <= y  - x mažiau ARBA lygus y
+  x == y  - ar x reikšmė lygi y reikšmei
+  x === y - ar x reikšmė IR tipas lygūs y reikšmei IR tipui
+  x != y  - ar x reikšmė nelygi y reikšmei
+  x !== y - ar x reikšmė IR tipas nelygūs y reikšmei IR tipui
+*/
+
+console.groupCollapsed('Prilyginimai');
+  let kintamasis = 'pietų metas';
+  console.log(kintamasis); // 'pietų metas'
+  kintamasis = 10;
+  console.log(kintamasis); // 10
+  // kintamasis = kintamasis + 1;
+  // kintamasis += 1;
+  kintamasis++;
+  console.log(kintamasis); // 11
+  kintamasis += 5;
+  console.log(kintamasis); // 16
+  kintamasis -= 20;
+  console.log(kintamasis); // -4
+console.groupEnd();
+
+console.group('Palyginimai');
+  console.log('10 > 10', 10 > 10); // false
+  console.log('10 < 10', 10 < 10); // false
+  console.log('10 > 3', 10 > 3); // true
+  console.log('10 < 3', 10 < 3); // false
+  console.log('10 >= 10', 10 >= 10); // true (false ARBA true)
+  console.log('10 <= 10', 10 <= 10); // true (false ARBA true)
+  console.log('10 >= 3', 10 >= 3); // true (true ARBA false)
+  console.log('10 <= 3', 10 <= 3); // false (false ARBA false)
+  console.log('10 == 10', 10 == 10); // true
+  console.log('10 == "10"', 10 == "10"); // true (reikšmė)
+  console.log('10 === "10"', 10 === "10"); // false (reikšmė IR tipas)
+  console.log('10 != 10', 10 != 10); // false
+  console.log('10 != "10"', 10 != "10"); // false
+  console.log('10 !== "10"', 10 !== "10"); // true
+  console.log('10 != "3"', 10 != "3"); // true
 console.groupEnd();
