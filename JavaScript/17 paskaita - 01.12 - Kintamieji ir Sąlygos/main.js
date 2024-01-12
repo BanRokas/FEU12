@@ -43,7 +43,7 @@ console.groupCollapsed("Objektai ir Masyvai intro");
   console.log(gerasMasyvas[3]); // "Fiat"
 console.groupEnd();
 
-console.group("Nest'inti masyvai ir objektai");
+console.groupCollapsed("Nest'inti masyvai ir objektai");
   console.groupCollapsed("masyvas masyve");
     // JS'e rečiausiai susiduriama situacija
     let matrica = [
@@ -94,7 +94,7 @@ console.group("Nest'inti masyvai ir objektai");
     console.log(masina.bonusai); //["odinės sėdynės", "integruota multimedija", 'šildomos sėdynės']
     console.log(masina.bonusai[1]); // "integruota multimedija"
   console.groupEnd();
-  console.group("objektas masyve");
+  console.groupCollapsed("objektas masyve");
     let objektaiMasyve = [
       {
         vardas: "Rokas",
@@ -124,3 +124,97 @@ console.group("Nest'inti masyvai ir objektai");
     // console.log(objektaiMasyve[2].vardas + " yra " + objektaiMasyve[2].amzius + " metų amžiaus.");
   console.groupEnd();
 console.groupEnd();
+
+/*              Sąlygos
+    switch - soon; ternary ir Logic AND - not soon
+    if if_else if_elseIf if_elseIf_else - šiandien
+
+    Jeigu sąlyga yra tenkinama - vykdomas kodas jos viduje
+
+    Loginiai Operatoriai
+      !  - NOT - apverčia reikšmę
+      && - AND - ar bent vienoje pusėje yra melas, tokiu atveju grąžinama false
+      || - OR  - ar bent vienoje pusėje yra tiesa, tokiu atveju grąžinama true
+
+    Truthy   |   Falsy
+    _________|__________
+    true     | false
+    non zero | 0
+    "string" | ""
+    object   | undefined
+    array    | null
+    function | NaN
+
+    Sąlygos
+      if
+        if(salyga) { veiksmai }
+          Jeigu sąlyga yra tiesa - vykdomi veiksmai; melas - niekas nevyksta (kodas važiuoja toliau)
+      if else
+        if(salyga) { veiksmai0 } else { veiksmai1 }
+          Jeigu sąlyga yra tiesa - vykdomi veiksmai0; melas - vykdomi veiksmai1
+      if else_if
+        if(salyga0) { veiksmai0 } else if(salyga1) { veiksmai1 }
+          Jeigu sąlyga0 yra tiesa - vykdomi veiksmai0 ir toliau einančių sąlygų netikrina ir nevykdo jų veiksmų
+          Jeigu sąlyga0 yra melas - tikrinama sąlyga1; Jeigu sąlyga1 yra tiesa - vykdomi veiksmai1
+          Jeigu sąlyga0 yra melas - tikrinama sąlyga1; Jeigu sąlyga1 yra melas - niekas nevyksta (kodas važiuoja toliau)
+      if else_if else
+        if(sąlyga0) { veiksmai0 } else if(sąlyga1) { veiksmai1 } else { veiksmai2 }
+          Jeigu sąlyga0 yra tiesa - vykdomi veiksmai0 ir toliau einančių sąlygų netikrina ir nevykdo jų veiksmų
+          Jeigu sąlyga0 yra melas - tikrinama sąlyga1; Jeigu sąlyga1 yra tiesa - vykdomi veiksmai1 ir toliau einančių sąlygų netikrina ir nevykdo jų veiksmų
+          Jeigu sąlyga0 yra melas - tikrinama sąlyga1; Jeigu sąlyga1 yra melas - vykdomi else'o veiksmai2
+
+      Jeigu sąlyga yra tenkinama - vykdomas jos kodas.
+      Sąlygos viduje yra vykdoma vienintelė veiksmų grupė.
+      Else if'ų gali būti kiek nori.
+      Jeigu nei viena sąlyga nėra tiesa - vykdomas else'as.
+*/
+
+// let amzius = 30;
+// if(amzius >= 18){
+//   console.log("Asmuo yra pilnametis.");
+// } else {
+//   console.log("Asmuo nėra pilnametis.");
+// }
+
+// let amzius = 50;
+// if(amzius < 18){
+//   console.log("Asmuo nėra pilnametis.");
+// } else if(amzius >= 65){
+//   console.log("Asmuo yra pensininkas.");
+// } else if(amzius < 30){
+//   console.log("Asmuo yra pilnametis, bet nesuaugęs.");
+// } else {
+//   console.log("Asmuo yra pilnametis ir suaugęs.");
+// }
+
+//        Sąlygos su loginiais operatoriais
+
+// let amzius = 50;
+// if(amzius < 18){
+//   console.log("Asmuo nėra pilnametis.");
+// } else if(amzius >= 65){
+//   console.log("Asmuo yra pensininkas.");
+// } else if(amzius >= 18 && amzius < 30){
+//   console.log("Asmuo yra pilnametis, bet nesuaugęs.");
+// } else {
+//   console.log("Asmuo yra pilnametis ir suaugęs.");
+// }
+
+
+//        Nest'intos sąlygos
+
+let amzius = 35;
+if(!(typeof(amzius) === "number")){
+  console.log("error, reikia skaičiaus...");
+} else if(amzius >= 18){
+  console.log("Asmuo yra pilnametis.");
+  if(amzius < 30){
+    console.log("Dar jaunas.");
+  } else if(amzius >= 30 && amzius < 65){
+    console.log("Laukia pensijos...");
+  } else {
+    console.log("Sulaukė pensijos.");
+  }
+} else {
+  console.log("Asmuo nėra pilnametis.");
+}
