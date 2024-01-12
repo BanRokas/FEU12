@@ -1,0 +1,57 @@
+Kintamieji:
+  1) Susikurti konteinerius ir juos užpildyti reikšmėmis (bent po 1 kiekvieno tipo).
+    1.1) Masyvas bent 6 ilgio. []
+    1.2) Objektas bent 6 ilgio. {}
+
+    1.3) Masyvas bent 4 ilgio, kurio viduje būtų kitas masyvas bent 4 ilgio.
+    1.4) Masyvas bent 4 ilgio, kurio viduje būtų objektas bent 4 ilgio.
+    1.5) Objektas bent 4 ilgio, kurio viduje būtų masyvas bent 4 ilgio.
+    1.6) Objektas bent 4 ilgio, kurio viduje būtų objektas bent 4 ilgio.
+
+  2) Į konsolę išvesti:
+    2.1) Bent po 2 reikšmes iš 1.1 ir 1.2 konteinerių.
+    2.2) Bent po 3 reikšmes iš 1.3-1.6 konteinerių su bent 1 reikšme esančia konteinerio konteineryje.
+
+Sąlygos (simple):
+  1) Sukurk variable 'legalAge', kuris būtų lygus 20. Antra variable 'clientAge' su bet kokiu skaičiumi. Pasirašyk if-else, kuris alert išmestų ar klientas jau pasiekęs šį legalAge, ar dar ne.
+  2) Pasirašyk kintamą su savo vardu. Sukurk if-else, kuris pasakys "Ilgas vardas", jei tavo vardas ilgesnis nei 6 raidės. Kitu atveju, nieko neišmes. String ilgį gali susižinoti prirašant 'length' property (pvz.: "Petras".length arba su kintamu: name.length). (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length)
+  3) Sukurt kintamąjį su savo amžiumi. Patikrink: jei amžius didesnis nei 100, arba mažesnis nei 0 - tegul išmeta "Invalid age"; jei tarp 1 ir 18 - "Child"; jei tarp 19 ir 99 - "Adult".
+  4) Sukurk variable 'car', kuris bus lygus kažkokiam automobilio prekės ženklui. Sukurk if-else, kuris pasakys ar tas brand'as priklauso VW Group, ar BMW Group, ar nei vienam.
+  VW group priklauso: VW, Audi, Bentley, Bugatti, Lamborghini, Porsche.
+  BMW group priklauso: BMW, Mini, Rolls-Royce.
+
+Sąlygos (harder):
+  1) Parašyti sąlygą, kuri tikrintų ar turi vairuotojo teises.
+    1.1) Papildyti užduoties sąlygą, kad tikrintų ar vairuotojas turintis vairuotojo teises - turi automobilį. (nesting)
+    1.2) Papildyti užduoties sąlygą, kad tikrintų ar vairuotojas turintis vairuotojo teises - turi automobilį ir yra blaivas. (AND)
+
+  2) Padaryti taip, kad puslapis su tavimi pasisveikintų, patikrintų kokiame mieste gyveni ir išvestų su tai susijusią info (pasakytų ką nors gražaus apie tavo miestą(galima tobulinti išskiriant keletą miestų, o ne išvedant tą pačią žinutę apie visus)).
+    Naudoti:
+      1) let - kurti kintamuosius/ąjį
+      optional) prompt - gauti tavo miesto pavadinimą.
+      2) alert/console.log - grąžintų atsakymus.
+      3) if/elseIf/else - kas be ko...
+
+  3) Parašyti if'ą, kuris tikrintų kokia tavo lytis (tikrinimas turi vykti iš object kintamojo (object kintamasis turi turėti bent 4 kintamuosiuos savo viduje)).
+    Naudoti:
+      1) let - kurti kintamuosius (objektą/us)
+      optional) prompt - vartotojas priskirtų objektui reikšmes
+      2) alert/console.log - grąžintų atsakymus.
+      3) if/elseIf/else - kas be ko...
+
+  4) Parašyti if'ą, kuris tikrintų koks dabar mėnuo ir grąžintų koks yra metų laikas
+    Naudoti:
+      1) let - kurti kintamuosius.
+      optional) prompt - gauti mėnesį.
+      2) alert/console.log - grąžinti galimus atsakymus.
+      3) if/elseIf/else - kas be ko...
+    4 extra) Google kaip veikia/atrodo/naudojamas switch'as ir užduotį atlikti su switch vietoj if.
+
+
+  5 Extra) Padaryti taip, kad puslapis su tavimi pasisveikintu naudodamas teisingą galunę (ir tiktų ne tik tavo vardui, o visiem).
+    Naudoti: 
+      1) let - kurti kintamuosius
+      2) prompt - gauti tavo vardą
+      3) endsWith | slice | concat - google šiuos string metodus, kad tikrintum ir koreguotum vardą
+      4) alert/console.log - grąžinti teisingą pasisveikinimą.
+      5) if/elseIf/else - kas be ko...
