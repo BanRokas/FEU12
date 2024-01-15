@@ -58,3 +58,43 @@ console.groupEnd();
     kintamasis-=x - mažina kintamąjį x'u PO ciklo iteracijos
 */
 
+//    for
+console.groupCollapsed('for');
+  console.log('Labas rytas 1');
+  console.log('Labas rytas 2');
+  console.log('Labas rytas 3');
+  console.log('Labas rytas 4');
+  console.log('Labas rytas 5');
+  console.log('Labas rytas 6');
+  console.log('Labas rytas 7');
+  console.log('Labas rytas 8');
+  console.log('Labas rytas 9');
+  console.log('Labas rytas 10');
+  console.log('--------------');
+  for(let i = 1; i <= 10; i++){
+    console.log('Labas rytas ' + i);
+  }
+  console.log('Už ciklo');
+console.groupEnd();
+
+// while
+console.groupCollapsed('while');
+  let iteracija = 1;
+  while(iteracija <= 10){
+    console.log('while ciklas ' + iteracija);
+    iteracija++;
+  }
+  console.log('Už ciklo');
+  let masyvasWhile = ['a','b','c','d','e','f'];
+  while(masyvasWhile.length){ // !== 0; > 0;
+    console.log(masyvasWhile.shift());
+  }
+  console.log('Už ciklo');
+  let randomSkaicius = undefined;
+  while(randomSkaicius%2!==0){
+    randomSkaicius = Math.ceil(Math.random()*1000);
+    console.log(randomSkaicius);
+  }
+  console.log("Skaičius " + randomSkaicius + ' yra lyginis.');
+console.groupEnd();
+
