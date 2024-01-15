@@ -162,5 +162,28 @@ console.group('for praktika');
   for(let i = 0; i < masyvasCiklams.length; i++){
     console.log(masyvasCiklams[i]);
   }
-
+  console.log('-----------------');
+  // sukamas ciklas per visą masyvą nuo galo iki pradžios
+  for(let i = masyvasCiklams.length - 1; i >= 0; i--){
+    console.log(masyvasCiklams[i]);
+  }
+  console.log('-----------------');
+  // sukamas ciklas per visą masyvą nuo pradžios iki galo ir naujas masyvas pildomas tik teigiamais skaičiais
+  let naujasMasyvas = [];
+  for(let i = 0; i < masyvasCiklams.length; i++){
+    if(masyvasCiklams[i] >= 0){
+      naujasMasyvas.push(masyvasCiklams[i]);
+    }
+  }
+  console.log(naujasMasyvas);
+  console.log('-----------------');
+  // sukamas ciklas per visą masyva nuo pradžios iki galo kas 3 elementą ir kiekvienas masyvo elementas spausdinamas į konsolę po 3 kartus
+  for(let i = 0; i < masyvasCiklams.length; i+=3){
+    // console.log(masyvasCiklams[i]);
+    // console.log(masyvasCiklams[i]);
+    // console.log(masyvasCiklams[i]);
+    for(let j = 0; j < 3; j++){
+      console.log(masyvasCiklams[i]);
+    }
+  }
 console.groupEnd();
