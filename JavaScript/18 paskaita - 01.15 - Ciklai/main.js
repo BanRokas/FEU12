@@ -107,7 +107,7 @@ console.group('for of');
 console.groupEnd();
 
 // for in
-console.group('for in');
+console.groupCollapsed('for in');
   let objektasForIn = {
     pirmas: 'vienetas',
     antras: 'dvejetas',
@@ -119,4 +119,13 @@ console.group('for in');
   for(keyWord in objektasForIn){
     console.log(keyWord, objektasForIn[keyWord]); // weird
   }
+console.groupEnd();
+
+// do while
+console.groupCollapsed('do while');
+  let skaicius = 20;
+  do {
+    console.log('skaicius yra: ' + skaicius);
+    // skaicius*= Math.random();
+  } while(skaicius < 1);
 console.groupEnd();
