@@ -99,7 +99,7 @@ console.groupCollapsed('while');
 console.groupEnd();
 
 // for of
-console.group('for of');
+console.groupCollapsed('for of');
   let masyvasForOf = ['a','b','c','d','e','f'];
   for(masyvoElementas of masyvasForOf){
     console.log(masyvoElementas);
@@ -128,4 +128,39 @@ console.groupCollapsed('do while');
     console.log('skaicius yra: ' + skaicius);
     // skaicius*= Math.random();
   } while(skaicius < 1);
+console.groupEnd();
+
+
+//        FOR praktika
+console.group('for praktika');
+  // sukamas ciklas nuo 0 iki 20 kas 3
+  for(let i = 0; i <= 20; i+=3){
+    console.log(i);
+  }
+  console.log('-----------------');
+  // sukamas ciklas nuo -10 iki 30 kas 5
+  for(let i = -10; i <= 30; i+=5){
+    console.log(i);
+  }
+  console.log('-----------------');
+  // sukamas ciklas nuo 10 iki neimtinai 0 kas 1
+  for(let i = 10; i > 0; i--){
+    console.log(i);
+  }
+  console.log('-----------------');
+  // sukamas ciklas nuo 0 iki 10 kas 1 ir spausdinti lyginius skaičius
+  for(let i = 0; i <= 10; i++){
+    if(i%2 === 0){
+      console.log(i);
+    }
+  }
+  console.log('-----------------');
+  
+  let masyvasCiklams = [54,897,1,0,21,-1,4,-46541,1651,12,5,-1,10];
+  console.log(masyvasCiklams);
+  // sukamas ciklas per visą masyvą nuo pradžios iki galo
+  for(let i = 0; i < masyvasCiklams.length; i++){
+    console.log(masyvasCiklams[i]);
+  }
+
 console.groupEnd();
