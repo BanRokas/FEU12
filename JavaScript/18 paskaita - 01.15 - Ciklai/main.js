@@ -98,3 +98,25 @@ console.groupCollapsed('while');
   console.log("Skaičius " + randomSkaicius + ' yra lyginis.');
 console.groupEnd();
 
+// for of
+console.group('for of');
+  let masyvasForOf = ['a','b','c','d','e','f'];
+  for(masyvoElementas of masyvasForOf){
+    console.log(masyvoElementas);
+  }
+console.groupEnd();
+
+// for in
+console.group('for in');
+  let objektasForIn = {
+    pirmas: 'vienetas',
+    antras: 'dvejetas',
+    trecias: 'hihi',
+    ketvirtas: 654,
+    darKazkas: false
+  };
+  console.log(objektasForIn.pirmas);
+  for(keyWord in objektasForIn){
+    console.log(keyWord, objektasForIn[keyWord]); // weird
+  }
+console.groupEnd();
