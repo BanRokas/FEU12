@@ -103,3 +103,47 @@ console.groupEnd();
     '   katinas   '.trim() - 'katinas'
     NEmodifikuoja pradinio string'o. Grąžina naują string'ą be tarpų pradžioje ir gale.
 */
+
+//  Math metodai
+//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+/*
+  floor - suapvalina skaičių iki mažiausio sveikojo skaičiaus
+    Math.floor(5.9) - 5
+  ceil - suapvalina skaičių iki didžiausio sveikojo skaičiaus
+    Math.ceil(5.1) - 6
+  round - suapvalina skaičių pagal apvalinimo taisykles
+    Math.round(5.5) - 6
+    Math.round(5.49) - 5
+  random - grąžina random skaičių nuo 0 (neimtinai) iki 1 (neimtinai)
+    Math.random() - (0; 1)
+*/
+
+//  Array metodai
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+/*
+  pop - išima iš galo
+  push - prideda į galą
+  shift - išima iš pradžios
+  unshift - prideda į pradžią
+  concat - sujungia keletą masyvų į vieną
+    [1,2].concat(['a','b'], [5,6], ...) - [1,2,'a','b',5,6]
+    NEmodifikuoja nei vieno iš masyvų, o grąžina naują jų junginį.
+  slice - iš pateikto masyvo iškerpa elementus nuo nurodyto indekso (imtinai) iki nurodyto indekso (neimtinai), jeigu nėra iki, tuomet iki galo.
+    [1,2,3,4,5,6].slice(3,5) - [4,5]
+    NEmodifikuoja pradinio masyvo, o grąžina iškirptą gabaliuką kaip naują masyvą
+  splice - iš pradinio masyvo iškerpa nuo nurodytos pozicijos, nurodytą kiekį elementų ir jų vietoje įterpia likusius nurodytus elementus. Grąžina iškirptus elementus.
+    [1,2,3,4,5,6].splice(3,2,'naujas1','naujas2',654, ...) - [4,5]
+    MODIFIKUOJA pradinį masyvą - [1,2,3,'naujas1','naujas2',654,6]
+  reverse - apverčia masyvą
+    [1,2,3,4,5].reverse() - [5,4,3,2,1]
+    MODIFIKUOJA pradinį masyvą - [5,4,3,2,1]
+  sort - rikiuoja abėcėlės tvarka arba didėjimo tvarka
+    Skaičiams: sort((a,b)=>a-b)
+    Žodžiams: sort((a,b)=>a.localeCompare(b))
+    MODIFIKUOJA pradinį masyvą, grąžina modifikuotą masyvą
+*/
+
+function randomSkaiciusIki(iki){
+  return Math.floor(Math.random()*(iki+1));
+}
+console.log(randomSkaiciusIki(5));
