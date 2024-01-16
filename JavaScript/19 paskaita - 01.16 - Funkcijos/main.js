@@ -73,3 +73,33 @@ console.groupCollapsed('Eventai');
     // sekcija.innerHTML += "<img src='https://www.greenmangaming.com/blog/wp-content/uploads/2022/06/teenage-mutant-ninja-turtles-characters-ranked.jpg' height='300px' width='auto'>";
   }
 console.groupEnd();
+
+//          Metodai (string, math, array)
+/*
+  Metodas yra funkcija, kuri priklauso kažkokiam elementui/kintamajam/objektui.
+
+  Vieni metodai modifikuoja pradinius duomenis, kiti - ne.
+*/
+
+//  String metodai
+//  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+/*
+  concat - sujungia du arba daugiau string'ų į vieną.
+    'as'.concat('labai', 'alkanas', ...); - 'aslabaialkanas'
+    NEmodifikuoja nei vieno string'o. Grąžina jų apjungimą.
+  endsWith - tikrina ar string'as baigiasi su nurodyta galūne.
+    'katinas'.endsWith('as') - true
+    NEmodifikuoja pradingio string'o. Grąžina true arba false.
+  slice - iškerpa simbolius iš string'o nuo nurodytos pozicijos (imtinai) iki nurodytos pozicijos (neimtinai), o jei iki pozicija nenurodyta - iki galo.
+    'katinas'.slice(3,5) - 'in'
+    NEmodifikuoja pradinio string'o. Grąžina iškirptą string'o gabaliuką.
+  toLowerCase - paverčia string'ą į mažąsias raides
+    'KaTinAS'.toLowerCase() - 'katinas'
+    NEmodifikuoja pradinio string'o. Grąžina naują kur visos raidės mažosios.
+  toUpperCase - paverčia string'ą į didžiąsias raides
+    'katINas'.toUpperCase() - 'KATINAS'
+    NEmodifikuoja pradinio string'o. Grąžina naują kur visos raidės didžiosios.
+  trim - panaikina tarpus string'o pradžioje ir gale
+    '   katinas   '.trim() - 'katinas'
+    NEmodifikuoja pradinio string'o. Grąžina naują string'ą be tarpų pradžioje ir gale.
+*/
