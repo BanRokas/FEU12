@@ -46,7 +46,7 @@ console.groupEnd();
   Kreipimasis į dokumente esančius elementus (tag'us) - document.querySelector('selektorius');
   Įvykio klausymasis dokumente esančio elemento - element.addEventListener('įvykis', funkcija);
 */
-console.group('Eventai');
+console.groupCollapsed('Eventai');
   let mygtukas = document.querySelector('#pirmas > button');
   // console.dir(mygtukas);
   mygtukas.textContent += ' If You Dare';
@@ -61,5 +61,15 @@ console.group('Eventai');
     antraste.style.textAlign = 'center';
     antraste.style.fontSize = '50px';
     antraste.style.color = 'red';
+
+    // sudetinga
+    let imageElement = document.createElement('img');
+    imageElement.style.height = '300px';
+    imageElement.style.width = 'auto';
+    imageElement.setAttribute('src', 'https://www.greenmangaming.com/blog/wp-content/uploads/2022/06/teenage-mutant-ninja-turtles-characters-ranked.jpg');
+    sekcija.appendChild(imageElement);
+
+    // labai paprasta ir blogai dėl code injection
+    // sekcija.innerHTML += "<img src='https://www.greenmangaming.com/blog/wp-content/uploads/2022/06/teenage-mutant-ninja-turtles-characters-ranked.jpg' height='300px' width='auto'>";
   }
 console.groupEnd();
