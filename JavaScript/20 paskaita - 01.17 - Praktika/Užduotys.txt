@@ -1,0 +1,30 @@
+0) Pasibaigti ko nebaigę iš praėjusių temų.
+
+Funkcijos:
+  1) Sukurti funkciją, kuri į konsolę išvestų visus jai duotojo masyvo elementus nuo paskutinio iki pirmojo.
+  2) Sukurti funkciją, kuri surikiuotų gautąją informaciją (parametrą(masyvą(tik su string kintamaisiais))) abeceliškai ir ją išvestų į konsolę.
+  3) Sukurti funkciją, kuri surikiuotų gautąją informaciją (parametrą(masyvą(tik su number kintamaisiais))) nuo didžiausio iki mažiausio ir ją išvestų į konsolę.
+  4+) Sukurti funkciją, kuri į konsolę išvestų skaičius kas pirmąjį duotajį parametrą nuo antrojo duotojo parametro (imtinai) iki trečiojo duotojo parametro (imtinai). (paduodu 2,5,16 => išveda 5,7,9,11,13,15)
+  5+) Sukurti funkciją, kuri grąžintų 10 ilgio masyvą random skaičių (nuo 0 iki 100).
+    5.1+) Sukurti funkciją, kuri priimtų argumentą, kuris nurodytų kokio ilgio masyvą su random skaičiais (nuo 0 iki 100) funkcija turi grąžinti.
+    5.2++) Sukurti funkciją, kuri priimtų 3 argumentus, kurie nurodytų: 1-kokio ilgio masyvą funkcija turi grąžinti su random skaičiais 2-nuo kokio skaičiaus 3-iki kokio skaičiaus.
+
+Events:
+  1) Padaryk, kad paspaudus ant mygtuko - išoktų alert su tavo vardu! (naudoti inline metoda/atributą: onclick="")
+  2) Perrašyti pirmą pratimą su addEventListener (kaip visad ir reikės daryti).
+  3) Padaryti, kad paspaudus ant mygtuko, po apačia atsirastų paragrafe tekstas apie jus.
+  4) Sukurk programą, kurioje bus h1 tekstas su skaičiumi ir mygtuku. Paspaudus ant mygtuko, skaičius padidėja (+1).
+  5++) Sukurk programą, kurioje ilgas paragrafas. Bandant kopijuoti kodą - išmeta, kad negalima kopijuoti.
+  6+) Sukurk programą, kur paspaudus ant mygtuko - sugeneruoja random skaičių nuo 1 iki 100 ir jį išmeta kaip h1 tekstą.
+  7+) Sukurk programą, kurioje du mygtukai - "Turiu bent 18 metų" ir "Mažiau nei 18 metų". Jei paspaudžia ant pirmo mygtuko - išmeta h1 tekstą "Alus". Jei antrą paspaudžia - išmeta alert su "nepilnametis - užauk".
+  8++) Sukurk programą, kuri sugeneruoja random skaičių nuo 1 iki 3, kai tik užsikrauna puslapis. Vartotojas skaičiaus nemato (bet jūs pasiconsole'inkit). Ekrane - trys mygtukai (1, 2, 3). Vartotojas turi spėti koks random skaičius susigeneravo. Jei atspėja - išoka alert("Yay"), jei ne - alert("Nay").
+  9) Parašykite programą, kurioje būtų tekstas "Do NOT click". Vartotojui paspaudus bet kokį mygtuką turi pasikeisti tekstas į "Pants are an illusion and so is death".
+  10+) Sukurkite h1, jam duokite 100vh aukštį ir 100vh line-height. Jame įrašykite "Nejudinkite pelytės". Jeigu vartotojas pajudins pelytę - pakeiskite tekstą į "Why are you running?".
+
+
+Extra:
+  1) Parašykite programą, kuri vykdysis ekrane paspaudus mygtuka "Generuok sąrašą". Funkcija turi ekrane sugeneruoti sąrašą su bent 5 sąrašo elementais. Sąrašo elementai random paimami iš iš anksto sukurto žodžių masyvo su bent 10 skirtingų string'ų.
+    1.1) Patobulinti programą, kad po to kai paspaudi ant mygtuko "Generuok sąrašą" ir yra sugeneruojamas sąrašas, mygtuko tekstas pasikeistų į "Pildyk sąrašą" ir jeigu paspaudžiama ant mygtuko vėl, sąrašas yra papildomas 1 sąrašo elementu su random žodžiu iš žodžių masyvo.
+    1.2) Patobulinti programą, kad jeigu paspaudžiama ant kurio nors iš sąrašo elemento, jo stilius pasikeičia.
+    1.3) Patobulinti programą, kad jeigu paspaudžiama ant sąrašo elemento, kurio stilius jau yra pakeistas (ant kurio jau buvo paspausta), jo stilius grįžta į normalų.
+    1.4) Patobulinti programą, kad šalimais sąrašo elementų būtų šiukšlinės ikonėlė, ant kurios paspaudus - tas sąrašo elementas būtų panaikinamas iš ekrano.
