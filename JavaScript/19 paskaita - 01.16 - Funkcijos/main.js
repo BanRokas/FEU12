@@ -147,3 +147,33 @@ function randomSkaiciusIki(iki){
   return Math.floor(Math.random()*(iki+1));
 }
 console.log(randomSkaiciusIki(5));
+
+// 2) Sukurkite funkciją, kuri sugeneruos ir grąžins random skaičių tarp 1 ir 5.
+function nuo_1_iki_5(){
+  let randomSk = Math.ceil(Math.random()*5);
+  return randomSk;
+}
+console.log(nuo_1_iki_5());
+
+// 3) Sukurkite funkciją, kuri paims du parametrus - vardą ir pavardę - ir grąžins sumą šių žodžių ilgių (t.y. "Petras", "Petraitis" => 15).
+function pav(zodis1, zodis2){
+  // console.log(zodis1, zodis1.length);
+  // console.log(zodis2, zodis2.length);
+  // console.log(zodis1.length + zodis2.length)
+  return zodis1.length + zodis2.length;
+}
+let ats1 = pav('ha labas rytas', 'hihi');
+console.log(ats1);
+let ats2 = pav('asd', 'dddd');
+let ats3 = pav('aaaaaaaaaaaaa', 'bbbbbbbbbbbbbbb');
+console.log(ats1+ats2+ats3);
+
+// 5) Sukurti funkciją, kuri į konsolę išvestų visus jai duotojo masyvo elementus nuo pirmo iki paskutinio.
+function uzd5(masyvas){
+  console.log(masyvas);
+  for(let i = 0; i < masyvas.length; i++){
+    console.log(masyvas[i]);
+  }
+}
+uzd5([5,6,4,8,6,1]);
+uzd5([5,6,4,8,6,2]);
