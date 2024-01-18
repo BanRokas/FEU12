@@ -218,3 +218,42 @@ if(!(typeof(amzius) === "number")){
 } else {
   console.log("Asmuo nėra pilnametis.");
 }
+
+/*
+  5 Extra) Padaryti taip, kad puslapis su tavimi pasisveikintu naudodamas teisingą galunę (ir tiktų ne tik tavo vardui, o visiem).
+    Naudoti: 
+      1) let - kurti kintamuosius
+      2) prompt - gauti tavo vardą
+      3) endsWith | slice | concat - google šiuos string metodus, kad tikrintum ir koreguotum vardą
+      4) alert/console.log - grąžinti teisingą pasisveikinimą.
+      5) if/elseIf/else - kas be ko...
+*/
+// Rok as - Rok ai; Nerij us - Nerij au; Nagl is - Nagl i; Stas ys - Stas į; Egl ė - Egl e; Mild a - Mild a;
+let vardas = "Aistis";
+if(vardas.endsWith('as')){
+  let pradzia = vardas.slice(0, vardas.length-1);
+  let vardoKreipimasis = pradzia.concat('i');
+  console.log(vardoKreipimasis);
+} else if(vardas.endsWith('us')){
+  let pradzia = vardas.slice(0, vardas.length-2);
+  let vardoKreipimasis = pradzia.concat('au');
+  console.log(vardoKreipimasis);
+} else if(vardas.endsWith('is')){
+  let pradzia = vardas.slice(0, vardas.length-1);
+  let vardoKreipimasis = pradzia.concat('');
+  console.log(vardoKreipimasis);
+} else if(vardas.endsWith('ys')){
+  let pradzia = vardas.slice(0, vardas.length-2);
+  let vardoKreipimasis = pradzia.concat('į');
+  console.log(vardoKreipimasis);
+} else if(vardas.endsWith('ė')){
+  let pradzia = vardas.slice(0, vardas.length-1);
+  let vardoKreipimasis = pradzia.concat('e');
+  console.log(vardoKreipimasis);
+} else if(vardas.endsWith('a')){
+  let pradzia = vardas.slice(0, vardas.length-0);
+  let vardoKreipimasis = pradzia.concat('');
+  console.log(vardoKreipimasis);
+} else {
+  console.log(vardas);
+}

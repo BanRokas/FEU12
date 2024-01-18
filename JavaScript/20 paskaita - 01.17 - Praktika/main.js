@@ -86,3 +86,82 @@ function arTas(event){
     window.alert("Nay");
   }
 }
+
+
+/*
+  5 Extra) Padaryti taip, kad puslapis su tavimi pasisveikintu naudodamas teisingą galunę (ir tiktų ne tik tavo vardui, o visiem).
+    Naudoti: 
+      1) let - kurti kintamuosius
+      2) prompt - gauti tavo vardą
+      3) endsWith | slice | concat - google šiuos string metodus, kad tikrintum ir koreguotum vardą
+      4) alert/console.log - grąžinti teisingą pasisveikinimą.
+      5) if/elseIf/else - kas be ko...
+*/
+// Rok as - Rok ai; Nerij us - Nerij au; Nagl is - Nagl i; Stas ys - Stas į; Egl ė - Egl e; Mild a - Mild a;
+// let vardas = "Aistis";
+// if(vardas.endsWith('as')){
+//   let vardoKreipimasis = vardoGalunesKeitimas(1, 'i')
+//   console.log(vardoKreipimasis);
+// } else if(vardas.endsWith('us')){
+//   let vardoKreipimasis = vardoGalunesKeitimas(2, 'au')
+//   console.log(vardoKreipimasis);
+// } else if(vardas.endsWith('is')){
+//   let vardoKreipimasis = vardoGalunesKeitimas(1, '')
+//   console.log(vardoKreipimasis);
+// } else if(vardas.endsWith('ys')){
+//   let vardoKreipimasis = vardoGalunesKeitimas(2, 'į')
+//   console.log(vardoKreipimasis);
+// } else if(vardas.endsWith('ė')){
+//   let vardoKreipimasis = vardoGalunesKeitimas(1, 'e')
+//   console.log(vardoKreipimasis);
+// } else if(vardas.endsWith('a')){
+//   let vardoKreipimasis = vardoGalunesKeitimas(0, '')
+//   console.log(vardoKreipimasis);
+// } else {
+//   console.log(vardas);
+// }
+function vardoGalunesKeitimas(kiekAtimti, kitaGalune){
+  let pradzia = vardas.slice(0, vardas.length-kiekAtimti);
+  let vardoKreipimasis = pradzia.concat(kitaGalune);
+  return vardoKreipimasis;
+}
+let vardas = window.prompt('Koks tavo vardas?');
+let variacijos = [
+  {
+    galune: 'as',
+    atimti: 1,
+    prideti: 'i'
+  },{
+    galune: 'us',
+    atimti: 2,
+    prideti: 'au'
+  },{
+    galune: 'is',
+    atimti: 1,
+    prideti: ''
+  },{
+    galune: 'ys',
+    atimti: 2,
+    prideti: 'į'
+  },{
+    galune: 'ė',
+    atimti: 1,
+    prideti: 'e'
+  },{
+    galune: 'a',
+    atimti: 0,
+    prideti: ''
+  },{
+    galune: '',
+    atimti: 0,
+    prideti: ''
+  }
+];
+
+for(let i = 0; i < variacijos.length; i++){
+  if(vardas.endsWith(variacijos[i].galune)){
+    let vardoKreipimasis = vardoGalunesKeitimas(variacijos[i].atimti, variacijos[i].prideti);
+    window.alert('Labas ' + vardoKreipimasis + '.');
+    break;
+  }
+}
