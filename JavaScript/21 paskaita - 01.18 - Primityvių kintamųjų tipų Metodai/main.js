@@ -107,3 +107,17 @@ console.log('-------------------');
     prototype.trimEnd()- panaikina tarpus gale
     prototype.trim() - panaikina tarpus ir pradžioje ir gale
 */
+
+// Patikrinti ar vartotojo įvestis prasideda didžiąja raide.
+let vartotojoIvestis = 'Labas rytas';
+// let pirmojiRaide = vartotojoIvestis.slice(0, 1);
+let pirmojiRaide = vartotojoIvestis[0]; // charAt(0), at(0)
+// console.log(pirmojiRaide);
+let isdidintaPirmojiRaide = pirmojiRaide.toUpperCase();
+// console.log(isdidintaPirmojiRaide);
+if(pirmojiRaide === isdidintaPirmojiRaide){
+// if(vartotojoIvestis[0] === vartotojoIvestis[0].toUpperCase()){
+  console.log(vartotojoIvestis, "- pirmoji raidė yra didžioji.");
+} else {
+  console.log(vartotojoIvestis, "- pirmoji raidė nėra didžioji.");
+}
