@@ -109,7 +109,7 @@ function arTas(event){
 //   let vardoKreipimasis = vardoGalunesKeitimas(1, '')
 //   console.log(vardoKreipimasis);
 // } else if(vardas.endsWith('ys')){
-//   let vardoKreipimasis = vardoGalunesKeitimas(2, 'į')
+//   let vardoKreipimasis = vardoGalunesKeitimas(1, '')
 //   console.log(vardoKreipimasis);
 // } else if(vardas.endsWith('ė')){
 //   let vardoKreipimasis = vardoGalunesKeitimas(1, 'e')
@@ -141,8 +141,8 @@ let variacijos = [
     prideti: ''
   },{
     galune: 'ys',
-    atimti: 2,
-    prideti: 'į'
+    atimti: 1,
+    prideti: ''
   },{
     galune: 'ė',
     atimti: 1,

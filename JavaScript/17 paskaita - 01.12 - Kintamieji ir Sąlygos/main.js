@@ -243,8 +243,8 @@ if(vardas.endsWith('as')){
   let vardoKreipimasis = pradzia.concat('');
   console.log(vardoKreipimasis);
 } else if(vardas.endsWith('ys')){
-  let pradzia = vardas.slice(0, vardas.length-2);
-  let vardoKreipimasis = pradzia.concat('į');
+  let pradzia = vardas.slice(0, vardas.length-1);
+  let vardoKreipimasis = pradzia.concat('');
   console.log(vardoKreipimasis);
 } else if(vardas.endsWith('ė')){
   let pradzia = vardas.slice(0, vardas.length-1);
