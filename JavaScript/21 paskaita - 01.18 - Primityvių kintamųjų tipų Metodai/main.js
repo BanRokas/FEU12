@@ -121,3 +121,23 @@ if(pirmojiRaide === isdidintaPirmojiRaide){
 } else {
   console.log(vartotojoIvestis, "- pirmoji raidė nėra didžioji.");
 }
+
+// 14) Iš 3'čios užduoties masyvo išvesti tik ilgesnius nei 5 simbolių žodžius.
+let mas3 = ['14)', 'Iš', "3'čios", 'užduoties', 'masyvo', 'išvesti', 'tik', 'ilgesnius', 'nei', '5', 'simbolių', 'žodžius.'];
+for(let i = 0; i < mas3.length; i++){
+  // console.log(mas3[i], mas3[i].length);
+  if(mas3[i].length > 5){
+    console.log(mas3[i]);
+  }
+}
+
+// 18++) Parašyti funkciją, kuri iš jai pateikto masyvo išvestų tik tuos žodžius, kurie yra ilgesni negu A, bet trumpesni negu B. Pvz.:(funkcija uzd18(masyvas, a, b) => uzd18(["Labas", "ate", "Katašunis"], 4, 8) => "Labas")
+function uzd18(masyvas, ilgesnisNegu, trumpesnisNegu){
+  console.log(masyvas, ilgesnisNegu, trumpesnisNegu);
+  for(let i = 0; i < masyvas.length; i++){
+    if(masyvas[i].length > ilgesnisNegu && masyvas[i].length < trumpesnisNegu){
+      console.log(masyvas[i]);
+    }
+  }
+}
+uzd18(mas3, 2, 7)
