@@ -80,3 +80,54 @@ console.log(objektoRaktai);
     prototype.with(index, value) - grąžina naują masyvą, kuriame nurodytame indekse reikšmė yra pakeista į nurodytą value (reikšmę). NEmodifikuoja originalaus masyvo.
       prototype[index] = value; - originalus masyvas yra MODIFIKUOJAMAS.
 */
+
+const numbersArray = [654,87,561,1,64,64,981,8,498,189,468];
+console.log(numbersArray);
+const sortedNumbersArray = numbersArray.toSorted((a, b) => {
+  // console.log('a', a);
+  // console.log('b', b);
+  // console.log(a - b);
+  // console.log('------');
+  return a - b;
+});
+console.log(sortedNumbersArray);
+
+// Jeigu veikluMasyvas neturi kažkurio asmenys veiklos, tuomet reikia papildyti veikluMasyvas to asmens veikla.
+const veikluMasyvas = ['TV', 'PC', 'Laukas', 'Parduotuvė', 'Sportas', 'Žygis', 'Miegas'];
+const asmenys = [
+  {
+    vardas: "Rokas",
+    veikla: "PC"
+  },{
+    vardas: "Petras",
+    veikla: "Kinas"
+  },{
+    vardas: "Karolis",
+    veikla: "Dviratis"
+  },{
+    vardas: "Jonas",
+    veikla: "Žygis"
+  },{
+    vardas: "Stanislovas",
+    veikla: "Baidarės"
+  },
+];
+
+for(asmuo of asmenys){
+  if(veikluMasyvas.includes(asmuo.veikla)){
+    // nieko
+  } else {
+    // window.alert(asmuo.vardas + ' užsiima neaiškia veikla pavadinimu ' + asmuo.veikla);
+    window.alert(`${asmuo.vardas} užsiima neaiškia veikla pavadinimu ${asmuo.veikla}`);
+    // veikluMasyvas.push(asmuo.veikla);
+  }
+}
+let duomuo = `Visualization and "audibilization" of 15 Sorting's Algorithms in`;
+// "<ul>"+
+// "<li>"+duomuo+"</li>"
+// "<li>"+duomuo+"</li>"
+// "</ul>"
+let sarasas = `<ul>
+    <li>${duomuo}</li>
+    <li>${duomuo}</li>
+  </ul>`;
