@@ -5,10 +5,10 @@
   18 paskaita - 01.15 - Ciklai
   19 paskaita - 01.16 - Funkcijos
   20 paskaita - 01.17 - Praktika
-  21 paskaita - 01.18
-  22 paskaita - 01.19
+  21 paskaita - 01.18 - Primityvių kintamųjų tipų Metodai 
+  22 paskaita - 01.19 - Arrow function ir Masyvų metodai (neiteraciniai)
 3 savaitė:
-  23 paskaita - 01.22
+  23 paskaita - 01.22 - Advanced sąlygos ir Destruktūrizavimas ir Iteraciniai masyvų metodai
   24 paskaita - 01.23
   25 paskaita - 01.24
   26 paskaita - 01.25
@@ -32,12 +32,6 @@
 
 
 Temos:
-  Primityvių kintamųjų tipų Metodai 
-  Masyvų metodai
-  Arrow function
-  Advanced sąlygos
-  Destruktūrizavimas
-  Iteraciniai masyvų metodai
   Formų valdymas
   Formų HTML validacija
   DOM metodai
