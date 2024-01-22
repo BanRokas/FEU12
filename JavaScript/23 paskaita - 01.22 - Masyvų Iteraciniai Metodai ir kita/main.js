@@ -131,7 +131,7 @@ console.groupCollapsed('objektų des');
     galima susirinkti likusias NEPALIESTAS objekto reikšmes naudojant spread operatorių ...
   */
 console.groupEnd();
-console.group('parametrų destr'); // nieko naujo, tas pats kas ir objektų ar masyvų destr tik, kad parametrų aprašymo vietoje
+console.groupCollapsed('parametrų destr'); // nieko naujo, tas pats kas ir objektų ar masyvų destr tik, kad parametrų aprašymo vietoje
   function spreadPvz(tekstas, ...skaiciai){
     console.log(tekstas);
     console.log(skaiciai);
@@ -153,3 +153,117 @@ console.group('parametrų destr'); // nieko naujo, tas pats kas ir objektų ar m
   }
   objKaipParDes(objektasDes);
 console.groupEnd();
+
+//      Masyvų iteraciniai metodai
+/*
+  Iteraciniai masyvų metodai yra tokie metodai, kur sukant ciklą per masyvą atliekami kažkokie masyvo metodui reikalingi veiksmai
+*/
+let masyvasString = ['Suka', 'ciklą', 'per', 'visą', 'masyvą', 'ir', 'kiekvienos', 'iteracijos', 'metu', 'atlieka', 'kažkokius', 'nurodytus', 'veiksmus', 'su', 'tos', 'iteracijos', 'elementu.'];
+console.log(masyvasString);
+let masyvasNumber = [1,2,3,84,51,26,-451,-1,-46,654,151,3,-4,0];
+console.log(masyvasNumber);
+/*      forEach
+  Syntax:
+    masyvas.forEach((el) => { ... veiksmai ... })
+    masyvas.forEach((el, i) => { ... veiksmai ... })
+    masyvas.forEach((el, i, arr) => { ... veiksmai ... })
+
+  ForEach metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu atlieka kažkokius nurodytus veiksmus su tos iteracijos elementu.
+  ForEach negali grąžinti reikšmės, neturi return.
+  ForEach negali būti sustabdytas, neveikia break.
+*/
+console.groupCollapsed('for each')
+  masyvasString.forEach( (element, index)=>{ console.log(index, element) } );
+console.groupEnd();
+
+/*      filter
+  Syntax:
+    masyvas.filter((el) => { ... veiksmai ... sąlyga return })
+    masyvas.filter((el, i) => { ... veiksmai ... sąlyga return })
+    masyvas.filter((el, i, arr) => { ... veiksmai ... sąlyga return })
+
+  Filter metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu tikrinama ar elementas atitinka kažkokią sąlygą. Jeigu atitinka ir grąžinama true, tas elementas yra tampa grąžinamo masyvo dalimi; jeigu neatitinka sąlygos ir grąžinama false - netampa grąžinamo masyvo dalimi.
+*/
+console.group('filter');
+  // let filterAts = masyvasString.filter( (el) => { return el.length > 8 } );
+  let filterAts = masyvasString.filter( el => el.charAt(0) === 'i' );
+  console.log(filterAts);
+console.groupEnd();
+
+/*      map
+  Syntax:
+    masyvas.map((el) => { ... veiksmai ... return })
+    masyvas.map((el, i) => { ... veiksmai ... return })
+    masyvas.map((el, i, arr) => { ... veiksmai ... return })
+
+  Map metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu grąžina kažkaip mutuotą/pakeistą/redaguotą elementą, galų gale grąžinamas masyvas su mutuotais elementais.
+*/
+console.group('map');
+  let mapAts = masyvasNumber.map((el, i) => {
+    return {
+      skaicius: el,
+      indeksas: i,
+      arLyginis: el % 2 === 0
+    }
+    // return `Indekse ${i} esantis skaičius ${el} yra ${el % 2 === 0 ? 'lyginis' : 'nelyginis'}.`;
+    // return el / i;
+  });
+  console.log(mapAts);
+console.groupEnd();
+
+/*    reduce
+  Syntax:
+    masyvas.reduce((accumulator, currentElement) => { ... veiksmai ... return })
+    masyvas.reduce((accumulator, currentElement, i) => { ... veiksmai ... return })
+    masyvas.reduce((accumulator, currentElement, i, arr) => { ... veiksmai ... return })
+    masyvas.reduce((accumulator, currentElement) => { ... veiksmai ... return }, intitialValue)
+    masyvas.reduce((accumulator, currentElement, i) => { ... veiksmai ... return }, intitialValue)
+    masyvas.reduce((accumulator, currentElement, i, arr) => { ... veiksmai ... return }, intitialValue)
+
+  Reduce metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu keičia accumulator'ių naudodamas currentElement'o reikšmę ir grąžina pakeistą accumulator'ių kitai iteracijai. Viso metodo gale grąžinama viena reikšmė - accumulator.
+  Pirmosios iteracijos metu, accumulator yra 0'tasis elementas, o currentElement yra 1'asis elementas.
+  JEIGU yra nurodytas initialValue - pirmosios iteracijos metu, accumulator yra initialValue, o currentElement yra 0'tasis elementas.
+*/
+console.group('reduce');
+  let reduceAts = mapAts.reduce((acc, curr, i) => {
+    // console.log('iteracija: ', i);
+    // console.log('acc: ', acc);
+    // console.log('curr: ', curr);
+    // console.log('-----');
+    return acc + curr.skaicius;
+  }, 0);
+  console.log(reduceAts);
+console.groupEnd();
+
+/*  reduceRight
+  Lygiai tas pats kas ir reduce, tik iš kito galo. (rtl - right to left)
+*/
+
+/*  flatMap
+  Junginys flat(1) ir map metodų. Neturi galimybės keisti flat lygmens.
+*/
+
+/*  Some
+
+
+*/
+
+/*  Every
+
+
+*/
+
+/*  Find
+
+
+*/
+
+/*  FindIndex
+
+
+*/
+
+/*  FindLast / FindLastIndex
+
+
+*/
