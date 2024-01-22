@@ -67,6 +67,11 @@ arAdmin && console.log('Yra admin, atvaizduojam dalykus');
   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
   
   Destruktūrizavimas - kažko (parametrai, objektai, masyvai, ..?) išskaidymas į atskiras dalis.
+
+  Video:
+    https://youtu.be/NIq3qLaHCIs - web dev simplified
+    https://youtu.be/UgEaJBz3bjY - fireship
+    https://youtu.be/-vR3a11Wzt0 - freeCodeCamp
 */
 //  masyvai
 console.groupCollapsed('masyvų des')
@@ -244,26 +249,59 @@ console.groupEnd();
 */
 
 /*  Some
+  Syntax:
+    masyvas.some((el) => { ... veiksmai ... sąlyga return})
+    masyvas.some((el, i) => { ... veiksmai ... sąlyga return})
+    masyvas.some((el, i, arr) => { ... veiksmai ... sąlyga return})
 
-
+  Some metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu tikrina ar elementas atitinka nurodytą sąlygą; iteracijų metų grąžina true arba false.
+  Jeigu bent vienoje iteracijoje sąlyga grąžina true - visas metodas grąžina true ir tolimesnės iteracijos nebevyksta.
+  Jeigu visose iteracijose sąlygos grąžina false - visas metodas grąžina false.
 */
-
 /*  Every
+  Syntax:
+    masyvas.every((el) => { ... veiksmai ... sąlyga return})
+    masyvas.every((el, i) => { ... veiksmai ... sąlyga return})
+    masyvas.every((el, i, arr) => { ... veiksmai ... sąlyga return})
 
-
+  Every metodas - suka ciklą per visą masyvą ir kiekvienos iteracijos metu tikrina ar elementas atitinka nurodytą sąlygą; iteracijų metų grąžina true arba false.
+  Jeigu bent vienoje iteracijoje sąlyga grąžina false - visas metodas grąžina false ir tolimesnės iteracijos nebevyksta.
+  Jeigu visose iteracijose sąlygos grąžina true - visas metodas grąžina true.
 */
+console.group('some / every')
+  let someEveryAts = masyvasNumber.some( (el,i) => {
+    console.log(i, el);
+    return el > 10;
+  });
+  console.log(someEveryAts);
+console.groupEnd();
 
 /*  Find
+  Syntax:
+    masyvas.find((el) => { ... veiksmai ... sąlyga return})
+    masyvas.find((el, i) => { ... veiksmai ... sąlyga return})
+    masyvas.find((el, i, arr) => { ... veiksmai ... sąlyga return})
 
-
+  Find metodas - suka ciklą per visą masyvą ir tikrina ar elementas atitinka nurodytą sąlygą.
+  Jeigu randamas elementas, kuris atitinka nurodytą sąlygą - jis yra grąžinamas (elementas) ir nebėra tikrinami tolimesni elementai.
+  Jeigu nerandamas nei vienas elementas, kuris atitinka nurodytą sąlyga - yra grąžinama undefined.
 */
+console.group('find');
+  let findAts = mapAts.find(el => el.arLyginis); // el.arLyginis === true
+  console.log(findAts);
+console.groupEnd();
 
 /*  FindIndex
+  Syntax:
+    masyvas.findIndex((el) => { ... veiksmai ... sąlyga return})
+    masyvas.findIndex((el, i) => { ... veiksmai ... sąlyga return})
+    masyvas.findIndex((el, i, arr) => { ... veiksmai ... sąlyga return})
 
-
+  FindIndex metodas - suka ciklą per visą masyvą ir tikrina ar elementas atitinka nurodytą sąlygą.
+  Jeigu randamas elementas, kuris atitinka nurodytą sąlygą - yra grąžinamas jo indeksas ir nebėra tikrinami tolimesni elementai.
+  Jeigu nerandamas nei vienas elementas, kuris atitinka nurodytą sąlyga - yra grąžinama -1.
 */
 
 /*  FindLast / FindLastIndex
-
-
+  FindLast ir FindLastIndex daro tą patį ką Find ir FindLastIndex, tik nuo kito galo (rtl - right to left).
 */
