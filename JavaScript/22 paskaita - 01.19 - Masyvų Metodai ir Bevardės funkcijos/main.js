@@ -118,7 +118,7 @@ for(asmuo of asmenys){
     // nieko
   } else {
     // window.alert(asmuo.vardas + ' užsiima neaiškia veikla pavadinimu ' + asmuo.veikla);
-    window.alert(`${asmuo.vardas} užsiima neaiškia veikla pavadinimu ${asmuo.veikla}`);
+    // window.alert(`${asmuo.vardas} užsiima neaiškia veikla pavadinimu ${asmuo.veikla}`);
     // veikluMasyvas.push(asmuo.veikla);
   }
 }
@@ -131,3 +131,24 @@ let sarasas = `<ul>
     <li>${duomuo}</li>
     <li>${duomuo}</li>
   </ul>`;
+
+
+// 2+) Parašykite funkciją, kuriai padavus kažkokį number kintamąjį (ilgą 10+ skaitmenų), jinai jį išvestų į konsolę su "-" simboliu tarp dviejų lyginių skaičių. (pvz: paduodi 645286344, grąžina '6-452-8-634-4')
+
+function uzd2(number){
+  console.log(number);
+  let array = number.toString().split('');
+  // console.log(array.length);
+  for(let i = 0; i < array.length - 1; i++){
+    console.log(array[i], array[i+1]);
+    if(array[i] % 2 === 0 && array[i+1] % 2 === 0){
+      array.splice(i+1, 0, '-');
+      i++;
+    }
+  }
+  // console.log(array);
+  const resultString = array.join('');
+  console.log(resultString);
+}
+
+uzd2(455463844681684);
