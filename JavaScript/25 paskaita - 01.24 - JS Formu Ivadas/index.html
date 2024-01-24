@@ -71,11 +71,33 @@
         </div>
         <div>
           <label for="dob">Gimimo data:</label>
-          <input type="date" id="dob" name="dob">
+          <input type="datetime-local" id="dob" name="dob">
         </div>
         <div>
           <label for="amzius">Amžius:</label>
           <input type="number" id="amzius" name="amzius">
+        </div>
+        <div>
+          <label>Kelnių dydis:</label> <!-- Multi select - CTRL D -->
+          <label for="small">S</label>
+          <input type="radio" id="small" value="small" name="kelniuDydis">
+          <label for="medium">M</label>
+          <input type="radio" id="medium" value="medium" name="kelniuDydis">
+          <label for="large">L</label>
+          <input type="radio" id="large" value="large" name="kelniuDydis">
+        </div>
+        <div>
+          <label>Mėgstami muzikos stiliai:</label> <!-- Multi select - CTRL D -->
+          <label for="pop">Pop</label>
+          <input type="checkbox" id="pop" value="pop" name="muzikosStiliai">
+          <label for="rock">Rock</label>
+          <input type="checkbox" id="rock" value="rock" name="muzikosStiliai">
+          <label for="classic">Classic</label>
+          <input type="checkbox" id="classic" value="classic" name="muzikosStiliai">
+          <label for="country">Country</label>
+          <input type="checkbox" id="country" value="country" name="muzikosStiliai">
+          <label for="metal">Metal</label>
+          <input type="checkbox" id="metal" value="metal" name="muzikosStiliai">
         </div>
 
 

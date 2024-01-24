@@ -16,7 +16,23 @@ document
     // let dob = document.querySelector('#dob').value;
 
     // very good, very nice, very (probly) fast ;)
-    
+    // let { vardas, nuotrauka, amzius, dob} = event.target.elements; // gauname visą didžiulį objektą, not very good, a tai dažniausiai norime tik value
+    let vardas = event.target.elements.vardas.value;
+    let nuotrauka = event.target.elements.nuotrauka.value;
+    let amzius = event.target.elements.amzius.valueAsNumber;
+    let dob = event.target.elements.dob.value;
+    let kelniuDydis = event.target.elements.kelniuDydis.value;
+    let muzikosStiliai = [];
+    event.target.elements.muzikosStiliai
+      .forEach(el => el.checked && muzikosStiliai.push(el.value));
+    // document
+    //   .querySelectorAll('input[name="muzikosStiliai"]:checked')
+    //   .forEach(el => muzikosStiliai.push(el.value));
 
-    console.log(vardas, nuotrauka, amzius, dob);
+    console.log(vardas);
+    console.log(nuotrauka);
+    console.log(amzius);
+    console.log(dob);
+    console.log(kelniuDydis);
+    console.log(muzikosStiliai);
   });
