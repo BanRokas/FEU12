@@ -28,6 +28,11 @@ document
     // document
     //   .querySelectorAll('input[name="muzikosStiliai"]:checked')
     //   .forEach(el => muzikosStiliai.push(el.value));
+    // let salisLankyti = event.target.elements.salis.value;
+    let salysLankyti = [];
+    for(el of event.target.elements.salis.children){
+      el.selected && salysLankyti.push(el.value);
+    }
 
     console.log(vardas);
     console.log(nuotrauka);
@@ -35,4 +40,5 @@ document
     console.log(dob);
     console.log(kelniuDydis);
     console.log(muzikosStiliai);
+    console.log(salysLankyti);
   });
