@@ -42,3 +42,26 @@ document
     console.log(muzikosStiliai);
     console.log(salysLankyti);
   });
+
+//  sudeties forma
+document.querySelector('#sudetis')
+  .addEventListener('submit', event => {
+    event.preventDefault();
+    let pirmasDomuo = event.target.elements.sk1.valueAsNumber;
+    let antrasDomuo = event.target.elements.sk2.valueAsNumber;
+    console.log(pirmasDomuo+antrasDomuo);
+  });
+
+// kariuomenes forma
+document.querySelector('#kariuomene')
+  .addEventListener('submit', e => {
+    e.preventDefault();
+    // console.log(e.target.elements);
+    let amzius = e.target.elements.amzius3.valueAsNumber;
+    let arKriminalas = e.target.elements.kriminalas.checked;
+    if(amzius > 18 && amzius < 30 && !arKriminalas){
+      console.log('Kariuomenė šaukia');
+    } else {
+      console.log('Nieko');
+    }
+  });
