@@ -27,6 +27,39 @@
         <li>multiple - leidimas daugiau įvesčių į vieną - file/email</li>
       </ul>
     </section>
+    <section> <!-- DOM -->
+      <h1>DOM - Document Object Model</h1>
+      <h3>Node</h3>
+      <p>
+        Node'as - HTML elementas JS'o aplinkoje.
+      </p>
+      <p>
+        Galima HTML pildyti innerHTML'u - rašant HTML kodą JS'o string'e ir šį įklijuoti į HTML dokumentą, kur to string'o viduje esantis HTML kodas bus skaitomas kaip HTML ir atvaizduojamas vartotojui.<br>
+        Bet šitas būdas turi daug minusų, pradedant nuo saugumo, baigiant implementacija.
+      </p>
+      <p>
+        Geresnis būdas pildyti HTML'ą su JS'u - kurti HTML elementus (node'us) JS'e ir juos append'inti į kažkurį HTML'o elementą.<br>
+        Node'ai yra kuriami ir modifikuojami naudojant Node'ų metodus.
+      </p>
+      <h3>Node'ų metodai</h3>
+      <ul>
+        <li>document.createElement('tagVardas')</li>
+        <li>document.createTextNode('kažkoks tekstas...')</li>
+        <li>kam.append(ką0, ką1, ką2, ...) - į kokį node'ą įterpi kokį/ius node'ą/node'us/tekstus</li>
+        <li>kam.appendChild(ką) - į kokį node'ą įterpi VIENĄ kitą NODE'ą</li>
+        <li>kam.prepend(ką0, ką1, ...) - tas pats kas append, tik prideda į pradžią, o ne galą</li>
+        <li>kam.setAttribute('name', 'value')</li>
+        <li>kam.classList
+          <ul>
+            <li>add('vienaKlase', 'kitaKlase', ...)</li>
+            <li>remove('vienaKlase', 'kitaKlase', ...)</li>
+            <li>replace('klaseIsimi', 'klasePridedi')</li>
+            <li>toggle('klase')</li>
+          </ul>
+        </li>
+      </ul>
+      <div id="DOM_pvz"></div>
+    </section>
   </main>
 </body>
 </html>
