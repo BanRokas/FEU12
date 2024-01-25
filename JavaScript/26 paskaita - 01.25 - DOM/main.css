@@ -5,7 +5,7 @@
   border-radius: 10px;
   padding: 10px;
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-template: auto 1fr / 50% 50%;
   overflow: hidden;
 
   > img{
@@ -29,5 +29,18 @@
 
   > img{
     order: -1;
+  }
+}
+
+#movies{
+  > h1{
+    text-align: center;
+    font-size: 4rem;
+  }
+  > #moviesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
   }
 }

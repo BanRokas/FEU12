@@ -66,3 +66,45 @@ listSec.appendChild(sarasas);
 
 //        DOM pildymas iš duomenų
 console.log(duomenysKartu);
+/*
+          iš duomenų sukurti korteles ir jas atvaiduoti HTML'e
+
+  sukti ciklą per VISUS duomenis
+    susikurti html elementus kiekvienos kortelės
+    html elementus užpildyti info iš duomenų
+    kortelę sukelti į HTML'ą
+*/
+const moviesDiv = document.querySelector('#moviesContainer');
+
+duomenysKartu.forEach(filmas => {
+  // let { pavadinimas, aprasymas, paveiksliukoURL, paveiksliukoALT } = filmas;
+
+  const divas = document.createElement('div');
+  divas.classList.add('kortele');
+
+  const heading = document.createElement('h1');
+  const headingText = document.createTextNode(filmas.pavadinimas);
+  heading.appendChild(headingText);
+
+  const par = document.createElement('p');
+  const parText = document.createTextNode(filmas.aprasymas);
+  par.appendChild(parText);
+
+  const image = document.createElement('img');
+  image.setAttribute('src', filmas.paveiksliukoURL);
+  image.setAttribute('alt', filmas.paveiksliukoALT);
+
+  divas.append(heading, par, image);
+  moviesDiv.appendChild(divas);
+
+  // moviesDiv.innerHTML += `
+  // <div class="kortele">
+  //   <h1>${filmas.pavadinimas}</h1>
+  //   <p>${filmas.aprasymas}</p>
+  //   <img 
+  //     src=${filmas.paveiksliukoURL}
+  //     alt=${filmas.paveiksliukoALT}
+  //   >
+  // </div>
+  // `;
+});
