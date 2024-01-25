@@ -35,3 +35,34 @@ DOM_pvz.appendChild(image);
 DOM_pvz.addEventListener('click', () => {
   DOM_pvz.classList.toggle('kortelePortraitChange');
 });
+
+//  -------------------------------------------
+//                  LIST
+const listSec = document.querySelector('#list');
+//      innerHTML
+// let listItemai = '';
+// for(let i = 0; i < 10; i++){
+//   listItemai += `<li>tekstas</li>`
+// }
+// listSec.innerHTML += `
+//   <ul>
+//     ${listItemai}
+//   </ul>
+// `;
+// let listItem = document.querySelector('#list > ul > li');
+// console.log(listItem);
+
+//      createElement
+let sarasas = document.createElement('ul');
+for(let i = 0; i < 10; i++){
+  let listItem = document.createElement('li');
+  // listItem.addEventListener('click', (e) => e.target.style.color='red');
+  let listItemText = document.createTextNode('tekstas');
+  listItem.appendChild(listItemText);
+  sarasas.appendChild(listItem);
+}
+listSec.appendChild(sarasas);
+
+
+//        DOM pildymas iš duomenų
+console.log(duomenysKartu);
