@@ -108,3 +108,36 @@ duomenysKartu.forEach(filmas => {
   // </div>
   // `;
 });
+
+// 5 extra) Sukurti funkcionalumą, kuris slėptų/rodytų sekcijose atvaizduojamą informaciją. (žiūrėti paveikslėlį images/hideShow.PNG) (querySelectorAll - grąžina "masyvą" -> kurti button -> suteikti funkcionalumą)
+
+document.querySelectorAll('section').forEach(section => {
+  // console.dir(section)
+
+  const button = document.createElement('button');
+  const buttonText = document.createTextNode('Slėpti');
+  button.appendChild(buttonText);
+  button.classList.add('sleptiRodyti');
+  button.addEventListener('click', e => {
+    // section.children.forEach...
+    [...e.target.parentElement.children].forEach((child, i, arr) => {
+      // console.dir(child);
+      // console.log(i, arr.length);
+      if(i !== arr.length-1){
+        // child.classList.add('slepti');
+        if(e.target.textContent === 'Slėpti'){
+          child.style.display = 'none';
+        } else {
+          child.style.display = '';
+        }
+      }
+    });
+    if(e.target.textContent === 'Slėpti'){
+      e.target.textContent = 'Rodyti';
+    } else {
+      e.target.textContent = 'Slėpti';
+    }
+  });
+
+  section.appendChild(button);
+});

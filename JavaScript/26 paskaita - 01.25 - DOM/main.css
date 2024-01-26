@@ -44,3 +44,16 @@
     justify-content: space-evenly;
   }
 }
+
+section{
+  position:relative;
+  min-height: 50px;
+
+  > button.sleptiRodyti{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    padding: 5px 10px;
+  }
+}
