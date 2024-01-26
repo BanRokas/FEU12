@@ -31,6 +31,58 @@
         -->
       </div>
     </section>
+    <section> <!-- more difficult -->
+      <h1>Telefono taisymo registravimas</h1>
+      <form id="telTaisymas">
+        <div>
+          <label for="asmuo">Asmens Vardas:</label>
+          <input type="text" name="asmuo" id="asmuo">
+        </div>
+        <div>
+          <label for="kontaktas">Asmens El.Paštas :</label>
+          <input type="email" name="kontaktas" id="kontaktas">
+        </div>
+        <div>
+          <label for="modelis">Telefono modelis:</label>
+          <input type="text" name="modelis" id="modelis" placeholder="Samsung Galaxy S 666">
+        </div>
+        <div>
+          <label for="nuotrauka">Telefono nuotrauka:</label>
+          <input type="url" name="nuotrauka" id="nuotrauka">
+        </div>
+        <div>
+          <label>Ar turite garantiją/draudimą?</label>
+          <label for="garantija">Garantija</label>
+          <input type="checkbox" name="garantija" id="garantija">
+          <label for="draudimas">Draudimas</label>
+          <input type="checkbox" name="draudimas" id="draudimas">
+        </div>
+        <div>
+          <label for="gedimas">Gedimo aprašymas:</label>
+          <textarea name="gedimas" id="gedimas"></textarea>
+        </div>
+        <div>
+          <label for="lokacija">Pasirinkite serviso lokacija:</label>
+          <input list="lokacijos" name="lokacija" id="lokacija">
+          <datalist id="lokacijos">
+            <option value="Kaunas Veiverių pl. 54"></option>
+            <option value="Kaunas Vytauto g. 32"></option>
+            <option value="Kaunas Baltų pr. 123"></option>
+            <option value="Vilnius Savanorių 50"></option>
+            <option value="Vilnius Žirmūnų 65"></option>
+            <option value="Vilnius Saulėtekio al. 15"></option>
+            <option value="Vilnius Antakalnio 54"></option>
+            <option value="Klaipėda Bangų 6"></option>
+            <option value="Klaipėda Taikos 61"></option>
+          </datalist>
+        </div>
+        <div>
+          <label for="dataLaikas">Telefono pristatymo data ir laikas:</label>
+          <input type="datetime-local" name="dataLaikas" id="dataLaikas">
+        </div>
+        <input type="submit" value="Užregistruoti">
+      </form>
+    </section>
   </main>
 </body>
 </html>

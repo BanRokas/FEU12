@@ -19,3 +19,23 @@ document
     }
     e.target.reset();
   });
+
+// telefono taisymo forma
+document
+  .querySelector('#telTaisymas')
+  .addEventListener('submit', e => {
+    e.preventDefault();
+    const el = e.target.elements;
+    const info = {
+      vardas: el.asmuo.value,
+      kontaktas: el.kontaktas.value,
+      modelis: el.modelis.value,
+      foto: el.nuotrauka.value,
+      garantinis: el.garantija.checked,
+      draudimas: el.draudimas.checked,
+      gedimas: el.gedimas.value,
+      lokacija: el.lokacija.value,
+      dataLaikas: el.dataLaikas.value
+    };
+    console.log(info);
+  });
