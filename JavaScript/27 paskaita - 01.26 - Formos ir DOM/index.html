@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>27 paskaita - Formos ir DOM</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <main>
+    <section> <!-- super simple -->
+      <h1>Besikartojantis vardas</h1>
+      <form id="vardoTask">
+        <div>
+          <label for="vardas">Vardas</label>
+          <input type="text" name="vardas" id="vardas">
+        </div> 
+        <div>
+          <label for="kartai">Kartai</label>
+          <input type="number" min="1" name="kartai" id="kartai">
+        </div>
+        <input type="submit" value="Spausdinti">
+      </form>
+      <div id="vardoAts">
+        <!-- Petras 3 -->
+        <!-- 
+          <p>Petras</p>
+          <p>Petras Petras</p>
+          <p>Petras Petras Petras</p>
+        -->
+      </div>
+    </section>
+  </main>
+</body>
+</html>
