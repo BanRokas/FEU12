@@ -39,3 +39,44 @@ let zmogus1 = new Asmuo('Petras', 'Petraitis', 1980);
 
 console.log(zmogus0);
 console.log(zmogus1);
+
+
+class Knyga{
+  #pavadinimas; #autorius; #leidimoMetai;
+  constructor(pavadinimas, autorius, leidimoMetai){
+    this.#pavadinimas = pavadinimas;
+    this.#autorius = autorius;
+    this.#leidimoMetai = leidimoMetai;
+  }
+  getPavadinimas(){
+    return this.#pavadinimas;
+  }
+  setPavadinimas(naujasPavadinimas){
+    this.#pavadinimas = naujasPavadinimas;
+  }
+  getAutorius(){
+    return this.#autorius;
+  }
+  setAutorius(naujasAutorius){
+    this.#autorius = naujasAutorius;
+  }
+  getLeidimoMetai(){
+    return this.#leidimoMetai;
+  }
+  setLeidimoMetai(naujasLeidimoMetai){
+    this.#leidimoMetai = naujasLeidimoMetai;
+  }
+  getKnygosAmzius(){
+    return new Date().getFullYear() - this.#leidimoMetai;
+  }
+  static randomStuff(nr){
+    return Math.random()*nr;
+  }
+}
+
+const knygos = [
+  new Knyga("Harry Potter", "J.K. Rowling", 2004),
+  new Knyga("Lord of the Rings", "J.R.R. Tolkien", 1954)
+];
+
+console.log(knygos[1].getLeidimoMetai());
