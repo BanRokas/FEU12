@@ -86,3 +86,28 @@ document
 
     document.querySelector('#phoneContainer').appendChild(cardDiv);
   });
+
+
+// 6) pirminiai skaičiai
+console.time();
+let kiek = 100000;
+for(let i = 2; i < kiek; i++){
+  let arPirminis = true;
+  // for(let j = 2; j < i; j++){
+  //   if(i % j === 0){
+  //     arPirminis = false;
+  //     break;
+  //     // su break default: 1264 ms iki 100_000
+  //     // be break default: 3733 ms iki 100_000
+  //   }
+  // }
+  // jeigu skaičius nesidalina be liekanos iš 2 3 5 7 jis yra pirminis
+  if(i % 2 === 0 || i % 3 === 0 || i % 5 === 0 || i % 7 === 0){
+    arPirminis = false;
+    // default: 0.82 ms iki 100_000
+  }
+  // if(arPirminis){
+  //   console.log(i, ' yra pirminis skaičius.');
+  // }
+}
+console.timeEnd();
