@@ -1,5 +1,5 @@
 //          Kintamieji
-console.group('kintamieji');
+console.groupCollapsed('kintamieji');
 let zodisK0 = 'string';
 let zodisK1 = "string";
 let zodisK2 = `string`;
@@ -63,5 +63,59 @@ let objInArrK0 = [
   }
 ];
 console.log(objInArrK0[4].vardas);
+
+console.groupEnd();
+
+console.group('Sąlygos');
+if(true){
+  // veiksmai true atveju
+}
+
+if(true){
+  // veiksmai true atveju
+} else {
+  // veiksmai false atveju
+}
+
+if(false){
+  // veiksmai if tiesos atveju
+} else if(false){
+  // veiksmai if melo, o else_if tiesos atveju
+}
+
+if(true){
+  // veiksmai if tiesos atveju
+} else if(false){
+  // veiksmai if melo, o else_if tiesos atveju
+} else if(true){
+  // veiksmai if melo, else_if(pirmo) melo, o else_if(antro) tiesos atveju
+} else {
+  // veiksmai if melo, else_if(pirmo) melo, else_if(antro) melo atveju
+  // kitaip pasakius, visų iki jo ėjusių salygų melo atveju
+}
+
+switch('something'){
+  case 'something':
+    // veiksmai jeigu switch viduje yra 'something'
+    break;
+  case 'somethingElse':
+    // veiksmai jeigu switch viduje yra 'somethingElse'
+    break;
+  case 'somethingNew':
+    // veiksmai jeigu switch viduje yra 'somethingNew'
+    break;
+  case 'somethingSomething':
+    // veiksmai jeigu switch viduje yra 'somethingSomething'
+    break;
+  case 'somethingHey':
+    // veiksmai jeigu switch viduje yra 'somethingHey'
+    break;
+  default:
+    // veiksmai jeigu nei vienas case nebuvo teisus
+}
+
+true ? console.log('do true stuff') : console.log('do false stuff');
+
+false && console.log('do true stuff');
 
 console.groupEnd();
