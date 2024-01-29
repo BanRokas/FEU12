@@ -1,5 +1,5 @@
 //          Kintamieji
-console.groupCollapsed('kintamieji');
+console.groupCollapsed('Kintamieji');
 let zodisK0 = 'string';
 let zodisK1 = "string";
 let zodisK2 = `string`;
@@ -120,7 +120,7 @@ false && console.log('do true stuff');
 
 console.groupEnd();
 
-console.group('Ciklai');
+console.groupCollapsed('Ciklai');
 
 for(let i = 0; i < 50; i+=6){
   console.log(i);
@@ -145,5 +145,34 @@ do{
 } while(false);
 
 /* iteraciniai masyvų metodai */
+
+console.groupEnd();
+
+console.group('Funkcijos');
+
+function fVardas(par){
+  console.log(par+'hihi haha');
+}
+fVardas('Tell me ');
+fVardas('U ok?');
+fVardas(5);
+fVardas(false);
+
+//              ________________________
+//              |                      |
+//              |     ________         |
+//              |     |      |         |
+function suma(par1, par2){// |         |
+  return par1+par2;//        |         |
+}//     |                    |         |
+//      |                    |         |
+//      |                    |         |
+//      |       _____________|         |
+//      |       |                      |
+let a = suma(6, 9);//                  |
+//           |                         |
+//           |                         |
+//           ---------------------------
+console.log(a);
 
 console.groupEnd();
