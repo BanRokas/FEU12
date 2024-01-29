@@ -48,22 +48,22 @@ class Knyga{
     this.#autorius = autorius;
     this.#leidimoMetai = leidimoMetai;
   }
-  getPavadinimas(){
+  get Pavadinimas(){
     return this.#pavadinimas;
   }
-  setPavadinimas(naujasPavadinimas){
+  set Pavadinimas(naujasPavadinimas){
     this.#pavadinimas = naujasPavadinimas;
   }
-  getAutorius(){
+  get Autorius(){
     return this.#autorius;
   }
-  setAutorius(naujasAutorius){
+  set Autorius(naujasAutorius){
     this.#autorius = naujasAutorius;
   }
-  getLeidimoMetai(){
+  get leidimoMetai(){
     return this.#leidimoMetai;
   }
-  setLeidimoMetai(naujasLeidimoMetai){
+  set leidimoMetai(naujasLeidimoMetai){
     this.#leidimoMetai = naujasLeidimoMetai;
   }
   getKnygosAmzius(){
@@ -79,4 +79,4 @@ const knygos = [
   new Knyga("Lord of the Rings", "J.R.R. Tolkien", 1954)
 ];
 
-console.log(knygos[1].getLeidimoMetai());
+console.log(knygos[1].leidimoMetai);
