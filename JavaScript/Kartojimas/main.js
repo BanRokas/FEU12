@@ -38,8 +38,30 @@ let objectK1 = {
 };
 console.log(objectK0, objectK0.raktas1, objectK1.lokacija.salis, objectK1.darStuff.raktasMelas);
 
+let arrInObjK0 = {
+  vardas: 'Petras',
+  pomegiai: ['bike', 'pc', 'friends', 'something else...']
+};
+console.log(arrInObjK0.pomegiai[skaiciusK0-2]);
+
 let objInArrK0 = [
-  {},{},{},{},{},{},{},{},{}
+  {
+    vardas: "Rokas",
+    amzius: 27
+  },{
+    vardas: "Petras",
+    amzius: 50
+  },{
+    vardas: "Jonas",
+    amzius: 20
+  },{
+    vardas: "Antanas",
+    amzius: 29
+  },{
+    vardas: "Aloyzas",
+    amzius: 92
+  }
 ];
+console.log(objInArrK0[4].vardas);
 
 console.groupEnd();
