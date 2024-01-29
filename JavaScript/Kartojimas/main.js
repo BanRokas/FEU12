@@ -66,7 +66,7 @@ console.log(objInArrK0[4].vardas);
 
 console.groupEnd();
 
-console.group('Sąlygos');
+console.groupCollapsed('Sąlygos');
 if(true){
   // veiksmai true atveju
 }
@@ -117,5 +117,33 @@ switch('something'){
 true ? console.log('do true stuff') : console.log('do false stuff');
 
 false && console.log('do true stuff');
+
+console.groupEnd();
+
+console.group('Ciklai');
+
+for(let i = 0; i < 50; i+=6){
+  console.log(i);
+}
+
+for(el of arrayK0){
+  console.log(el);
+}
+
+for(key in objectK1){
+  console.log(key, objectK1[key]);
+}
+
+let nr = 0;
+while(nr < 10){
+  nr = Math.random()*11;
+  console.log(nr);
+}
+
+do{
+  console.log('does at least once');
+} while(false);
+
+/* iteraciniai masyvų metodai */
 
 console.groupEnd();
