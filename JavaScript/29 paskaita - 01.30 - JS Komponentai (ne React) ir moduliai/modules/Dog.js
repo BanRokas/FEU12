@@ -10,3 +10,7 @@ export default class Dog{
     this.nuotrauka = nuotrauka;
   }
 }
+
+export const graziausiVardai = ['Pikachu', 'Šuo', 'Kapučinas', 'Patriotas'];
+
+// export default Dog;

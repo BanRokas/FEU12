@@ -17,17 +17,31 @@
       <p>
         Moduliuose gali būti įvairus kodas. Nuo duomenų (kintamųjų) iki funkcijų, klasių, metodų ir kt.<br />
         JS Klasės turi būti atskiri failai. Kitaip pasakius - viename faile neturėtų būti daugiau negu viena JS Klasė.<br />
-        HTML'e prijungas skriptas, kuris kreipiasi į kitus script failus, privalo turėti nurodytą tipą - modulis. (type='module')<br />
-        HTML failas, kuriame yra modulio tipo JS failas, privalo būti paleistas kaip serveris, kitu atveju neleis vykdyti JS failo kodo.
+        HTML'e prijungas skriptas, kuris kreipiasi į kitus script failus, PRIVALO turėti nurodytą tipą - modulis. (type='module')<br />
+        HTML failas, kuriame yra modulio tipo JS failas, PRIVALO būti paleistas kaip serveris, kitu atveju neleis vykdyti JS failo kodo.
       </p>
       <h3>Export ir Import</h3>
       <p>
         Failuose esanti informacija gali būti iškeliama (export'uojama) ir galima kažkokią informaciją įsikelti (import'uoti) iš kito failo.
       </p>
       <h4>Export</h4>
-      <p></p>
+      <p>
+        Informaciją galima eksportuoti dvejais būdais:
+      </p>
+      <ul>
+        <li>export default - numatytasis/pagrindinis export'as. Jis gali būti TIK VIENAS viename faile.</li>
+        <li>export - paprastas/papildomas export'as/ai, kurių gali būti daug viename faile. Jie visi gali būti išrašyti vienoje eilutėje.</li>
+      </ul>
       <h4>Import</h4>
-      <p></p>
+      <p>
+        Informacija gali būti importuojama įvairiais būdais.<br />
+        Bet yra keletas pagrindinių įdėjų:
+      </p>
+      <ul>
+        <li>import RandomDefaultName from './.../*.js' - kai yra importuojamas default export'as galima jo pavadinimą pasirašyti betkokį.</li>
+        <li>import { sameName as diffName } from './.../*.js' - yra importuojamas paprastas export'as kitokiu pavadinimu.</li>
+        <li>import DefaultStuff, { nonDefaultStuff } from './.../*.js' - viename import aprašyme galima importuoti ir default ir paprastus export'us.</li>
+      </ul>
     </section>
   </main>
 </body>
