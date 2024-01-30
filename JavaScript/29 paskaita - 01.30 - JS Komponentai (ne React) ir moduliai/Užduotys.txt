@@ -1,0 +1,4 @@
+Moduliai:
+  Susikonspektuoti kas yra ir kam naudojami moduliai.
+  Peržiūrėti: https://www.youtube.com/watch?v=cRHQNNcYf6s
+  Persiskaitykite 1 ir 2: https://javascript.info/modules
