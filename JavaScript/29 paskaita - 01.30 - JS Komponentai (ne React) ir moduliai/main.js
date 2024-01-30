@@ -7,7 +7,7 @@ import dogsData from './modules/dogsData.js';
 // console.log(randomColor('hex'));
 // console.log(names);
 
-console.log(dogsData);
+// console.log(dogsData);
 // let doggo0 = new Suniukas('Senbernaras', 'Bethovenas', 'balta', 10, 60, 'vyras', false, 'https://a-z-animals.com/media/2023/05/shutterstock-131725145-huge-licensed-scaled.jpg');
 // let doggo1 = new Suniukas('Senbernaras', 'Bethovenas', 'balta', 10, 60, 'vyras', false, 'https://a-z-animals.com/media/2023/05/shutterstock-131725145-huge-licensed-scaled.jpg');
 // let doggo2 = new Suniukas('Senbernaras', 'Bethovenas', 'balta', 10, 60, 'vyras', false, 'https://a-z-animals.com/media/2023/05/shutterstock-131725145-huge-licensed-scaled.jpg');
@@ -23,7 +23,7 @@ console.log(dogsData);
 //   new Suniukas(dogsData[3])
 // ];
 const doggos = dogsData.map(dog => new Suniukas(dog));
-console.log(doggos);
+// console.log(doggos);
 
 const sunuKorteliuSekcija = document.createElement('section');
 sunuKorteliuSekcija.classList.add('dogsCards');
@@ -32,3 +32,25 @@ doggos.forEach(dog => sunuKorteliuSekcija.appendChild(dog));
 document
   .querySelector('main')
   .appendChild(sunuKorteliuSekcija);
+
+document
+  .querySelector('#addDog')
+  .addEventListener('submit', e => {
+    e.preventDefault();
+    const el = e.target.elements;
+    const suo = {
+      veisle: el.veisle.value,
+      vardas: el.vardas.value,
+      spalva: el.spalva.value,
+      amzius: el.amzius.valueAsNumber,
+      svoris: el.svoris.valueAsNumber,
+      cipuotas: el.cipuotas.checked,
+      lytis: el.lytis.value,
+      nuotrauka: el.nuotrauka.value
+    };
+    // console.log(suo);
+    const suoNode = new Suniukas(suo);
+    // console.log(suoNode);
+    sunuKorteliuSekcija.appendChild(suoNode);
+    e.target.reset();
+  });

@@ -43,6 +43,47 @@
         <li>import DefaultStuff, { nonDefaultStuff } from './.../*.js' - viename import aprašyme galima importuoti ir default ir paprastus export'us.</li>
       </ul>
     </section>
+    <section>
+      <h1>Add New Doggo</h1>
+      <form id="addDog">
+        <div>
+          <label for="veisle">Veislė:</label>
+          <input type="text" name="veisle" id="veisle">
+        </div>
+        <div>
+          <label for="vardas">Vardas:</label>
+          <input type="text" name="vardas" id="vardas">
+        </div>
+        <div>
+          <label for="spalva">Spalva:</label>
+          <input type="color" value="#000000" name="spalva" id="spalva">
+        </div>
+        <div>
+          <label for="amzius">Amžius:</label>
+          <input type="number" min="0" name="amzius" id="amzius">
+        </div>
+        <div>
+          <label for="svoris">Svoris:</label>
+          <input type="number" min="0" name="svoris" id="svoris">
+        </div>
+        <div>
+          <label for="cipuotas">Ar čipuotas:</label>
+          <input type="checkbox" name="cipuotas" id="cipuotas">
+        </div>
+        <div>
+          <label>Lytis:</label>
+          <label for="patinas">Patinas</label>
+          <input type="radio" name="lytis" id="patinas" value="patinas">
+          <label for="patele">Patelė:</label>
+          <input type="radio" name="lytis" id="patele" value="patelė">
+        </div>
+        <div>
+          <label for="nuotrauka">Nuotrauka:</label>
+          <input type="url" name="nuotrauka" id="nuotrauka">
+        </div>
+        <input type="submit" value="Pridėti šunį">
+      </form>
+    </section>
   </main>
 </body>
 </html>
