@@ -1,3 +1,5 @@
+import Par from "./Paragraph.js";
+
 export default class Dog{
   //      1 būdas
   // constructor({veisle, vardas, spalva, amzius, svoris, lytis, cipuotas, nuotrauka}){
@@ -47,13 +49,15 @@ export default class Dog{
     const bendraInfo = document.createElement('div');
     bendraInfo.classList.add('dogInfoGrid');
 
-    const amzius = document.createElement('p');
-    const amziusText = document.createTextNode(`${this.amzius} metų amžiaus`);
-    amzius.appendChild(amziusText);
+    // const amzius = document.createElement('p');
+    // const amziusText = document.createTextNode(`${this.amzius} metų amžiaus`);
+    // amzius.appendChild(amziusText);
+    const amzius = new Par({ tekstas: `${this.amzius} metų amžiaus` });
 
-    const svoris = document.createElement('p');
-    const svorisText = document.createTextNode(`${this.svoris} kg. svorio`);
-    svoris.appendChild(svorisText);
+    // const svoris = document.createElement('p');
+    // const svorisText = document.createTextNode(`${this.svoris} kg. svorio`);
+    // svoris.appendChild(svorisText);
+    const svoris = new Par({ tekstas: `${this.svoris} kg. svorio` });
 
     const cipuotas = document.createElement('p');
     const cipuotasText = document.createTextNode(' Čipuotas?');
