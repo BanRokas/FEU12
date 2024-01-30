@@ -88,6 +88,6 @@ export default class Dog{
   }
 }
 
-export const graziausiVardai = ['Pikachu', 'Šuo', 'Kapučinas', 'Patriotas'];
+export const graziausiVardai = ['Pikachu', 'Šuo', 'Kapučinas', 'Patriotas']; 
 
 // export default Dog;
