@@ -1,0 +1,14 @@
+export const randomColor = (type) => {
+  if(type === 'hex'){
+    return `#${Math.floor(Math.random()*16777216).toString(16).padStart(6, '0')}`;
+  } else if(type === 'rgb') {
+    return `rgb(${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)},${Math.floor(Math.random()*256)})`;
+  } else {
+    return 'no bueno ma frend';
+  }
+}
+export const throwError = (string) => {
+  window.alert(string);
+}
+export const sum = (nr1, nr2) => nr1+nr2;
+export const division = (nr1, nr2) => nr1/nr2;
