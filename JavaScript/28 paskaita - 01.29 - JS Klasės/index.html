@@ -27,6 +27,36 @@
         <li>Inheritance - Paveldėjimas</li>
       </ul>
     </section>
+    <section id="taskasTask">
+      <form id="kurtiTaska">
+        <div>
+          <label for="coordX">X coordinate:</label>
+          <input type="number" min="-999" max="999" required name="coordX" id="coordX">
+        </div>
+        <div>
+          <label for="coordY">Y coordinate:</label>
+          <input type="number" min="-999" max="999" required name="coordY" id="coordY">
+        </div>
+        <input type="submit" value="Create Point">
+      </form>
+      <div id="taskai">
+
+      </div>
+      <form id="atstumuSkaiciavimas">
+        <div>
+          <label for="pointA">Point A:</label>
+          <select name="pointA" id="pointA"></select>
+        </div>
+        <div>
+          <label for="pointB">Point B:</label>
+          <select name="pointB" id="pointB"></select>
+        </div>
+        <input type="submit" value="Find Distance">
+      </form>
+      <div id="atstumai">
+        
+      </div>
+    </section>
   </main>
 </body>
 </html>
