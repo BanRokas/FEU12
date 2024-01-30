@@ -22,5 +22,13 @@ console.log(dogsData);
 //   new Suniukas(dogsData[2]),
 //   new Suniukas(dogsData[3])
 // ];
-let doggos = dogsData.map(dog => new Suniukas(dog));
+const doggos = dogsData.map(dog => new Suniukas(dog));
 console.log(doggos);
+
+const sunuKorteliuSekcija = document.createElement('section');
+sunuKorteliuSekcija.classList.add('dogsCards');
+
+doggos.forEach(dog => sunuKorteliuSekcija.appendChild(dog));
+document
+  .querySelector('main')
+  .appendChild(sunuKorteliuSekcija);
