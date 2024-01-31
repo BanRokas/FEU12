@@ -13,18 +13,18 @@
   25 paskaita - 01.24 - Formos
   26 paskaita - 01.25 - DOM
   27 paskaita - 01.26 - Formos ir DOM
-4 savaitė:     
+4 savaitė:
   28 paskaita - 01.29 - Klasės
   29 paskaita - 01.30 - Moduliai; Komponentai (ne React)
   30 paskaita - 01.31 - Praktika
-  31 paskaita - 02.01 - ?Praktika?
-  32 paskaita - 02.02 - ????Praktika????? / Local/Session/Cookie; TodoApp;
-5 savaitė: Fetch; JSON server; Async; CRUD
-  33 paskaita - 02.05 -
-  34 paskaita - 02.06 -
-  35 paskaita - 02.07 -
-  36 paskaita - 02.08 -
-  37 paskaita - 02.09 -
+  31 paskaita - 02.01 - Praktika
+  32 paskaita - 02.02 - Local/Session/Cookie; TodoApp
+5 savaitė:
+  33 paskaita - 02.05 - Fetch
+  34 paskaita - 02.06 - JSON server
+  35 paskaita - 02.07 - Async (teoriškai); CRUD
+  36 paskaita - 02.08 - CRUD praktika
+  37 paskaita - 02.09 - CRUD praktika
 6 savaitė:
   38 paskaita - 02.12 - JS kartojimas
   39 paskaita - 02.13 - JS ruošimasis atsiskaitymui
