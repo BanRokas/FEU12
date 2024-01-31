@@ -1,0 +1,27 @@
+Komponentai:
+  1) Sukurti Klasę, kurios pagalba galima būtų kurti:
+    1.1) IMG elementą su atributais.
+    1.2) P elementą su atributais ir tekstu.
+    1.3) H1-H6 elementą su atributais ir tekstu.
+    1.4) Bet kokį elementą su atributais ir tekstu. (vienas iš parametrų nurodo koks tag'as)
+  2) Sukurti Klasę, kurios pagalba galima būtų kurti OL arba UL elementus su LI jų viduje. (kas be ko, galimybė suteikti tekstus ir atributus)
+  3) Sukurti Klasę, kurios pagalba galima būtų kurti SELECT elementą, kurio viduje būtų OPTION'ai. (kas be ko, galimybė suteikti tekstus ir atributus).
+  4) Sukurti Klasę, kurios pagalba galima būtų kurti TABLE elementą, kurio viduje būtų THEAD ir TBODY (gal ir TFOOT jei nori). THEAD viduje būtų TR, kurio viduje TH. TBODY viduje būtų TR, kurių viduje būtų TD. (jeigu darot su TFOOT, tai ten irgi bus TR su TD kaip buvo TBODY).  (kas be ko, galimybė suteikti tekstus ir atributus).
+  5+) Sukurti universalią Klasę, kurios pagalba galima būtų sukurti bet kokius elementus ar net jų struktūras (vaikinius elementus jų viduje, tų viduje dar vaikinių ir t.t.t.).
+
+FORM + DOM + Komponent:
+  1) Sukurkite su HTML formą su vienu laukeliu - fullname, ir po apačia - lentelę su dviem stulpeliais - name ir surname.
+    1.1) JavaScripte pasirašykite klasę su konstruktoriumi, kuris turės vardą ir pavardę.
+    1.2) Pridėkite klasei metodą, kuris sukurtų lentelės eilutę su dvejais stulpeliais.
+    1.3) Kai vartotojas įrašo savo pilną vardą į formą ir šią pateikia - su JS metodais išskirkite fullName į dvi dalis. (pasirūpinkite, kad nebūtų tarpelių prieš ir po vardo; pirmą raidę vardo ir pavardės padidinkit, o kitas - sumažinkit (capitalization)).
+    1.4) Sukurkite objektą naudojant Klasę.
+    1.5) Galiausiai iškvieskite metodą, kad pridėtų į lentelę.
+    Taip naudojant OOP, vartotojui įrašius duomenis į formą, šie atsiras apačioje esančioje lentelėje su išskirtais vardu ir pavarde.
+
+  2) Sukurkite HTML formą, kurioje vartotojas galės įrašyti (į input laukelius): tripDestinationName, tripLocation, tripLength (kiek laiko truks kelionė), tripPrice ir image (url laukelis).
+    2.1) Per Klasę, sukuriamas node elementas ir jis atvaizduojamas po forma (CSS'ą rašykite CSS'e ir suteikite per klases). Atvaizduojama tripDestinationName ir image.
+    2.2) Paspaudus ant kelionės kortelės div'o - turi alert išmesti tripLocation, tripLength ir tripPrice. (gal su CSS'u gražiai padaryti, kad užėjus ant elemento su pele arba paspaudus, atsiranda laukelis nuotraukoje...) (+ arba sukurti atsirandantį modalą apie likusią informaciją paspaudimo ant kortelės atveju)
+
+  3) Pakurti formą, su kuria HTML'e atvaizduoti Klasės pagalba sukurtą kortelę su informacija apie filmą/serialą/knygą/aktorių/personažą/... (laisvai pasirinkta tema)
+
+  4+) Atkurti ./images/skaiciuotuvas.PNG vaizdą puslapyje (skaičiuotuvą kurti su HTML, jeigu yra noro galima ir su JS) ir įgalinti jo funkcionalumą su JS'u taip, kaip veikia tokie skaičiuotuvai.
