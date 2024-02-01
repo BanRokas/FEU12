@@ -1,4 +1,7 @@
+import { data2 } from "./dataPvz.js";
+
 import Image from "./components/Image.js";
+import List from "./components/List.js";
 
 {
   const paveiksliukuKonteineris = document.querySelector('#task1_1 > div');
@@ -35,3 +38,16 @@ import Image from "./components/Image.js";
   paveiksliukuKonteineris.appendChild(perry);
   paveiksliukuKonteineris.appendChild(jhonny);
 }
+
+
+// 2) Sukurti Klasę, kurios pagalba galima būtų kurti OL arba UL elementus su LI jų viduje. (kas be ko, galimybė suteikti tekstus ir atributus)
+// console.log(data2);
+
+const sarasas = new List(data2);
+// const sarasas2 = new List({
+//   listType: 'ol',
+//   listItems: ['labas', 'ate', 'pusryčiai', 'dar', 'penktas']
+// });
+
+document.querySelector('#task2 > div').appendChild(sarasas);
+// document.querySelector('#task2 > div').appendChild(sarasas2);

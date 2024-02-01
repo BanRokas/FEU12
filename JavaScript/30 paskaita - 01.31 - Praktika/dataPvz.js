@@ -52,7 +52,7 @@ const data1_4 = {
   ]
 }
 
-const data2 = {
+export const data2 = {
   listType: 'ul',
   attributes: [
     {
