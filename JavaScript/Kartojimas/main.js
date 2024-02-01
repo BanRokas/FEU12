@@ -148,7 +148,7 @@ do{
 
 console.groupEnd();
 
-console.group('Funkcijos');
+console.groupCollapsed('Funkcijos');
 
 function fVardas(par){
   console.log(par+'hihi haha');
@@ -176,3 +176,51 @@ let a = suma(6, 9);//                  |
 console.log(a);
 
 console.groupEnd();
+
+console.groupCollapsed('Masyvai ir Objektai');
+  const league = {
+    pavadinimas: 'League of Legends',
+    nuotrauka: 'https://assets.nuuvem.com/image/upload/t_screenshot_full/v1/products/5eb09e2bc883e67fb003013d/screenshots/omthhuq2ntvwzzo0dbss.jpg',
+    vertinimai: [
+      {
+        vertinimas: '3.2/5',
+        vertintojai: 'Facebook'
+      },{
+        vertinimas: '74%',
+        vertintojai: 'Google'
+      }
+    ],
+    aprasymas: `League of Legends, commonly referred to as League, is a 2009 multiplayer online battle arena video game developed and published by Riot Games. Inspired by Defense of the Ancients, a custom map for Warcraft III, Riot's founders sought to develop a stand-alone game in the same genre.`,
+    extraInfo: {
+      tekstas: 'Wikipedia',
+      nuoroda: 'https://en.wikipedia.org/wiki/League_of_Legends'
+    },
+    isleidimoData: {
+      pavadinimas: 'Initial release date',
+      data: 'October 27, 2009'
+    },
+    kurejas:{
+      pavadinimas: 'Developer',
+      list: [
+        {
+          tekstas: 'Riot Games',
+          nuoroda: 'https://www.google.com/search?q=Riot+Games'
+        }
+      ]
+    },
+    zanrai:{
+      pavadinimas: 'Genres',
+      list : [
+        {
+          tekstas: 'Multiplayer online battle arena',
+          nuoroda: 'https://www.google.com/search?q=Multiplayer+online+battle+arena'
+        },{
+          tekstas: 'Action role-playing game',
+          nuoroda: 'https://www.google.com/search?q=Action+role-playing+game'
+        }
+      ]
+    }
+  };
+  console.log(league);
+console.groupEnd();
+
