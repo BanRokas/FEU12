@@ -174,7 +174,6 @@ let a = suma(6, 9);//                  |
 //           |                         |
 //           ---------------------------
 console.log(a);
-
 console.groupEnd();
 
 console.groupCollapsed('Masyvai ir Objektai');
@@ -224,3 +223,38 @@ console.groupCollapsed('Masyvai ir Objektai');
   console.log(league);
 console.groupEnd();
 
+console.group('Funkcijos');
+
+  //  Reikia funkcijos, kuri apskaičiuotų apskritimo tūrį. Funkcijai paduodama visa informacija apie apskritimą
+  const apskritimas = {
+    spindulys: 8.4321,
+    spalva: 'juoda',
+    linijosStoris: 3
+  };
+  const apskritimas2 = {
+    spindulys: 654
+  };
+  const apskritimas3 = {
+    skersmuo: 20
+  };
+  // apskritimas3.spindulys = apskritimas3.skersmuo / 2;
+  function apskritimoTuris({ spindulys, skersmuo }){
+    // console.log(spindulys, skersmuo);
+    if(spindulys){
+      return turis = Math.PI * Math.pow(spindulys, 2);
+    } else if(skersmuo){
+      return turis = Math.PI * Math.pow(skersmuo/2, 2);
+    } else {
+      return 'could not be calculated';
+    }
+  }
+  console.log(apskritimas);
+  console.log(apskritimas2);
+  console.log(apskritimas3);
+  apskritimas.turis = apskritimoTuris(apskritimas);
+  apskritimas2.turis = apskritimoTuris(apskritimas2);
+  apskritimas3.turis = apskritimoTuris(apskritimas3);
+  console.log(apskritimas);
+  console.log(apskritimas2);
+  console.log(apskritimas3);
+console.groupEnd();
