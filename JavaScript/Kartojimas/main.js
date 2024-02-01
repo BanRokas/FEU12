@@ -257,4 +257,39 @@ console.group('Funkcijos');
   console.log(apskritimas);
   console.log(apskritimas2);
   console.log(apskritimas3);
+
+
+  // Reikia funkcijos, kuriai padavus asmens gimimo datą (pilną) - ji grąžintų jo amžių. 
+  const asmuo0 = {
+    vardas: "Rokas",
+    pavardė: "Banaitis",
+    dob: '1996 02 01',
+    ugis: 186,
+    akiuSpalva: 'mėlyna',
+    arVedes: false
+  };
+  const asmuo1 = {
+    vardas: "Petras",
+    dob: '1960 03 01'
+  }
+
+  function amzius(dob){
+    const dobDateFormat = new Date(dob);
+    const currentDate = new Date();
+    const difference = currentDate - dobDateFormat;
+    const timeSince1970 = new Date(difference);
+    const now = timeSince1970.getFullYear() - 1970;
+    // return new Date(new Date() - new Date(dob)).getFullYear() - 1970;
+    // console.log(dobDateFormat);
+    // console.log(currentDate);
+    // console.log(currentDate-dobDateFormat);
+    // console.log(now);
+    const amzius = now;
+    return amzius;
+  }
+
+  // console.log(asmuo0);
+  asmuo0.amzius = amzius(asmuo0.dob);
+  asmuo1.amzius = amzius(asmuo1.dob);
+  console.log(asmuo1);
 console.groupEnd();
