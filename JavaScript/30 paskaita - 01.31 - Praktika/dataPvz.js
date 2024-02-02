@@ -157,7 +157,7 @@ const data3 = {
   ]
 }
 
-const data4 = {
+export const data4 = {
   attributes: [
     {
       name: 'class',
