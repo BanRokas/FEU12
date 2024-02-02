@@ -17,6 +17,9 @@
         Cookies, Session Storage ir Local Storage informacija yra saugojama jūsų įrenginyje/aplikacijoje/naršyklėje... <br>
         Skirtingose svetainėse/naršyklėse/įrenginiuose cookies/session/local storage yra saugojama atskirai.
       </p>
+      <p>
+        Visi lokaliai saugojami duomenys turėtų būti string pavidalu!!!
+      </p>
       <img src="./images/cookieVsLocalVsSession.png" alt="cookies vs local vs session">
     </section>
     <section> <!-- cookies -->
@@ -29,9 +32,42 @@
     </section>
     <section> <!-- session storage -->
       <h1>Session</h1>
+      <p>
+        Laiko duomenis aplikacijoje/naršyklėje, per kurią atidaroma kažkuri svetainė, kuriai tie duomenys priskiriami.<br>
+        Kai pasibaigia sesija (kai yra išjungiama svetainė) šitie duomenys yra ištrinami.
+      </p>
+      <p>
+        Dažnai naudojamas saugoti JWT token.
+      </p>
+      <h3>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage">Storage</a>
+      </h3>
+      <ul>
+        <li>sessionStorage.length - grąžina kiekį išsaugotų elementų</li>
+        <li>sessionStorage.setItem('raktas', 'reiksme')</li>
+        <li>sessionStorage.getItem('raktas') - grąžina reikšmę pagal raktą</li>
+        <li>sessionStorage.removeItem('raktas')</li>
+        <li>sessionStorage.clear() - ištrina viską iš sessionStorage</li>
+        <li>sessionStorage.key(index) - grąžina raktinį žodį esantį atitinkamoje indekso pozicijoje</li>
+      </ul>
     </section>
     <section> <!-- local storage -->
       <h1>Local</h1>
+      <p>
+        Laiko duomenis aplikacijoje/naršyklėje, per kurią atidaroma kažkuri svetainė, kuriai tie duomenys priskiriami.<br>
+        Duomenys yra išsaugojami per daugelį sesijų. Duomenys gali būti ištrinami tik naudojant atitinkamus metodus (kode) arba per dev tools.
+      </p>
+      <h3>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Storage">Storage</a>
+      </h3>
+      <ul>
+        <li>localStorage.length - grąžina kiekį išsaugotų elementų</li>
+        <li>localStorage.setItem('raktas', 'reiksme')</li>
+        <li>localStorage.getItem('raktas') - grąžina reikšmę pagal raktą</li>
+        <li>localStorage.removeItem('raktas')</li>
+        <li>localStorage.clear() - ištrina viską iš localStorage</li>
+        <li>localStorage.key(index) - grąžina raktinį žodį esantį atitinkamoje indekso pozicijoje</li>
+      </ul>
     </section>
   </main>
   <footer></footer>

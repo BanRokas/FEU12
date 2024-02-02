@@ -20,3 +20,57 @@ document.cookie.split('; ').forEach(cookie => {
 });
 console.log(cookiesObj);
 console.groupEnd();
+
+//      Session/Local Storage
+
+// sessionStorage.setItem('vardas', 'Rokas');
+// sessionStorage.setItem('amzius', 27);
+
+localStorage.setItem('vardas', 'Rokas');
+localStorage.setItem('amzius', 27);
+localStorage.setItem('alkanas', true);
+// localStorage.setItem('vardas0', 'Petras');
+// localStorage.setItem('amzius0', 50);
+// localStorage.setItem('alkanas0', false);
+
+console.groupCollapsed('local simple')
+const amzius = localStorage.getItem('amzius');
+console.log(amzius, typeof(amzius));
+
+// localStorage.removeItem('alkanas');
+// localStorage.clear();
+
+const something = localStorage.key(2);
+console.log(something);
+console.log(localStorage.getItem(something));
+console.log(localStorage.length);
+
+for(let i = 0; i < localStorage.length; i++){
+  const something0 = localStorage.key(i);
+  console.log(something0);
+  console.log(localStorage.getItem(something0));
+}
+console.groupEnd();
+
+const asmenys = [
+  {
+    vardas: "Rokas",
+    amzius: 27,
+    alkanas: true
+  },{
+    vardas: "Petras",
+    amzius: 50,
+    alkanas: false
+  },{
+    vardas: "Jonas",
+    amzius: 10,
+    alkanas: true
+  },{
+    vardas: "Kazys",
+    amzius: 80,
+    alkanas: false
+  }
+];
+// localStorage.setItem('asmenys', asmenys);// bad nes saugoja kaip string ir gaunasi - [object Object],[object Object],[object Object],[object Object]
+localStorage.setItem('asmenys', JSON.stringify(asmenys));
+console.log(JSON.parse(localStorage.getItem('asmenys')));
