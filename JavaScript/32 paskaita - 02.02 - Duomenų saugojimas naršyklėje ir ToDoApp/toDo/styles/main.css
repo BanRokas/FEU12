@@ -1,0 +1,99 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+  background-color: #f0fdff;
+  font-family: 'Roboto', sans-serif;
+  padding: 50px;
+}
+main{
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+section#newTask{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 50px 70px;
+  border-radius: 5px;
+  box-shadow: 0 8px 10px 0px #d0d0d0;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+#newTask > h1{
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+#newTask > form{
+  width: 100%;
+}
+#newTask div{
+  display: flex;
+  border-radius: 3px;
+  overflow: hidden;
+  height: 40px;
+}
+#newTask form input:nth-child(1){
+  flex: 3;
+  border: none;
+  padding: 0;
+  border: 1px #80808044 solid;
+  border-right: none;
+  text-indent: 20px;
+  font-size: 20px;
+  background-color: #e3e3e3fd;
+}
+#newTask form input:nth-child(1)::placeholder{
+  color: #a2b0cf;
+  padding: 10px 0;
+  
+}
+#newTask form input:nth-child(2){
+  flex: 1;
+  background-color: #0062ff;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border: none;
+  cursor: cell;
+}
+
+#tasks > ul{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+}
+
+#tasks li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 20px 70px;
+  border-radius: 5px;
+  box-shadow: 0 8px 10px 0px #d0d0d0;
+  background-color: white;
+  cursor: crosshair;
+}
+
+#tasks li > h3{
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+#tasks i.bi-trash-fill{
+  color: #700;
+  font-size: 24px;
+  cursor: not-allowed;
+}
+#tasks li.done{
+  background-color: green;
+}
+#tasks li.done > h3{
+  text-decoration-line: line-through;
+  text-decoration-thickness: 3px;
+}
