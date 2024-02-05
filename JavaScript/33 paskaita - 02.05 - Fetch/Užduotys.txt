@@ -1,0 +1,11 @@
+extra info:
+  https://javascript.info/fetch
+
+videos:
+  https://youtu.be/7YcW25PHnAA - WebConcepts
+  https://youtu.be/ecT42O6I_WI - TheCodingTrain
+
+APIs:
+  https://randomuser.me/
+  https://www.themealdb.com/
+  https://wheretheiss.at/w/developer
