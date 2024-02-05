@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>33 paskaita - Fetch</title>
+  <link rel="stylesheet" href="./main.css">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <main>
+    <section> <!-- API -->
+      <h1>API</h1>
+      <p>
+        Application programming interface - jūsų užklausa iš aplikacijos (front-end) išsiunčiama į serverį (back-end) ir jeigu viskas - grąžinami duomenys pagal jūsų užklausą, jeigu kažkas negerai - grąžinama atitinkama error'o žinutė.
+      </p>
+      <p>Kas yra API - <a href="https://youtu.be/s7wmiS2mSXY" target="_blank">video</a></p>
+    </section>
+    <section> <!-- JSON -->
+      <h1>JSON</h1>
+      <p>
+        JSON - Java Script Object Notation yra skirtas paversti duomenis į tokį formatą, kuris galėtų būti siunčiamas su API.<br />
+        JSON formatas nuo JS Object formato skiriasi tuo, kad raktiniai žodžiai turi būti kabutėse, o pačios kabutės visada dvigubos.
+      </p>
+      <p>
+        Tam, kad paversti JS sintaksę į JSON formatą arba atvirkščiai, naudojamos dvi JSON komandos:<br />
+        JSON.stringify(JS syntax) - iš JS sintaksės paverčia ir grąžiną JSON sintaksės string'ą.<br />
+        JSON.parse(JSON syntax) - iš JSON sintaksės paverčia ir grąžina JS sintaksę (kaip objektą ar masyvą).
+      </p>
+    </section>
+    <section> <!-- Fetch -->
+      <h1>Fetch</h1>
+      <p>
+        Funkcija, kurios pagalba mes galime siūsti užklausas į serverį ir gauti kažkokius atsakymus.
+      </p>
+      <h3>Fetch vykdymo eiga:</h3>
+      <ol>
+        <li>Fetch'inant (siūsčiant užklausą) nurodomas URL, galima nurodyti ir papildomas opcijas. Tarp tų opcijų yra metodai: 
+          <ul>
+            <li>GET - gauti info</li>
+            <li>POST - pateikti info</li>
+            <li>DELETE - trinti info</li>
+            <li>PATCH - redaguoti info</li>
+            <li>PUT - redaguoti info</li>
+          </ul>
+        </li>
+        <li>Apdoroti gautą info (vykdosi kai nėra error)</li>
+        <li>Naudoti gautą info (vykdosi kai nėra error)</li>
+        <li>Pagaunam (catch) ir kažką atliekam su tuo error (vykdosi tik erorr atveju)</li>
+        <li>Galiausiai (finally) dar kažką atliekam (vykdosi betkokiu atveju)</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>
