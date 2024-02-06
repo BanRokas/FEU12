@@ -25,16 +25,17 @@
       "nuotrauka": "https://m.media-amazon.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_FMjpg_UX1000_.jpg"
     },
     {
-      "id": "d719",
-      "pavadinimas": "The Intouchables",
-      "leidimoData": 2011,
-      "nuotrauka": "https://m.media-amazon.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_FMjpg_UX1000_.jpg"
+      "pavadinimas": "Ice Age",
+      "nuotrauka": "https://m.media-amazon.com/images/I/51GerfuvYGL._AC_UF894,1000_QL80_.jpg",
+      "kitaInfo": "hihi haha",
+      "id": "d719"
     },
     {
       "id": "5",
-      "pavadinimas": "The Intouchables",
+      "pavadinimas": "In Time",
       "leidimoData": 2011,
-      "nuotrauka": "https://m.media-amazon.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_FMjpg_UX1000_.jpg"
+      "nuotrauka": "https://m.media-amazon.com/images/M/MV5BMjA3NzI1ODc1MV5BMl5BanBnXkFtZTcwMzI5NjQwNg@@._V1_.jpg",
+      "kitaInfo": "haha hihi"
     }
   ],
   "kitas": [

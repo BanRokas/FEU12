@@ -88,3 +88,29 @@
 //     method: "DELETE"
 //   })
 // })
+
+//      redaguoti su PUT (perrašyti)
+// fetch(`http://localhost:3000/filmai/d719`, {
+//   method: "PUT",
+//   headers:{
+//     "Content-Type":"application/json"
+//   },
+//   body: JSON.stringify({
+//     pavadinimas: "Ice Age",
+//     nuotrauka: "https://m.media-amazon.com/images/I/51GerfuvYGL._AC_UF894,1000_QL80_.jpg",
+//     kitaInfo: 'hihi haha'
+//   })
+// })
+
+//      redaguoti su PATCH
+// fetch(`http://localhost:3000/filmai/5`, {
+//   method: "PATCH",
+//   headers:{
+//     "Content-Type":"application/json"
+//   },
+//   body: JSON.stringify({
+//     pavadinimas: "In Time",
+//     nuotrauka: "https://m.media-amazon.com/images/M/MV5BMjA3NzI1ODc1MV5BMl5BanBnXkFtZTcwMzI5NjQwNg@@._V1_.jpg",
+//     kitaInfo: 'haha hihi'
+//   })
+// })
