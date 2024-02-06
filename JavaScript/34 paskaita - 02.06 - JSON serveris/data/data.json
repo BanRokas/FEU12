@@ -1,0 +1,26 @@
+{
+  "filmai":[
+    {
+      "id": 0,
+      "pavadinimas":"Tadas Blinda",
+      "leidimoData":2011,
+      "nuotrauka":"https://upload.wikimedia.org/wikipedia/lt/1/14/Tadas_Blinda_Prad%C5%BEia_DVD_vir%C5%A1elis.jpeg"
+    },{
+      "id": 1,
+      "pavadinimas":"2012",
+      "leidimoData":2009,
+      "nuotrauka":"https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p193479_p_v8_aa.jpg"
+    },{
+      "id": 2,
+      "pavadinimas":"Pirates of the Caribbean: The Curse of the Black Pearl",
+      "leidimoData":2003,
+      "nuotrauka":"https://lumiere-a.akamaihd.net/v1/images/p_piratesofthecaribbean_thecurseoftheblackpearl_19642_d1ba8e66.jpeg"
+    }
+  ],
+  "kitas":[
+    {
+      "id": 0,
+      "pav":"duom"
+    }
+  ]
+}
