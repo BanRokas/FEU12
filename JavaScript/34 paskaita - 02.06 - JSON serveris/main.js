@@ -1,3 +1,5 @@
+import Movie from "./components/Movie.js";
+
 //          gauti visus filmus
 // fetch(`http://localhost:3000/filmai`)
 //   .then(res => res.json())
@@ -114,3 +116,40 @@
 //     kitaInfo: 'haha hihi'
 //   })
 // })
+
+fetch(`http://localhost:3000/filmai`)
+  .then(res => res.json())
+  .then(movies => {
+    console.log(movies);
+
+    movies.forEach(movie => {
+      const movieDiv = new Movie(movie);
+
+      document.querySelector('#movies > div').prepend(movieDiv);
+    })
+  })
+
+document.querySelector('#movies > form')
+  .addEventListener('submit', e => {
+    e.preventDefault();
+
+    const filmas = {
+      pavadinimas: e.target.elements.pavadinimas.value,
+      nuotrauka: e.target.elements.nuotrauka.value,
+      leidimoData: e.target.elements.leidimoData.valueAsNumber,
+      // id: new Date()*1+''
+      id: String(Number(new Date()))
+    };
+
+    fetch(`http://localhost:3000/filmai`,{
+      method: "POST",
+      headers: {
+        "Content-Type":"application/json"
+      },
+      body: JSON.stringify(filmas)
+    });
+    
+    // window.location.reload();
+    const filmoDiv = new Movie(filmas);
+    document.querySelector('#movies > div').prepend(filmoDiv);
+  })

@@ -28,6 +28,7 @@
       "pavadinimas": "Ice Age",
       "nuotrauka": "https://m.media-amazon.com/images/I/51GerfuvYGL._AC_UF894,1000_QL80_.jpg",
       "kitaInfo": "hihi haha",
+      "leidimoData": 2002,
       "id": "d719"
     },
     {
@@ -36,6 +37,12 @@
       "leidimoData": 2011,
       "nuotrauka": "https://m.media-amazon.com/images/M/MV5BMjA3NzI1ODc1MV5BMl5BanBnXkFtZTcwMzI5NjQwNg@@._V1_.jpg",
       "kitaInfo": "haha hihi"
+    },
+    {
+      "id": "1707221008409",
+      "pavadinimas": "Matrix",
+      "nuotrauka": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+      "leidimoData": 1999
     }
   ],
   "kitas": [
