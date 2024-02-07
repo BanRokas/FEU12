@@ -39,7 +39,13 @@ function delay(time, data){
 
 //    async await
 async function randomName(){
-  const delayAts = await delay(1500, 'haha hihi');
-  console.log(delayAts);
+  try{
+    const delayAts = await delay(1500, 'haha hihi');
+    console.log(delayAts);
+  } catch(err){
+    console.error(err);
+  } finally{
+    console.log('baigėsi')
+  }
 }
 randomName();
