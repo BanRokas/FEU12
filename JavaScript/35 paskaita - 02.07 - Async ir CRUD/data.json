@@ -35,6 +35,12 @@
       "pavadinimas": "China",
       "miestas": "Šiauliai",
       "fakultetuKiekis": 2
+    },
+    {
+      "pavadinimas": "Stars hihi",
+      "miestas": "Utena",
+      "fakultetuKiekis": 7,
+      "id": "1707313674182"
     }
   ]
 }
