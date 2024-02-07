@@ -1,0 +1,40 @@
+{
+  "school": [
+    {
+      "id": "6541",
+      "pavadinimas": "KTU",
+      "miestas": "Kaunas",
+      "fakultetuKiekis": 9
+    },
+    {
+      "id": "6564",
+      "pavadinimas": "LSMU",
+      "miestas": "Kaunas",
+      "fakultetuKiekis": 7
+    },
+    {
+      "id": "6522",
+      "pavadinimas": "KK",
+      "miestas": "Kaunas",
+      "fakultetuKiekis": 4
+    },
+    {
+      "id": "6541",
+      "pavadinimas": "VU",
+      "miestas": "Vilnius",
+      "fakultetuKiekis": 10
+    },
+    {
+      "id": "1707300500308",
+      "name": "Lemon Gym",
+      "city": "Kaunas",
+      "fNr": 10
+    },
+    {
+      "id": "1707300541633",
+      "pavadinimas": "Lemon Gym",
+      "miestas": "Kaunas",
+      "fakultetuKiekis": 10
+    }
+  ]
+}
