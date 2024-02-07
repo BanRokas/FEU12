@@ -51,6 +51,37 @@
           });
         </p>
       </div>
+      <div> <!-- then catch finally -->
+        <h3>then catch finally</h3>
+        <p>
+          Then, catch ir finally gali būti naudojami tik su funkcijomis, kurios grąžina Promise'us.<br>
+          Kai pažadas yra grąžinamas, tik tuomet vykdosi then arba catch.<br>
+          Then vykdosi tuomet kai Promise'as yra resolve'inamas.<br>
+          Catch vykdosi tuomet kai Promise'as ura reject'inamas arba then viduje įvyksta klaida.<br>
+          Finally vykdosi po visų then'ų ar catch'ų.
+        </p>
+        <p>
+          Promise(...).then().then().then().catch().finally()
+        </p>
+      </div>
+      <div> <!-- asyncF ir await -->
+        <h3>Async ir await</h3>
+        <p>
+          Rašant kodą asinchroniškai, kartais prireikia kažkiek luktelėti kol bus atlikti vieni ar kiti veiksmai.<br>
+          Tam, kad palauktume atsakymo, reikia kažkaip uždelsti kodą.<br>
+          Tai galima padaryti su: setTimeout (blogai, nes kuriamas callbackHell); thenCatchFinally (good enough) arba su async await (better?).
+        </p>
+        <p>
+          Norint rašyti asinchroninį kodą su async ir await, reikia:<br>
+          Promise'o (funkcijos, kuri grąžina pažadą);<br>
+          Asinchroninės funkcijos, kurioje kreipiamasi į Promise'ą.<br>
+          Await raktinio žodžio prieš kreipimąsį į Promise'ą.<br>
+          extra: try catch finally blokų (pažiūrėsim vėliau)
+        </p>
+        <p>
+          async function name(){ const ats = await Promise(); ats+='keisti' }
+        </p>
+      </div>
     </section>
   </main>
 </body>
