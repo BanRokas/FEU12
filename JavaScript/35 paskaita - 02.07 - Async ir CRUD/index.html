@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>35 paskaita - Async ir CRUD</title>
+  <link rel="stylesheet" href="./main.css">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <main>
+    <section> <!-- Async -->
+      <h1>Asinchroninis programavimas</h1>
+      <p>
+        Asinchroninio programavimo idėja yra ta, kad kol vykdosi vienas kodas, galima leisti vykdytis kitam kodui. Kitaip pasakius atlikinėti keletą veiksmų vienu metu.
+      </p>
+      <h4>Step by step</h4>
+      <ol>
+        <li>setTimeout(callback, time)</li>
+        <li>Promise(resolve, reject)</li>
+        <li>then catch finally</li>
+        <li>asyncF await</li>
+      </ol>
+      <div> <!-- setTimeout -->
+        <h3>setTimeout</h3>
+        <p>
+          SetTimeout funkcija, atlieka kažkokius veiksmus (callback) po nurodyto laiko tarpo.
+        </p>
+        <p>
+          setTimeout(()=>{ ... veiksmai ... }, 1000);
+        </p>
+      </div>
+      <div> <!-- Promise -->
+        <h3>Promise</h3>
+        <p>
+          Rašant asinchroninį kodą yra kuriami Promise'ai (pažadai).<br>
+          Promise'ai pažada grąžinti kažkokį atsakymą, kurio Promiso iškvietimo momentu mes dar neturime.<br>
+          Promise po kažkiek laiko mums grąžins atsakymą, kurį yra pažadėjęs (resolve'ins) ARBA dėl kažkokios priežasties negrąžins norimo atsakymo, grąžins kažkokią užklausos atmetimo informaciją (reject'ins).
+        </p>
+        <p>
+          Promise((resolve, reject) => {
+            if(good){
+              resolve('answer');
+            } else if(bad0){
+              reject('error0');
+            } else if(bad1){
+              reject('error1');
+            } else {
+              reject('errorSomething');
+            }
+          });
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
