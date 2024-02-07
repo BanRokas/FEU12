@@ -25,16 +25,16 @@
       "fakultetuKiekis": 10
     },
     {
-      "id": "1707300500308",
-      "name": "Lemon Gym",
-      "city": "Kaunas",
-      "fNr": 10
-    },
-    {
       "id": "1707300541633",
       "pavadinimas": "Lemon Gym",
       "miestas": "Kaunas",
       "fakultetuKiekis": 10
+    },
+    {
+      "id": "1707304267972",
+      "pavadinimas": "China",
+      "miestas": "Šiauliai",
+      "fakultetuKiekis": 2
     }
   ]
 }

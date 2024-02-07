@@ -93,5 +93,7 @@ document
       body: JSON.stringify(school)
     });
 
+    e.target.reset();
+
     console.log(school);
   });
