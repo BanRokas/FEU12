@@ -1,0 +1,5 @@
+Async skaityt/žiūrėt:
+  CodingTrain: https://youtu.be/QO4NXhWo_NM?list=PLRqwX-V7Uu6bKLPQvPRNNE65kBL62mVfx
+  ColorCode: https://www.colorcode.io/videos/js-async-await
+  FreeCodeCamp: https://www.freecodecamp.org/news/javascript-async-await-tutorial-learn-callbacks-promises-async-await-by-making-icecream/
+  Teorija: https://javascript.info/async
