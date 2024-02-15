@@ -22,6 +22,50 @@
         <li>rm --cached - išima nurodytus failus iš stage'inimo zonos (unstage'ina)</li>
         <li>commit -m "žinutė" - sukuria kodo versiją iš stage'intų failų ir prideda žinutę apie pakitimus (žinutė turėtų būti trumpa (ne ilgesnė nei 50 simbolių) ir aiški)</li>
         <li>restore - grąžina nurodytus failus į buvusio commit'o būseną (panaikina naujus pakitimus padarytus po paskutinio commit'o)</li>
+        <li>push - iš lokalios repozitorijos nusiunčia commit'us į išorinę repozitoriją</li>
+        <li>pull - iš išorinės repozitorijos atsiunčia commit'us į lokalią repozitoriją</li>
+        <li>clone - klonuoja nurodytą repozitoriją iš išorinės repozitorijos</li>
+        <li>log - išveda commit'ų sąrašą</li>
+        <li>checkout commitID|branchName - pareina į nurodytą kodo versiją ARBA į kitą šaką</li>
+        <li>branch naujosSakosPavadinimas - sukuria naują šaką</li>
+      </ul>
+    </section>
+    <section>
+      <h1>Branch protection rules</h1>
+      <p>
+        Vienas svarbiausių šakų apsaugos taisyklių yra "Pull Request" (bandymas vienos šakos commit'us sukelti į kitą šaką).<br>
+        Pull Request dar galima suteikti "Require approvals", kuris reikalauja, kad nurodytas kiekis kitų projekto dalyvių patvirtintų Pull Request'ą.
+      </p>
+    </section>
+    <section>
+      <h1>Eiliškumas Pull Request</h1>
+      <ol>
+        <li>Susikurti naują šaką - git branch newBranchName</li>
+        <li>Nueiti į tą naują šaką - git checkout newBranchName</li>
+        <li>Atlieki užduotį, kurią apsiėmei padaryti
+          <ol>
+            <li>Add'ini pakitusius failus - git add .</li>
+            <li>Commit'ini pakitimus - git commit -m "žinutė apie pakitimus"</li>
+          </ol>
+        </li>
+        <li>Nueini į main|master šaką - git checkout main|master</li>
+        <li>Atnaujini main|master šaką - git pull</li>
+        <li>Nueini į tą naują šaką - git checkout newBranchName</li>
+        <li>Sujungi savo šaką su main|master ir išsprendi galimai atsiradusius konfliktus - git merge main|master</li>
+        <li>Nusiunti tos naujos šakos pakitimus į GitHub'ą - git push</li>
+        <li>GitHub'e sukurti Pull Request'ą</li>
+        <li>Kiti komandos nariai patvirtina arba atmeta Pull Request'ą</li>
+      </ol>
+    </section>
+    <section>
+      <h1>Extra links</h1>
+      <ul>
+        <li><a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">Git Cheat Sheet</a></li>
+        <li><a href="https://rogerdudler.github.io/git-guide/" target="_blank">Git Quick Guide</a></li>
+        <li><a href="https://youtu.be/8JJ101D3knE" target="_blank">Mosh about Git</a></li>
+        <li><a href="https://youtu.be/mJ-qvsxPHpY" target="_blank">Nick White about Git</a></li>
+        <li><a href="https://youtu.be/DVRQoVRzMIY" target="_blank">Tech With Tim about Git</a></li>
+        <li><a href="https://youtu.be/hwP7WQkmECE" target="_blank">FireShip about Git 100s</a></li>
       </ul>
     </section>
   </main>

@@ -1,0 +1,14 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+body{
+  background-color:rgb(87, 43, 43);
+  color: white;
+}
+
+section{
+  padding: 20px 30px;
+}
+
+a{
+  color: grey;
+}
