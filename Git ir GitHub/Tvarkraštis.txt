@@ -1,0 +1,7 @@
+1 savaitė:
+  41 paskaita - 02.15 - Git ir GitHub
+2 savaitė:
+  42 paskaita - 02.19 - Komandinis darbas / Galutinis atsiskaitymas
+  43 paskaita - 02.20 - Komandinis darbas / Galutinis atsiskaitymas
+  44 paskaita - 02.21 - Komandinis darbas ir pristatymai / Galutinis atsiskaitymas
+  45 paskaita - 02.22 - Git ir GitHub atsiskaitymas / Galutinis atsiskaitymas ir jo pristatymai
