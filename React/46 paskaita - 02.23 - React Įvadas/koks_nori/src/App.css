@@ -1,3 +1,36 @@
-.red{
-  color: red;
+body{
+  margin: 0;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 60px;
+  background-color: antiquewhite;
+
+  > img{
+    height: 80%;
+  }
+  > nav{
+    > ul{
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 10px;
+      list-style-type: none;
+
+      >li{
+        >a{
+          text-decoration: none;
+          text-transform: capitalize;
+          font-size: 20px;
+        }
+        >a:hover{
+          color: green;
+        }
+      }
+    }
+  }
 }
