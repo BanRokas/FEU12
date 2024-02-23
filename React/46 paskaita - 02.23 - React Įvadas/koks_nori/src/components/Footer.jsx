@@ -1,8 +1,11 @@
 const Footer = () => {
+  const owner = "Čiukčių dėdė";
+  const metai = new Date().getFullYear();
+
   return (
-    <>
-      <p>Footer</p>
-    </>
+    <footer>
+      <p>&copy; {metai} owned by {owner}</p>
+    </footer>
   );
 }
  
