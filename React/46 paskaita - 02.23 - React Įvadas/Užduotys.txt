@@ -1,0 +1,16 @@
+Skaityti:
+  (arba legacy)
+  https://legacy.reactjs.org/docs/hello-world.html
+  https://legacy.reactjs.org/docs/introducing-jsx.html
+  https://legacy.reactjs.org/docs/rendering-elements.html
+  (arba nauja)
+  https://react.dev/learn/describing-the-ui
+  https://react.dev/learn/your-first-component
+  https://react.dev/learn/importing-and-exporting-components
+  https://react.dev/learn/writing-markup-with-jsx
+  https://react.dev/learn/javascript-in-jsx-with-curly-braces
+  (arba abudu)
+
+Atkartoti:
+  https://images.prismic.io/cao-lessons/bae2d44f-8258-4d15-a25b-c3705a0e78ca_Screenshot+2021-08-16+at+11.58.52.png
+  (nereikia jokių ciklų, jokių data failų, jokių json servų and so on...)
