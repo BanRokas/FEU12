@@ -1,0 +1,11 @@
+Skaityti:
+  (arba legacy)
+    https://legacy.reactjs.org/docs/components-and-props.html
+    https://legacy.reactjs.org/docs/lists-and-keys.html
+  (arba nauja)
+    https://react.dev/learn/passing-props-to-a-component
+    https://react.dev/learn/rendering-lists
+  (arba abudu)
+
+Atkartoti:
+  https://images.prismic.io/cao-lessons/6c1f0bf1-0f13-4f31-a23a-584689f8d41d_Screenshot+2021-08-17+at+11.37.21.png
