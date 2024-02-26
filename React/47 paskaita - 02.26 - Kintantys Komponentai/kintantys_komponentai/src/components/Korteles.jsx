@@ -3,9 +3,9 @@ import Card from "./Card";
 
 const Korteles = ({ data }) => {
   return (
-    <>
+    <section id="cards">
       <Heading 
-        text="Lankytinios Lietuvos vietos"
+        text="Lankytinos Lietuvos vietos"
       />
       <div>
         {
@@ -17,7 +17,7 @@ const Korteles = ({ data }) => {
           })
         }
       </div>
-    </>
+    </section>
   );
 }
  
