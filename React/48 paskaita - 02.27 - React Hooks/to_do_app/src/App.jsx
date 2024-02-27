@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import ToDoList from './components/ToDoList';
+import ToDoForm from './components/ToDoForm';
 
 const App = () => {
 
@@ -48,9 +49,16 @@ const App = () => {
       }
     }));
   }
+  const addNewTask = (newTask) => {
+    console.log('pridedame nauja task');
+    setTasks();
+  }
 
   return (
     <>
+      <ToDoForm
+        addNewTask={addNewTask}
+      />
       <ToDoList
         tasks={tasks}
         trintiTask={trintiTask}
