@@ -25,7 +25,28 @@ const App = () => {
   ]);
   const trintiTask = (id) => {
     console.log('triname', id);
-    
+    setTasks(tasks.filter(task => task.id !== id));
+  }
+  const changeTaskStatus = (id) => {
+    console.log('keiciu statusa', id);
+    setTasks(tasks.map(task => {
+      if(task.id === id){
+        return {
+          // id: task.id,
+          // isCompleted: !task.isCompleted,
+          // title: task.title
+          ...task,
+          isCompleted: !task.isCompleted
+        }
+      } else {
+        // return {
+        //   id: task.id,
+        //   isCompleted: task.isCompleted,
+        //   title: task.title
+        // }
+        return task;
+      }
+    }));
   }
 
   return (
@@ -33,6 +54,7 @@ const App = () => {
       <ToDoList
         tasks={tasks}
         trintiTask={trintiTask}
+        changeTaskStatus={changeTaskStatus}
       />
     </>
   );

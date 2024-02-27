@@ -1,6 +1,6 @@
 import ToDoItem from "./ToDoItem";
 
-const ToDoList = ({ tasks, trintiTask }) => {
+const ToDoList = ({ tasks, trintiTask, changeTaskStatus }) => {
   // console.log(tasks);
   return (
     <section>
@@ -12,6 +12,7 @@ const ToDoList = ({ tasks, trintiTask }) => {
               key={task.id}
               task={task}
               trintiTask={trintiTask}
+              changeTaskStatus={changeTaskStatus}
             />
           )
         }
