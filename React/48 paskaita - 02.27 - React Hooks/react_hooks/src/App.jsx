@@ -1,11 +1,12 @@
 import './App.css';
 import { useState } from 'react';
+import Skaiciuoti from './components/Skaiciuoti';
 
 const App = () => {
 
   // let skaicius = 0;
-  let [skaicius, setSkaicius] = useState(0);
-  console.log(skaicius);
+  const [skaicius, setSkaicius] = useState(0);
+  // console.log(skaicius);
   const mazintiSkaiciu = () => {
     // skaicius--;
     setSkaicius(skaicius-1);
@@ -19,9 +20,11 @@ const App = () => {
 
   return (
     <>
-      <p>Mūsų skaičius yra: {skaicius}</p>
-      <button onClick={mazintiSkaiciu}>Mažinti Skaičių</button>
-      <button onClick={() => didintiSkaiciu()}>Didinti Skaičių</button>
+      <Skaiciuoti
+        number={skaicius}
+        decrement={mazintiSkaiciu}
+        increment={didintiSkaiciu}
+      />
     </>
   );
 }
