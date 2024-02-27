@@ -5,6 +5,8 @@ import ToDoForm from './components/ToDoForm';
 
 const App = () => {
 
+  const [formInput, setFormInput] = useState("");
+
   const [tasks, setTasks] = useState([
     {
       id: 0,
@@ -50,14 +52,16 @@ const App = () => {
     }));
   }
   const addNewTask = (newTask) => {
-    console.log('pridedame nauja task');
-    setTasks();
+    console.log('pridedame nauja task', newTask);
+    setTasks([...tasks, newTask]);
   }
 
   return (
     <>
       <ToDoForm
         addNewTask={addNewTask}
+        formInput={formInput}
+        setFormInput={setFormInput}
       />
       <ToDoList
         tasks={tasks}

@@ -1,9 +1,13 @@
-const ToDoForm = ({ addNewTask }) => {
+const ToDoForm = ({ addNewTask, formInput, setFormInput }) => {
 
   const formSubmit = e => {
     e.preventDefault();
-    addNewTask();
-    // ???
+    addNewTask({
+      id: Date.now(),
+      isCompleted: false,
+      title: formInput
+    });
+    setFormInput('');
   }
 
   return (
@@ -14,6 +18,8 @@ const ToDoForm = ({ addNewTask }) => {
           type="text"
           placeholder="New task title..."
           required
+          value={formInput}
+          onChange={(e)=>{setFormInput(e.target.value)}}
         />
         <input
           type="submit"
