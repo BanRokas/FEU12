@@ -1,6 +1,6 @@
 import Patiekalas from "./Patiekalas";
 
-const Patiekalai = ({ dishes }) => {
+const Patiekalai = ({ dishes, statusChange, deleteDish }) => {
   return (
     <section id="ourDishes">
       <h1>Mūsų patiekalai</h1>
@@ -10,6 +10,8 @@ const Patiekalai = ({ dishes }) => {
             <Patiekalas
               key={dish.id}
               dish={dish}
+              statusChange={statusChange}
+              deleteDish={deleteDish}
             />
           )
         }

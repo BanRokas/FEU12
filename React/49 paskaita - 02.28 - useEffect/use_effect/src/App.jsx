@@ -51,11 +51,28 @@ const App = () => {
       }
     }
   ]);
+  const keistiPatiekaloStatusa = id => {
+    setDishes(dishes.map(dish => {
+      if(id === dish.id){
+        return {
+          ...dish,
+          ragautas: !dish.ragautas
+        }
+      } else {
+        return dish;
+      }
+    }));
+  }
+  const trintiPatiekala = id => {
+    setDishes(dishes.filter(dish => dish.id !== id));
+  }
 
   return (
     <>
       <Patiekalai
         dishes={dishes}
+        statusChange={keistiPatiekaloStatusa}
+        deleteDish={trintiPatiekala}
       />
     </>
   );

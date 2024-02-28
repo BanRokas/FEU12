@@ -1,10 +1,13 @@
 import ListItem from "./ListItem";
 
-const Patiekalas = ({ dish }) => {
+const Patiekalas = ({ dish, statusChange, deleteDish }) => {
   return (
-    <div className='dishCard'>
+    <div
+      className={`dishCard ${dish.ragautas ? 'green' : 'red'}`}
+      // style={{ backgroundColor: `${dish.ragautas? 'green' : 'red'}`}}
+    >
       <h3>{dish.pavadinimas}</h3>
-      <img 
+      <img
         src={dish.nuotrauka}
         alt={dish.pavadinimas}
       />
@@ -13,24 +16,28 @@ const Patiekalas = ({ dish }) => {
         <p>Ingredientai:</p>
         <ul>
           {
-            dish.ingredientai.map((ingredientas, i) => 
+            dish.ingredientai.map((ingredientas, i) =>
               <ListItem
                 key={i}
                 text={ingredientas}
-              />  
+              />
             )
           }
         </ul>
         <p>Kainos ribos: {dish.kaina.nuo} - {dish.kaina.iki}&euro;</p>
-        <label htmlFor="ragautas">Esu ragavęs šį patiekalą: </label>
-        <input 
+        <label htmlFor={`ragautas${dish.id}`}>Esu ragavęs šį patiekalą: </label>
+        <input
           type="checkbox"
-          id="ragautas" 
+          id={`ragautas${dish.id}`}
           checked={dish.ragautas}
+          onChange={() => statusChange(dish.id)}
         />
       </div>
+      <button
+        onClick={() => deleteDish(dish.id)}
+      >Trinti</button>
     </div>
   );
 }
- 
+
 export default Patiekalas;

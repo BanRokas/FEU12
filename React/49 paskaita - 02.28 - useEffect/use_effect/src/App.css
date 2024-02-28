@@ -27,7 +27,7 @@
   }
   > img{
     width: 300px;
-    height: 40%;
+    height: 200px;
     object-fit: contain;
   }
   > div{
@@ -35,4 +35,11 @@
       column-count: 2;
     }
   }
+}
+
+.red{
+  background-color: #ed7474;
+}
+.green{
+  background-color: #6fc47d;
 }
