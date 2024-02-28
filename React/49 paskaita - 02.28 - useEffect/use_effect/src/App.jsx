@@ -5,6 +5,24 @@ import NaujoPatiekaloForma from './components/NaujoPatiekaloForma';
 
 const App = () => {
 
+  const [formInputs, setFormInputs] = useState({
+    // pavadinimas:{
+    //   value: '',
+    //   error: {
+    //     isOkay: false,
+    //     validation: RegExp(),
+    //     message: 'error zinute'
+    //   }
+    // },
+    pavadinimas: '',
+    nuotrauka: '',
+    kilmesSalis: '',
+    ragautas: false,
+    ingredientai: '',
+    kainaNuo: '',
+    kainaIki: ''
+  });
+
   const [dishes, setDishes] = useState([
     {
       id: 0,
@@ -71,7 +89,8 @@ const App = () => {
   return (
     <>
       <NaujoPatiekaloForma
-
+        formInputs={formInputs}
+        setFormInputs={setFormInputs}
       />
       <Patiekalai
         dishes={dishes}
