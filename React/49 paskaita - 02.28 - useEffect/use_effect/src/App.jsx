@@ -78,15 +78,23 @@ const App = () => {
     fetch(`http://localhost:8080/dishes`)
       .then(res => res.json())
       .then(data => {
-        console.log('atsisiuntėme duomenis', data);
+        // console.log('atsisiuntėme duomenis', data);
         setDishes(data);
       });
   }, []);
   
-  
   const keistiPatiekaloStatusa = id => {
     setDishes(dishes.map(dish => {
       if(id === dish.id){
+        fetch(`http://localhost:8080/dishes/${id}`, {
+          method: "PATCH",
+          headers:{
+            "Content-Type":"application/json"
+          },
+          body: JSON.stringify({
+            ragautas: !dish.ragautas
+          })
+        });
         return {
           ...dish,
           ragautas: !dish.ragautas

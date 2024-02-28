@@ -3,7 +3,7 @@ const NaujoPatiekaloForma = ({ formInputs, setFormInputs, addNewDish}) => {
   const formSubmit = e => {
     e.preventDefault();
     const newCardData = {
-      id: Date.now(),
+      id: String(Date.now()),
       pavadinimas: formInputs.pavadinimas,
       nuotrauka: formInputs.nuotrauka,
       kilmesSalis: formInputs.kilmesSalis,

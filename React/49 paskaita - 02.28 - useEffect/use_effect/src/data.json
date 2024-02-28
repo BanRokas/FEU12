@@ -1,7 +1,7 @@
 {
   "dishes": [
     {
-      "id": 0,
+      "id": "0",
       "pavadinimas": "Kebabas",
       "nuotrauka": "https://imageproxy.wolt.com/menu/menu-images/600a7d7d826c1246cf405d26/971ef752-5eeb-11eb-9920-02dc710d0c97_28.kebabu_kebabai_products_3.jpeg",
       "kilmesSalis": "Bizantija",
@@ -18,7 +18,7 @@
       }
     },
     {
-      "id": 1,
+      "id": "1",
       "pavadinimas": "Pica",
       "nuotrauka": "https://www.italianshop.lt/cdn/shop/articles/NZ8_5456_FB_WEB-2.jpg",
       "kilmesSalis": "Italija",
@@ -35,7 +35,7 @@
       }
     },
     {
-      "id": 3,
+      "id": "3",
       "pavadinimas": "Cepelinai",
       "nuotrauka": "https://www.tv3.lt/Uploads/UArticles/leadPhotos/b1/f0/b9/00/b1f0b900ddb3deef12856c8b8abdc64c.jpg",
       "kilmesSalis": "Lietuva",
@@ -52,7 +52,7 @@
       }
     },
     {
-      "id": 4,
+      "id": "4",
       "pavadinimas": "Sevičė",
       "nuotrauka": "https://s1.15min.lt/images/photos/2015/12/22/big/fotolia_64151666_subscription_l-56794c082423b.jpg",
       "kilmesSalis": "Peru",
