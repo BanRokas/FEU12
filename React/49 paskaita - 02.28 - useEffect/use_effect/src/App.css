@@ -1,12 +1,15 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 
-#ourDishes{
+section{
   padding: 0 30px;
 
   > h1{
     text-align: center;
     font-size: 3rem;
   }
+}
+
+#ourDishes{
   > div.dishesContainer{
     display: flex;
     flex-wrap: wrap;

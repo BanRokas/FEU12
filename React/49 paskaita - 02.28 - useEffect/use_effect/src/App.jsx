@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import Patiekalai from './components/Patiekalai';
+import NaujoPatiekaloForma from './components/NaujoPatiekaloForma';
 
 const App = () => {
 
@@ -69,6 +70,9 @@ const App = () => {
 
   return (
     <>
+      <NaujoPatiekaloForma
+
+      />
       <Patiekalai
         dishes={dishes}
         statusChange={keistiPatiekaloStatusa}
