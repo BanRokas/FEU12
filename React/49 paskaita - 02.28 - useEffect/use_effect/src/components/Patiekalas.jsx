@@ -24,7 +24,7 @@ const Patiekalas = ({ dish, statusChange, deleteDish }) => {
             )
           }
         </ul>
-        <p>Kainos ribos: {dish.kaina.nuo} - {dish.kaina.iki}&euro;</p>
+        <p>Kainos ribos: {dish.kaina.nuo}&euro; - {dish.kaina.iki}&euro;</p>
         <label htmlFor={`ragautas${dish.id}`}>Esu ragavęs šį patiekalą: </label>
         <input
           type="checkbox"
