@@ -1,0 +1,11 @@
+Konspektuotis
+Persižiūrėti / pasikartoti
+Atlikti buvusias užduotis
+
+Viską stilizuoti
+Pridėkite trinimo JSON serveryje funkcionalumą
+Pridėti pridėjimo JSON serveryje funkcionalumą
+Gražiai padaryti trinimo atvaizdavimą kortelėje
+Ragautas/Neragautas checkbox pakeitimas į kažką grąžesnio
+Padaryti universalią input'ų onChange funkciją
+Pridėkite pilną redagavimo funkcionalumą (tam galima naudoti jau esančią formą)
