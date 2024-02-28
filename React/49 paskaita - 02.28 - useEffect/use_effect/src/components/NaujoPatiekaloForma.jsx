@@ -1,8 +1,36 @@
-const NaujoPatiekaloForma = ({ formInputs, setFormInputs}) => {
+const NaujoPatiekaloForma = ({ formInputs, setFormInputs, addNewDish}) => {
+
+  const formSubmit = e => {
+    e.preventDefault();
+    const newCardData = {
+      id: Date.now(),
+      pavadinimas: formInputs.pavadinimas,
+      nuotrauka: formInputs.nuotrauka,
+      kilmesSalis: formInputs.kilmesSalis,
+      ragautas: formInputs.ragautas,
+      ingredientai: formInputs.ingredientai.split(','),
+      kaina: {
+        nuo: Number(formInputs.kainaNuo),
+        iki: Number(formInputs.kainaIki)
+      }
+    };
+    // console.log(newCardData);
+    addNewDish(newCardData);
+    setFormInputs({
+      pavadinimas: '',
+      nuotrauka: '',
+      kilmesSalis: '',
+      ragautas: false,
+      ingredientai: '',
+      kainaNuo: '',
+      kainaIki: ''
+    });
+  }
+
   return (
     <section>
       <h1>Pridėti patiekalą</h1>
-      <form>
+      <form onSubmit={formSubmit}>
         <input
           type="text"
           name="pavadinimas"
@@ -55,7 +83,7 @@ const NaujoPatiekaloForma = ({ formInputs, setFormInputs}) => {
         <textarea
           name="ingredientai"
           id="ingredientai"
-          placeholder="Išvardinkite ingredientus atskirdami juos kabliataškiu: morka; bulvė; miltai; ..."
+          placeholder="Išvardinkite ingredientus atskirdami juos kableliu: morka, bulvė, miltai, ..."
           value={formInputs.ingredientai}
           onChange={e => setFormInputs({
             ...formInputs,

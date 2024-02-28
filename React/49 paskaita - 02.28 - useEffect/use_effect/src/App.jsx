@@ -85,12 +85,16 @@ const App = () => {
   const trintiPatiekala = id => {
     setDishes(dishes.filter(dish => dish.id !== id));
   }
+  const papildytiPatiekluSarasa = naujasPatiekalas => {
+    setDishes([ ...dishes, naujasPatiekalas ]);
+  }
 
   return (
     <>
       <NaujoPatiekaloForma
         formInputs={formInputs}
         setFormInputs={setFormInputs}
+        addNewDish={papildytiPatiekluSarasa}
       />
       <Patiekalai
         dishes={dishes}
