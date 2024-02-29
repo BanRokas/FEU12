@@ -6,25 +6,25 @@
   49 paskaita - 02.28 - useEffect ir JSON
   50 paskaita - 02.29 - Praktika
   51 paskaita - 03.01 - Praktika?
-3 savaitė: Atomic Design; React stilizavimas; React Komponentų Bibliotekos; Reducer / Context
+3 savaitė: Atomic Design; React stilizavimas; React Komponentų Bibliotekos; Reducer ir Context
   52 paskaita - 03.04 - 
   53 paskaita - 03.05 - 
   54 paskaita - 03.06 - 
   55 paskaita - 03.07 - 
   56 paskaita - 03.08 - 
-4 savaitė: ReactRouter; Formik ir Yup; Vartotojų verifikacija ir validacija
+4 savaitė: ReactRouter x1-2; Formik ir Yup; Vartotojų verifikacija ir validacija x2-3
   57 paskaita - 03.12 - 
   58 paskaita - 03.13 - 
   59 paskaita - 03.14 - 
   60 paskaita - 03.15 - 
-  61 paskaita - 03.16 - 
-5 savaitė: Ruošimasis galutiniam atsiskaitymui; Baigiamasis testas; Baigiamasis praktinis darbas
+5 savaitė: Ruošimasis galutiniam atsiskaitymui x2-3; Baigiamasis testas; Baigiamasis praktinis darbas
+  61 paskaita - 03.18 - 
   62 paskaita - 03.19 - 
   63 paskaita - 03.20 - 
   64 paskaita - 03.21 - 
   65 paskaita - 03.22 - 
-  66 paskaita - 03.23 - 
 6 savaitė:
+  66 paskaita - 03.23 - 
   67 paskaita - 03.26 - Baigiamasis praktinis darbas
   68 paskaita - 03.27 - Baigiamasis praktinis darbas
   69 paskaita - 03.28 - Baigiamojo darbo baigimas
