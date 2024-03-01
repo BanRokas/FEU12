@@ -1,9 +1,11 @@
+import { v4 as uuid } from 'uuid';
+
 const NaujoPatiekaloForma = ({ formInputs, setFormInputs, addNewDish}) => {
 
   const formSubmit = e => {
     e.preventDefault();
     const newCardData = {
-      id: String(Date.now()),
+      id: uuid(),
       pavadinimas: formInputs.pavadinimas,
       nuotrauka: formInputs.nuotrauka,
       kilmesSalis: formInputs.kilmesSalis,

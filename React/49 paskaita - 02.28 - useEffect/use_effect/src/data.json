@@ -66,6 +66,36 @@
         "nuo": 10,
         "iki": 20
       }
+    },
+    {
+      "id": "1709273588278",
+      "pavadinimas": "Poutine",
+      "nuotrauka": "https://www.seasonsandsuppers.ca/wp-content/uploads/2014/01/new-poutine-1.jpg",
+      "kilmesSalis": "Kanada",
+      "ragautas": false,
+      "ingredientai": [
+        "1",
+        " 2",
+        " haha"
+      ],
+      "kaina": {
+        "nuo": 3,
+        "iki": 6
+      }
+    },
+    {
+      "id": "a4d80e93-bb15-463d-930c-14a0f4baf9ee",
+      "pavadinimas": "Arbata",
+      "nuotrauka": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+      "kilmesSalis": "Kinija",
+      "ragautas": true,
+      "ingredientai": [
+        "Arbatos lapeliai"
+      ],
+      "kaina": {
+        "nuo": 1,
+        "iki": 3
+      }
     }
   ]
 }

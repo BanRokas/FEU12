@@ -109,6 +109,13 @@ const App = () => {
   }
   const papildytiPatiekluSarasa = naujasPatiekalas => {
     setDishes([ ...dishes, naujasPatiekalas ]);
+    fetch(`http://localhost:8080/dishes`, {
+      method: "POST",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      body: JSON.stringify(naujasPatiekalas)
+    });
   }
 
   return (
