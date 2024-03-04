@@ -19,4 +19,8 @@ CSS rašymo būdai:
     CSS file -> .klasesVardas{color:red}
     JSX file -> import randomName from CSS_fileName.module.css
     JSX file -> <div className={randomName.klasesVardas}></div>
-  Styled Components
+  Styled Components:
+    npm install styled-components
+    import styled from 'styled-components';
+    const RandomName = styled.tagName`color:red; text-align:center; border:1px solid black`;
+    <RandomName>tekstas?</RandomName>

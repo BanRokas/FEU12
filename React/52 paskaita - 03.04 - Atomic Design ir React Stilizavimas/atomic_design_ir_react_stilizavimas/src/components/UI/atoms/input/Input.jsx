@@ -1,7 +1,16 @@
+import styled from 'styled-components';
+
+const StyledInput = styled.input`
+  background-color: orange;
+  color: black;
+  font-size: 5px;
+  letter-spacing: 10px;
+`;
+
 const Input = ({type, name, id, placeholder, valueState, onChangeF}) => {
   // console.log(valueState);
   return (
-    <input
+    <StyledInput
       type={type}
       name={name}
       id={id}
