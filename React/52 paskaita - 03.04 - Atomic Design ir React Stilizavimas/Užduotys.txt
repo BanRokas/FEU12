@@ -1,0 +1,22 @@
+Atomic Design:
+  https://andela.com/insights/structuring-your-react-application-atomic-design-principles/
+  https://medium.com/@janelle.wg/atomic-design-pattern-how-to-structure-your-react-application-2bb4d9ca5f97
+
+  https://atomicdesign.bradfrost.com/images/content/instagram-atomic.png
+  https://bradfrost.com/wp-content/uploads/2015/12/atomic-gif-3.gif
+  https://blog.logicwind.com/content/images/2020/06/atomic-design-2-1-1024x359.png
+
+CSS rašymo būdai:
+  https://css-tricks.com/different-ways-to-write-css-in-react/
+  Import External CSS:
+    CSS
+    SCSS/SASS -> compiled -> CSS
+  Inline CSS:
+    <div style={{ color: red }}></div>
+    ARBA
+    const stilius={ color: red }; <div style={stilius}></div>
+  CSS Modules:
+    CSS file -> .klasesVardas{color:red}
+    JSX file -> import randomName from CSS_fileName.module.css
+    JSX file -> <div className={randomName.klasesVardas}></div>
+  Styled Components

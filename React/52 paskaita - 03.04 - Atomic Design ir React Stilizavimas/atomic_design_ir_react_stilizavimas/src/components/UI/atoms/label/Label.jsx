@@ -1,6 +1,15 @@
+import koksNori from "./label.module.css";
+
 const Label = ({text, inputName}) => {
+  const stilius = {
+    fontSize: "36px"
+  };
   return (
-    <label htmlFor={inputName}>{text}</label>
+    <label
+      className={koksNori.colorRed}
+      htmlFor={inputName}
+      style={stilius}
+    >{text}</label>
   );
 }
 
