@@ -1,0 +1,19 @@
+1) Pasidomėti apie React komponentų bibliotekas (ne tik MUI).
+2) Pabandyti panaudoti komponentus iš vienos ar kitos React komponentų bibliotekos. (siūlau MUI, nu arba dar AntD)
+3) Išbandžius panaudoti atskirus komponentus pabandyti sukurti:
+  3.1) Header'į (su logo, navigation, userInfo/LogIn)
+  3.2) Footer'į (su copyrights, links, icons, partners...)
+  3.3) Main'o dalį:
+    3.3.1) Hero sekciją (bgImage, Image, Title, someText)
+    3.3.2) Kortelę (su paveiksliuku, pavadinimu, aprašymu, kaina/kiekiu/like'ais/komentarais...)
+    3.3.3) Formą (registracijos/prisijungimo/naujoElementoKūrimo/filtravimo/paieškos...)
+    3.3.4) Nuotraukų karuselę
+    3.3.5) Dar kąnors...
+
+Populiariausios React Komponentų bibliotekos:
+  MUI:        https://mui.com/
+  Ant Design: https://ant.design/
+  
+  Bootstrap:  https://react-bootstrap.github.io/
+  ChakraUI:   https://chakra-ui.com/
+  BluePrint:  https://blueprintjs.com/
