@@ -1,6 +1,6 @@
 import ListItem from "./ListItem";
 
-const Patiekalas = ({ dish, statusChange, deleteDish }) => {
+const Patiekalas = ({ dish, statusChange, deleteDish, setArRedaguojame, setFormInputs }) => {
   return (
     <div
       className={`dishCard ${dish.ragautas ? 'green' : 'red'}`}
@@ -36,6 +36,20 @@ const Patiekalas = ({ dish, statusChange, deleteDish }) => {
       <button
         onClick={() => deleteDish(dish.id)}
       >Trinti</button>
+      <button
+        onClick={() => {
+          setArRedaguojame(dish.id);
+          setFormInputs({
+            pavadinimas: dish.pavadinimas,
+            nuotrauka: dish.nuotrauka,
+            kilmesSalis: dish.kilmesSalis,
+            ragautas: dish.ragautas,
+            ingredientai: dish.ingredientai.join(','),
+            kainaNuo: dish.kaina.nuo,
+            kainaIki: dish.kaina.iki
+          });
+        }}
+      >Redaguoti</button>
     </div>
   );
 }

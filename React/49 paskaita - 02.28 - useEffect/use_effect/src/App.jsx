@@ -2,10 +2,12 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import Patiekalai from './components/Patiekalai';
 import NaujoPatiekaloForma from './components/NaujoPatiekaloForma';
+import RedaguojamoPatiekaloForma from './components/RedaguojamoPatiekaloForma';
 import Header from './components/Header';
 
 const App = () => {
 
+  const [arRedaguojame, setArRedaguojame] = useState(false);
   const [formInputs, setFormInputs] = useState({
     // pavadinimas:{
     //   value: '',
@@ -104,8 +106,26 @@ const App = () => {
       }
     }));
   }
+  const redaguotiPatiekala = redaguotoPatiekaloInfo => {
+    // console.log(redaguotoPatiekaloInfo);
+    setDishes(dishes.map( dish => {
+      if(dish.id === redaguotoPatiekaloInfo.id){
+        return redaguotoPatiekaloInfo;
+      } else {
+        return dish;
+      }
+    }));
+    fetch(`http://localhost:8080/dishes/${redaguotoPatiekaloInfo.id}`,{
+      method: "PUT",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      body: JSON.stringify(redaguotoPatiekaloInfo)
+    });
+  }
   const trintiPatiekala = id => {
     setDishes(dishes.filter(dish => dish.id !== id));
+    fetch(`http://localhost:8080/dishes/${id}`, {method: "DELETE"});
   }
   const papildytiPatiekluSarasa = naujasPatiekalas => {
     setDishes([ ...dishes, naujasPatiekalas ]);
@@ -125,15 +145,26 @@ const App = () => {
         ragautuKiekis={dishes.filter(dish => dish.ragautas).length}
         neragautuKiekis={dishes.filter(dish => !dish.ragautas).length}
       />
-      <NaujoPatiekaloForma
-        formInputs={formInputs}
-        setFormInputs={setFormInputs}
-        addNewDish={papildytiPatiekluSarasa}
-      />
+      { arRedaguojame ?
+        <RedaguojamoPatiekaloForma 
+          formInputs={formInputs}
+          setFormInputs={setFormInputs}
+          setArRedaguojame={setArRedaguojame}
+          arRedaguojame={arRedaguojame}
+          redaguotiPatiekala={redaguotiPatiekala}
+        /> : 
+        <NaujoPatiekaloForma
+          formInputs={formInputs}
+          setFormInputs={setFormInputs}
+          addNewDish={papildytiPatiekluSarasa}
+        />
+      }
       <Patiekalai
         dishes={dishes}
         statusChange={keistiPatiekaloStatusa}
         deleteDish={trintiPatiekala}
+        setArRedaguojame={setArRedaguojame}
+        setFormInputs={setFormInputs}
       />
     </>
   );

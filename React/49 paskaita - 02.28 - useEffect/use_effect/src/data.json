@@ -27,7 +27,8 @@
         "picos padas",
         "padažas",
         "sūris",
-        "mėsa"
+        "mėsa",
+        " jalapenai"
       ],
       "kaina": {
         "nuo": 8,
@@ -60,11 +61,12 @@
       "ingredientai": [
         "žalia žuvis",
         "daržovės",
-        "žalia citrina"
+        "žalia citrina",
+        " paprika"
       ],
       "kaina": {
-        "nuo": 10,
-        "iki": 20
+        "nuo": 12,
+        "iki": 19
       }
     },
     {
@@ -86,7 +88,7 @@
     {
       "id": "a4d80e93-bb15-463d-930c-14a0f4baf9ee",
       "pavadinimas": "Arbata",
-      "nuotrauka": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+      "nuotrauka": "https://twinings.co.uk/cdn/shop/articles/How_To_Taste_Tea.jpg",
       "kilmesSalis": "Kinija",
       "ragautas": true,
       "ingredientai": [
