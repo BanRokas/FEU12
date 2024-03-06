@@ -1,0 +1,25 @@
+{
+  "staloZaidimai":[
+    {
+      "id": "0",
+      "pavadinimas":"Saboteur",
+      "nuotrauka":"https://www.brain-games.lt/cdn/shop/products/brain-games-lt-stalo-zaidimai-saboteur-22584446255283.jpg",
+      "zaidejai": {
+        "kiekisNuo":3,
+        "kiekisIki":10,
+        "amziusNuo":8
+      },
+      "aprasymas":"Players take on the role of dwarves. As miners, they are in a mine, hunting for gold. Suddenly, a pick axe swings down and shatters the mine lamp. The saboteur has struck. But which of the players are saboteurs? Will you find the gold, or will the fiendish actions of the saboteurs lead them to it first? After three rounds, the player with the most gold is the winner."
+    },{
+      "id": "1",
+      "pavadinimas":"Ticket to Ride",
+      "nuotrauka":"https://m.media-amazon.com/images/I/91YNJM4oyhL._AC_UF894,1000_QL80_.jpg",
+      "zaidejai": {
+        "kiekisNuo":2,
+        "kiekisIki":5,
+        "amziusNuo":8
+      },
+      "aprasymas":"With elegantly simple gameplay, Ticket to Ride can be learned in under 15 minutes. Players collect cards of various types of train cars they then use to claim railway routes in North America. The longer the routes, the more points they earn. Additional points come to those who fulfill Destination Tickets – goal cards that connect distant cities; and to the player who builds the longest continuous route."
+    }
+  ]
+}
