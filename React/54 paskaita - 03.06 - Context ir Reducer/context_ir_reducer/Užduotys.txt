@@ -1,0 +1,9 @@
+Perskaityti ir pasidaryti "challenges":
+  https://react.dev/reference/react/useContext
+  https://react.dev/learn/passing-data-deeply-with-context
+
+Peržiūrėti:
+  https://youtu.be/t9WmZFnE6Hg
+
+Aplikacijoje iškelti formInputs į atskirą kontekstą. 
+(galima padaryti kontekstą ir pageLoader'iui)
