@@ -16,7 +16,7 @@ const StyledCardDiv = styled.div`
   }
 `;
 
-const TableGameCard = ({game}) => {
+const TableGameCard = ({game, deleteTableGame}) => {
   return (
     <StyledCardDiv>
       <h3>{game.pavadinimas}</h3>
@@ -31,6 +31,9 @@ const TableGameCard = ({game}) => {
         <p>Age: {game.zaidejai.amziusNuo}+</p>
       </div>
       <p>{game.aprasymas}</p>
+      <button
+        onClick={() => deleteTableGame(game.id)}
+      >Delete</button>
     </StyledCardDiv>
   );
 }

@@ -8,7 +8,7 @@ const StyledDivContainer = styled.div`
   justify-content: space-around;
 `;
 
-const TableGameList = ({tableGames}) => {
+const TableGameList = ({tableGames, deleteTableGame}) => {
   return (
     <StyledDivContainer>
       {
@@ -17,6 +17,7 @@ const TableGameList = ({tableGames}) => {
           <TableGameCard
             key={game.id}
             game={game}
+            deleteTableGame={deleteTableGame}
           />
         ) :
         <img
