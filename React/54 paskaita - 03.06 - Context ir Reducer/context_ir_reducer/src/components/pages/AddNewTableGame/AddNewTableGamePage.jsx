@@ -1,6 +1,10 @@
 import { v4 as uuid } from 'uuid';
+import { useContext } from 'react';
+import TableGamesContext from '../../../contexts/TableGamesContext';
 
-const AddNewTableGamePage = ({formInputs, setFormInputs, setPageLoader, addNewTableGame}) => {
+const AddNewTableGamePage = ({formInputs, setFormInputs, setPageLoader}) => {
+
+  const { addNewTableGame } = useContext(TableGamesContext);
 
   const onChangeF = e => {
     setFormInputs({

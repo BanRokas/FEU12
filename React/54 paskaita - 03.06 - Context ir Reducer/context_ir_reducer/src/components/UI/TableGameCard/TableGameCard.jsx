@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { useContext } from 'react';
+import TableGamesContext from '../../../contexts/TableGamesContext';
 
 const StyledCardDiv = styled.div`
   box-sizing: border-box;
@@ -16,7 +18,10 @@ const StyledCardDiv = styled.div`
   }
 `;
 
-const TableGameCard = ({game, deleteTableGame}) => {
+const TableGameCard = ({game}) => {
+
+  const { deleteTableGame } = useContext(TableGamesContext);
+
   return (
     <StyledCardDiv>
       <h3>{game.pavadinimas}</h3>

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import TableGameCard from "../TableGameCard/TableGameCard";
+import { useContext } from "react";
+import TableGamesContext from "../../../contexts/TableGamesContext";
 
 const StyledDivContainer = styled.div`
   display: flex;
@@ -8,7 +10,10 @@ const StyledDivContainer = styled.div`
   justify-content: space-around;
 `;
 
-const TableGameList = ({tableGames, deleteTableGame}) => {
+const TableGameList = () => {
+
+  const { tableGames } = useContext(TableGamesContext);
+
   return (
     <StyledDivContainer>
       {
@@ -17,7 +22,6 @@ const TableGameList = ({tableGames, deleteTableGame}) => {
           <TableGameCard
             key={game.id}
             game={game}
-            deleteTableGame={deleteTableGame}
           />
         ) :
         <img

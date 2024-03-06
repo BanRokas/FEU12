@@ -1,13 +1,10 @@
 import TableGameList from "../../UI/TableGameList/TableGameList";
 
-const TableGamesPage = ({tableGames, deleteTableGame}) => {
+const TableGamesPage = () => {
   return (
     <section>
       <h1>Our Table Games</h1>
-      <TableGameList
-        tableGames={tableGames}
-        deleteTableGame={deleteTableGame}
-      />
+      <TableGameList />
     </section>
   );
 }
