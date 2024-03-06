@@ -12,12 +12,17 @@ const TableGameList = ({tableGames}) => {
   return (
     <StyledDivContainer>
       {
+        tableGames.length ?
         tableGames.map(game => 
           <TableGameCard
             key={game.id}
             game={game}
           />
-        )
+        ) :
+        <img
+          src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca.gif"
+          alt="loading gif"
+        />
       }
     </StyledDivContainer>
   );
