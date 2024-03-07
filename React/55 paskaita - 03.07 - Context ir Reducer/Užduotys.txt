@@ -1,0 +1,11 @@
+Perskaityti ir pasidaryti "challenges":
+  https://react.dev/learn/extracting-state-logic-into-a-reducer
+  https://react.dev/learn/scaling-up-with-reducer-and-context
+  https://react.dev/reference/react/useReducer
+
+Peržiūrėti:
+  https://youtu.be/RZPAQV7JvNU arba/ir https://youtu.be/kK_Wqx3RnHk
+
+Tęsti 54 paskaitos darbą:
+  Peržvelgti ką šiandien nuveikėm (kitų kontekstų sukūrimas, edit funkcionalumai ir useState perrašymas į useReducer)
+  Pakeisti FormInputsContext'e esantį useState'ą į useReducer'į.
