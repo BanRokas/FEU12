@@ -1,4 +1,10 @@
-const Header = ({setPageLoader}) => {
+import { useContext } from "react";
+import PageLoaderContext from "../../../contexts/PageLoaderContext";
+
+const Header = () => {
+
+  const { setPageLoader } = useContext(PageLoaderContext);
+
   return (
     <header>
       <button

@@ -2,11 +2,13 @@ import { v4 as uuid } from 'uuid';
 import { useContext } from 'react';
 import TableGamesContext from '../../../contexts/TableGamesContext';
 import FormInputsContext from '../../../contexts/FormInputsContext';
+import PageLoaderContext from '../../../contexts/PageLoaderContext';
 
-const AddNewTableGamePage = ({setPageLoader}) => {
+const AddNewTableGamePage = () => {
 
   const { addNewTableGame } = useContext(TableGamesContext);
   const { onChangeF, formInputs, resetFormInputs } = useContext(FormInputsContext);
+  const { setPageLoader } = useContext(PageLoaderContext);
 
   const formSubmit = e => {
     e.preventDefault();
