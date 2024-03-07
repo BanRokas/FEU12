@@ -2,10 +2,11 @@ import { useContext } from 'react';
 import TableGamesContext from '../../../contexts/TableGamesContext';
 import FormInputsContext from '../../../contexts/FormInputsContext';
 import PageLoaderContext from '../../../contexts/PageLoaderContext';
+import { actionTypes } from '../../../contexts/TableGamesContext';
 
 const EditTableGamePage = () => {
 
-  const { editTableGame } = useContext(TableGamesContext);
+  const { setTableGames } = useContext(TableGamesContext);
   const { onChangeF, formInputs, resetFormInputs } = useContext(FormInputsContext);
   const { setPageLoader } = useContext(PageLoaderContext);
 
@@ -23,7 +24,10 @@ const EditTableGamePage = () => {
       pazymetas: formInputs.pazymetas,
       aprasymas: formInputs.aprasymas
     };
-    editTableGame(editedTableGame);
+    setTableGames({
+      type: actionTypes.editFull,
+      changedTableGame: editedTableGame
+    });
     setPageLoader('cards');
     resetFormInputs();
   }

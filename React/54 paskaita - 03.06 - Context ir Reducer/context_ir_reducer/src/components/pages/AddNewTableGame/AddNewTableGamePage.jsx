@@ -3,10 +3,11 @@ import { useContext } from 'react';
 import TableGamesContext from '../../../contexts/TableGamesContext';
 import FormInputsContext from '../../../contexts/FormInputsContext';
 import PageLoaderContext from '../../../contexts/PageLoaderContext';
+import { actionTypes } from '../../../contexts/TableGamesContext';
 
 const AddNewTableGamePage = () => {
 
-  const { addNewTableGame } = useContext(TableGamesContext);
+  const { setTableGames } = useContext(TableGamesContext);
   const { onChangeF, formInputs, resetFormInputs } = useContext(FormInputsContext);
   const { setPageLoader } = useContext(PageLoaderContext);
 
@@ -24,7 +25,10 @@ const AddNewTableGamePage = () => {
       pazymetas: formInputs.pazymetas,
       aprasymas: formInputs.aprasymas
     }
-    addNewTableGame(newTableGame);
+    setTableGames({
+      type: actionTypes.addNew,
+      data: newTableGame
+    });
     setPageLoader('cards');
     resetFormInputs();
   }

@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import TableGamesContext from '../../../contexts/TableGamesContext';
 import FormInputsContext from '../../../contexts/FormInputsContext';
 import PageLoaderContext from '../../../contexts/PageLoaderContext';
+import { actionTypes } from '../../../contexts/TableGamesContext';
 
 const StyledCardDiv = styled.div`
   background-color: ${props => props.$arPazymetas ? '#8fe68d' : '#E79292'};
@@ -23,7 +24,7 @@ const StyledCardDiv = styled.div`
 
 const TableGameCard = ({ game }) => {
 
-  const { deleteTableGame, editTableGameStatus } = useContext(TableGamesContext);
+  const { setTableGames } = useContext(TableGamesContext);
   const { setFormInputsToCardInfo } = useContext(FormInputsContext);
   const { setPageLoader } = useContext(PageLoaderContext);
 
@@ -42,7 +43,10 @@ const TableGameCard = ({ game }) => {
       </div>
       <p>{game.aprasymas}</p>
       <button
-        onClick={() => deleteTableGame(game.id)}
+        onClick={() => setTableGames({
+          type: actionTypes.delete,
+          id: game.id
+        })}
       >Delete</button>
       <button
         onClick={()=>{
@@ -51,7 +55,10 @@ const TableGameCard = ({ game }) => {
         }}
       >Edit</button>
       <button
-        onClick={() => editTableGameStatus(game.id)}
+        onClick={() => setTableGames({
+          type: actionTypes.editStatus,
+          id: game.id
+        })}
       >{game.pazymetas ? "nežaistas" : "žaistas"}</button>
     </StyledCardDiv>
   );
