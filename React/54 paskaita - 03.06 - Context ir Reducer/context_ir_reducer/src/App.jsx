@@ -6,14 +6,6 @@ import Header from './components/UI/Header/Header';
 
 const App = () => {
 
-  const [formInputs, setFormInputs] = useState({
-    pavadinimas:"",
-    nuotrauka:"",
-    kiekisNuo:"",
-    kiekisIki:"",
-    amziusNuo:"",
-    aprasymas:""
-  });
   const [pageLoader, setPageLoader] = useState("cards");
 
   return (
@@ -25,8 +17,6 @@ const App = () => {
         pageLoader === "addForm" ?
         <AddNewTableGamePage
           setPageLoader={setPageLoader}
-          formInputs={formInputs}
-          setFormInputs={setFormInputs}
         /> : pageLoader === "cards" ? 
         <TableGamesPage /> : null
       }

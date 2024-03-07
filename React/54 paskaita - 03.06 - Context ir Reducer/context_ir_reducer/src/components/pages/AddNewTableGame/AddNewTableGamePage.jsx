@@ -1,17 +1,12 @@
 import { v4 as uuid } from 'uuid';
 import { useContext } from 'react';
 import TableGamesContext from '../../../contexts/TableGamesContext';
+import FormInputsContext from '../../../contexts/FormInputsContext';
 
-const AddNewTableGamePage = ({formInputs, setFormInputs, setPageLoader}) => {
+const AddNewTableGamePage = ({setPageLoader}) => {
 
   const { addNewTableGame } = useContext(TableGamesContext);
-
-  const onChangeF = e => {
-    setFormInputs({
-      ...formInputs,
-      [e.target.name]:e.target.value
-    });
-  }
+  const { onChangeF, formInputs, resetFormInputs } = useContext(FormInputsContext);
 
   const formSubmit = e => {
     e.preventDefault();
@@ -28,14 +23,7 @@ const AddNewTableGamePage = ({formInputs, setFormInputs, setPageLoader}) => {
     }
     addNewTableGame(newTableGame);
     setPageLoader('cards');
-    setFormInputs({
-      pavadinimas:"",
-      nuotrauka:"",
-      kiekisNuo:"",
-      kiekisIki:"",
-      amziusNuo:"",
-      aprasymas:""
-    });
+    resetFormInputs();
   }
 
   return (
