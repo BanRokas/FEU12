@@ -30,13 +30,26 @@ const FormInputsProvider = ({ children }) => {
       aprasymas:""
     });
   }
+  const setFormInputsToCardInfo = cardInfo => {
+    // console.log(cardInfo);
+    setFormInputs({
+      id: cardInfo.id,
+      pavadinimas: cardInfo.pavadinimas,
+      nuotrauka: cardInfo.nuotrauka,
+      kiekisNuo: cardInfo.zaidejai.kiekisNuo,
+      kiekisIki: cardInfo.zaidejai.kiekisIki,
+      amziusNuo: cardInfo.zaidejai.amziusNuo,
+      aprasymas: cardInfo.aprasymas
+    });
+  }
 
   return (
     <FormInputsContext.Provider
       value={{
         formInputs,
         onChangeF,
-        resetFormInputs
+        resetFormInputs,
+        setFormInputsToCardInfo
       }}
     >
       { children }

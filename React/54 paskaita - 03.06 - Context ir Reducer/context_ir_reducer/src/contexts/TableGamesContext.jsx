@@ -20,6 +20,9 @@ const TableGamesProvider = ({ children }) => {
     setTableGames(tableGames.filter(game => id !== game.id));
     fetch(`http://localhost:8080/staloZaidimai/${id}`, { method: "DELETE" });
   }
+  const editTableGame = changedTableGame => {
+
+  }
 
   useEffect(() => {
     fetch(`http://localhost:8080/staloZaidimai`)
@@ -32,7 +35,8 @@ const TableGamesProvider = ({ children }) => {
       value={{
         tableGames,
         addNewTableGame,
-        deleteTableGame
+        deleteTableGame,
+        editTableGame
       }}
     >
       {children}

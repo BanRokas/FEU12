@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { useContext } from 'react';
 import TableGamesContext from '../../../contexts/TableGamesContext';
+import FormInputsContext from '../../../contexts/FormInputsContext';
+import PageLoaderContext from '../../../contexts/PageLoaderContext';
 
 const StyledCardDiv = styled.div`
   box-sizing: border-box;
@@ -18,9 +20,11 @@ const StyledCardDiv = styled.div`
   }
 `;
 
-const TableGameCard = ({game}) => {
+const TableGameCard = ({ game }) => {
 
   const { deleteTableGame } = useContext(TableGamesContext);
+  const { setFormInputsToCardInfo } = useContext(FormInputsContext);
+  const { setPageLoader } = useContext(PageLoaderContext);
 
   return (
     <StyledCardDiv>
@@ -39,6 +43,12 @@ const TableGameCard = ({game}) => {
       <button
         onClick={() => deleteTableGame(game.id)}
       >Delete</button>
+      <button
+        onClick={()=>{
+          setFormInputsToCardInfo(game);
+          setPageLoader("editForm");
+        }}
+      >Edit</button>
     </StyledCardDiv>
   );
 }
