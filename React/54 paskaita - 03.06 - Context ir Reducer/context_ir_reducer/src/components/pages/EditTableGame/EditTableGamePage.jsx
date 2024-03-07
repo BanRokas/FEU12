@@ -87,7 +87,10 @@ const EditTableGamePage = () => {
         />
       </form>
       <button
-        onClick={()=>{}}
+        onClick={()=>{
+          resetFormInputs();
+          setPageLoader("cards");
+        }}
       >Cancel Edit</button>
     </section>
   );

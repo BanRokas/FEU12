@@ -12,7 +12,9 @@ const App = () => {
 
   return (
     <>
-      <Header />
+      {
+        pageLoader !== "editForm" && <Header />
+      }
       {
         pageLoader === "addForm" ? <AddNewTableGamePage /> 
         : pageLoader === "cards" ? <TableGamesPage />

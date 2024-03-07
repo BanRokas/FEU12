@@ -21,7 +21,20 @@ const TableGamesProvider = ({ children }) => {
     fetch(`http://localhost:8080/staloZaidimai/${id}`, { method: "DELETE" });
   }
   const editTableGame = changedTableGame => {
-
+    fetch(`http://localhost:8080/staloZaidimai/${changedTableGame.id}`,{
+      method: "PUT",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      body: JSON.stringify(changedTableGame)
+    });
+    setTableGames(tableGames.map(tableGame => {
+      if(tableGame.id !== changedTableGame.id){
+        return tableGame;
+      } else {
+        return changedTableGame;
+      }
+    }));
   }
 
   useEffect(() => {
