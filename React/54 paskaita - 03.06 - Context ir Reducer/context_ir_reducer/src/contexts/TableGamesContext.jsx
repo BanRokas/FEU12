@@ -36,6 +36,25 @@ const TableGamesProvider = ({ children }) => {
       }
     }));
   }
+  const editTableGameStatus = id => {
+    setTableGames(tableGames.map(tableGame => {
+      if(tableGame.id !== id){
+        return tableGame;
+      } else {
+        fetch(`http://localhost:8080/staloZaidimai/${id}`,{
+          method: "PATCH",
+          headers:{
+            "Content-Type":"application/json"
+          },
+          body: JSON.stringify({ pazymetas: !tableGame.pazymetas })
+        })
+        return {
+          ...tableGame,
+          pazymetas: !tableGame.pazymetas
+        }
+      }
+    }));
+  }
 
   useEffect(() => {
     fetch(`http://localhost:8080/staloZaidimai`)
@@ -49,7 +68,8 @@ const TableGamesProvider = ({ children }) => {
         tableGames,
         addNewTableGame,
         deleteTableGame,
-        editTableGame
+        editTableGame,
+        editTableGameStatus
       }}
     >
       {children}

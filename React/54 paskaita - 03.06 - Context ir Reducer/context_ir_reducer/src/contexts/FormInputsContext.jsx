@@ -11,7 +11,8 @@ const FormInputsProvider = ({ children }) => {
     kiekisNuo:"",
     kiekisIki:"",
     amziusNuo:"",
-    aprasymas:""
+    aprasymas:"",
+    pazymetas:false
   });
   const onChangeF = e => {
     setFormInputs({
@@ -27,7 +28,8 @@ const FormInputsProvider = ({ children }) => {
       kiekisNuo:"",
       kiekisIki:"",
       amziusNuo:"",
-      aprasymas:""
+      aprasymas:"",
+      pazymetas: false
     });
   }
   const setFormInputsToCardInfo = cardInfo => {
@@ -39,7 +41,8 @@ const FormInputsProvider = ({ children }) => {
       kiekisNuo: cardInfo.zaidejai.kiekisNuo,
       kiekisIki: cardInfo.zaidejai.kiekisIki,
       amziusNuo: cardInfo.zaidejai.amziusNuo,
-      aprasymas: cardInfo.aprasymas
+      aprasymas: cardInfo.aprasymas,
+      pazymetas: cardInfo.pazymetas
     });
   }
 

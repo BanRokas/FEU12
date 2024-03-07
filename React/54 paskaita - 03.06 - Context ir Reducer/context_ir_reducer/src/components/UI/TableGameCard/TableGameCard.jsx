@@ -5,6 +5,7 @@ import FormInputsContext from '../../../contexts/FormInputsContext';
 import PageLoaderContext from '../../../contexts/PageLoaderContext';
 
 const StyledCardDiv = styled.div`
+  background-color: ${props => props.$arPazymetas ? '#8fe68d' : '#E79292'};
   box-sizing: border-box;
   border: 1px solid black;
   padding: 5px 3px;
@@ -22,12 +23,12 @@ const StyledCardDiv = styled.div`
 
 const TableGameCard = ({ game }) => {
 
-  const { deleteTableGame } = useContext(TableGamesContext);
+  const { deleteTableGame, editTableGameStatus } = useContext(TableGamesContext);
   const { setFormInputsToCardInfo } = useContext(FormInputsContext);
   const { setPageLoader } = useContext(PageLoaderContext);
 
   return (
-    <StyledCardDiv>
+    <StyledCardDiv $arPazymetas={game.pazymetas}>
       <h3>{game.pavadinimas}</h3>
       <img 
         src={game.nuotrauka}
@@ -49,6 +50,9 @@ const TableGameCard = ({ game }) => {
           setPageLoader("editForm");
         }}
       >Edit</button>
+      <button
+        onClick={() => editTableGameStatus(game.id)}
+      >{game.pazymetas ? "nežaistas" : "žaistas"}</button>
     </StyledCardDiv>
   );
 }
