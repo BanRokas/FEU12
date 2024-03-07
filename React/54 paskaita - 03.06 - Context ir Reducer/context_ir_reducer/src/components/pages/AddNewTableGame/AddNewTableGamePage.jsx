@@ -21,6 +21,7 @@ const AddNewTableGamePage = () => {
         kiekisIki: Number(formInputs.kiekisIki),
         amziusNuo: Number(formInputs.amziusNuo)
       },
+      pazymetas: formInputs.pazymetas,
       aprasymas: formInputs.aprasymas
     }
     addNewTableGame(newTableGame);
@@ -38,6 +39,16 @@ const AddNewTableGamePage = () => {
           id="pavadinimas"
           placeholder="Enter table game name..."
           value={formInputs.pavadinimas}
+          onChange={onChangeF}
+        /><br />
+        <label
+          htmlFor="pazymetas"
+        >I have played this game - </label>
+        <input
+          type="checkbox"
+          name="pazymetas"
+          id="pazymetas"
+          checked={formInputs.pazymetas}
           onChange={onChangeF}
         /><br />
         <input
