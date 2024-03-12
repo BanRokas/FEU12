@@ -36,5 +36,47 @@
       "password": "devil123",
       "email": "shroom@shooms.com"
     }
+  ],
+  "merchandise": [
+    {
+      "id": "1",
+      "name": "Photo Camera",
+      "price": 50.3
+    },
+    {
+      "id": "2",
+      "name": "Fridge",
+      "price": 300
+    },
+    {
+      "id": "3",
+      "name": "Freezer",
+      "price": 180
+    },
+    {
+      "id": "4",
+      "name": "Microwave oven",
+      "price": 100
+    },
+    {
+      "id": "5",
+      "name": "Lamp",
+      "price": 20
+    },
+    {
+      "id": "6",
+      "name": "Televisor",
+      "price": 120
+    },
+    {
+      "id": "7",
+      "name": "Vacum cleaner",
+      "price": 99.99
+    },
+    {
+      "id": "73d49bfe-7252-4fb4-ba6b-9f001dd56853",
+      "name": "Lemon Gym",
+      "price": 12484
+    }
   ]
 }
