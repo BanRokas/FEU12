@@ -1,0 +1,27 @@
+Perskaityti:
+  https://reactrouter.com/en/main/start/concepts
+  https://reactrouter.com/en/main/router-components/browser-router
+  https://reactrouter.com/en/main/route/route
+
+Peržiūrėti:
+  Net Ninja: (tik pirmus du video)
+    1) https://youtu.be/OMQ2QARHPo0?list=PL4cUxeGkcC9iVKmtNuCeIswnQ97in2GGf
+    2) https://youtu.be/XN7E5tKM-no?list=PL4cUxeGkcC9iVKmtNuCeIswnQ97in2GGf
+
+  WebDev:
+    https://youtu.be/Ul3y1LXxzdU (tik pirmas ~10 minučių (galima ir viską, bet kitkas ryt bus))
+
+Galima daryt tutorial iš reactrouter.com: https://reactrouter.com/en/main/start/tutorial (nesiūlau)
+
+Puslapį patobulinti:
+  Sustilizuoti.
+  Pridėti korteles (pasirinkta tema) naudojantis kontekstu ir kurti jų puslapius:
+    Cards - visų kortelių puslapis.
+    AddNewCard - naujos kortelės pridėjimo puslapis.
+      Pridėjus naują kortelę yra nunaviguojama į Cards puslapį.
+
+EXTRA:
+  Sukurti Error puslapį, į kurį patenkama įvedus neegzistuojantį URL (URL kuris nėra aprašytas mūsų Route'uose)
+  Sukurti vartotojo puslapį:
+    UserProfile - vartotojo informacija atvaizduojama atskirame puslapyje. Čia patenkama kai prisijungęs vartotojas paspaudžia ant savo userName esančio Header'yje.
+      EXTRA: Galimybė redaguotis vartotojo profilį.
