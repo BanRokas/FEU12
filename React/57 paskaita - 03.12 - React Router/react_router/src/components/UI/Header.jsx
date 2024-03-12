@@ -1,17 +1,19 @@
 import { useContext } from "react";
 import UsersContext from "../../contexts/UsersContext";
+import { Link, useNavigate } from 'react-router-dom';
 
 const Header = () => {
 
   const { loggedInUser, logout } = useContext(UsersContext);
+  const navigate = useNavigate();
 
   return (
     <header>
       <div>logo</div>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Cards</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to='/cards'>Cards</Link></li>
         </ul>
       </nav>
       {
@@ -19,14 +21,17 @@ const Header = () => {
         <>
           <span>{loggedInUser.username}</span>
           <button
-            onClick={logout}
+            onClick={() => {
+              logout();
+              navigate('/');
+            }}
           >logOut</button>
         </> :
         <>
           <nav>
             <ul>
-              <li>Login</li>
-              <li>Register</li>
+              <li><Link to='/login'>Login</Link></li>
+              <li><Link to='/register'>Register</Link></li>
             </ul>
           </nav>
         </>

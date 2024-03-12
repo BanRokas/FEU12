@@ -1,9 +1,12 @@
 import { v4 as uuid } from 'uuid';
 import { useContext, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import UsersFormInputsContext from "../../contexts/UsersFormInputsContext";
 import UsersContext from "../../contexts/UsersContext";
 
 const Register = () => {
+
+  const navigate = useNavigate();
 
   const [diffPassError, setDiffPassError] = useState(false);
   const { formInputs, onChangeF, resetForm } = useContext(UsersFormInputsContext);
@@ -23,6 +26,7 @@ const Register = () => {
     };
     addNewUser(newUser);
     resetForm();
+    navigate('/');
   }
 
   return (

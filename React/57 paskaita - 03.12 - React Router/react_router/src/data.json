@@ -29,6 +29,12 @@
       "username": "Graves",
       "password": "cigar123A",
       "email": "cigar@gmail.com"
+    },
+    {
+      "id": "7ad07850-053f-4099-a47b-c3ef8a89e39d",
+      "username": "Teemo",
+      "password": "devil123",
+      "email": "shroom@shooms.com"
     }
   ]
 }

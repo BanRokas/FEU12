@@ -1,8 +1,11 @@
 import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import UsersFormInputsContext from "../../contexts/UsersFormInputsContext";
 import UsersContext from "../../contexts/UsersContext";
 
 const Login = () => {
+
+  const navigate = useNavigate();
 
   const [failedToLogin, setFailedToLogin] = useState(false);
   const { formInputs, onChangeF, resetForm } = useContext(UsersFormInputsContext);
@@ -17,6 +20,7 @@ const Login = () => {
     } else if(user.password === formInputs.password){
       login(user);
       resetForm();
+      navigate('/');
     } else {
       setFailedToLogin(true);
       return;
