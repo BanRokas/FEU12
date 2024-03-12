@@ -1,25 +1,34 @@
 {
-  "users":[
+  "users": [
     {
       "id": "0",
-      "username":"kitten",
+      "username": "kitten",
       "password": "kazkas123",
       "email": "kit@kat.com"
-    },{
+    },
+    {
       "id": "1",
-      "username":"doggo",
+      "username": "doggo",
       "password": "kazkas1234",
       "email": "whoof@dog.com"
-    },{
+    },
+    {
       "id": "2",
-      "username":"salamis",
+      "username": "salamis",
       "password": "desraGera123",
       "email": "email@email.com"
-    },{
+    },
+    {
       "id": "3",
-      "username":"patric",
+      "username": "patric",
       "password": "yesThisIS_PATRIC",
       "email": "bikkini@bottoms.com"
+    },
+    {
+      "id": "f9c018f4-8381-4754-95af-910fb280622b",
+      "username": "Graves",
+      "password": "cigar123A",
+      "email": "cigar@gmail.com"
     }
   ]
 }
