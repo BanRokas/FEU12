@@ -1,0 +1,20 @@
+Darbas buvo tęsiamas 57 paskaitoje.
+
+Peržiūrėti:
+  Net Ninja: (visus video galima)
+    https://youtu.be/OMQ2QARHPo0?list=PL4cUxeGkcC9iVKmtNuCeIswnQ97in2GGf
+  WebDev: (galima peržiūrėti visą)
+    https://youtu.be/Ul3y1LXxzdU
+
+Tęsti vakar dienos užduotis.
+
+Sutvarkyti Error puslapį gražiai (jeigu toks yra).
+Papildyti korteles didesniu kiekiu informacijos, kad mažesnis kiekis būtų rodomas bendrame puslapyje, bet visa informacija tos kortelės specifiniame puslapyje.
+  Pridėti kortelių trinimą.
+Sukurti prisijungusio vartotojo puslapį (kur rodys jo pilną info ir gal net duos ją koreguoti).
+
+EXTRA
+  Pridėti vartotojų roles:
+    Neprisijungęs gali TIK peržiūrėti.
+    Prisijungęs regular user gali kurti naujas korteles.
+    Prisijungęs moderator gali kurti naujas ir trinti/redaguoti esamas korteles.
