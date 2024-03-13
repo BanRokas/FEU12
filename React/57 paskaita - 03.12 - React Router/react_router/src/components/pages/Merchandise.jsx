@@ -36,7 +36,7 @@ const Merchandise = () => {
   return (
     <StyledMerchandise>
       <button
-        onClick={()=>{navigate('/addNewMerchandise')}}
+        onClick={()=>{navigate('addNew')}}
       >Add New Merch</button>
       <h1>Our Merch</h1>
       <div>

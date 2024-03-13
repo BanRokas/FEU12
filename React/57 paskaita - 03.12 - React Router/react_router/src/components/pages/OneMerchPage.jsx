@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 
@@ -14,12 +14,14 @@ const StyledOneMerchandise = styled.div`
 
 const OneMerchPage = () => {
 
+  const navigator = useNavigate();
   const { id } = useParams();
   const [merch, setMerch] = useState({});
   useEffect(() => {
     fetch(`http://localhost:8080/merchandise/${id}`)
       .then(res => res.json())
-      .then(data => setMerch(data));
+      .then(data => setMerch(data))
+      .catch(err => navigator('/errornonexistttttt'))
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -30,7 +32,7 @@ const OneMerchPage = () => {
         <p>{merch.price}&euro;</p>
         <p>More info and stuff...</p>
         <button>
-          <Link to={`/editSpecMerchandise/${id}`}>Edit</Link>
+          <Link to={`edit`}>Edit</Link>
         </button>
       </StyledOneMerchandise>
     </section>

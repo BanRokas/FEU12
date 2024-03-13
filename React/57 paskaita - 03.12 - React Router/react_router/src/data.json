@@ -35,6 +35,12 @@
       "username": "Teemo",
       "password": "devil123",
       "email": "shroom@shooms.com"
+    },
+    {
+      "id": "c14365dd-f30f-403d-b1a1-01f7999ad5a0",
+      "username": "squid",
+      "password": "hahahihi",
+      "email": "squid@gmail.com"
     }
   ],
   "merchandise": [
@@ -50,7 +56,7 @@
     },
     {
       "id": "3",
-      "name": "Freezer",
+      "name": "Freezeris",
       "price": 180
     },
     {
