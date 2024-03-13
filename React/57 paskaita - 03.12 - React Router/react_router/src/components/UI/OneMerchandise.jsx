@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const StyledOneMerchandise = styled.div`
@@ -15,6 +16,9 @@ const OneMerchandise = ({ data }) => {
     <StyledOneMerchandise>
       <h1>{data.name}</h1>
       <p>{data.price}&euro;</p>
+      <button>
+        <Link to={`/merchandise/${data.id}`}>More info</Link>
+      </button>
     </StyledOneMerchandise>
   );
 }

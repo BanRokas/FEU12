@@ -30,7 +30,8 @@ const MerchandiseFormInputsProvider = ({ children }) => {
       value={{
         formInputs,
         onChangeF,
-        resetForm
+        resetForm,
+        setFormInputs
       }}
     >
       { children }

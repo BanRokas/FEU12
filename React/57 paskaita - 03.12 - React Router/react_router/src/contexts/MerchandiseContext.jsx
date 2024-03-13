@@ -16,6 +16,23 @@ const MerchandiseProvider = ({ children }) => {
       body: JSON.stringify(newMerch)
     });
   };
+  const editMerch = editedMerch => {
+    // console.log(editedMerch);
+    fetch(`http://localhost:8080/merchandise/${editedMerch.id}`,{
+      method: "PUT",
+      headers:{
+        "Content-Type":"application/json"
+      },
+      body: JSON.stringify(editedMerch)
+    });
+    setMerch(merch.map(el => {
+      if(el.id === editedMerch.id){
+        return editedMerch;
+      } else {
+        return el;
+      }
+    }));
+  };
   useEffect(()=>{
     fetch(`http://localhost:8080/merchandise`)
       .then(res => res.json())
@@ -26,7 +43,8 @@ const MerchandiseProvider = ({ children }) => {
     <MerchandiseContext.Provider
       value={{
         merch,
-        addNewMerch
+        addNewMerch,
+        editMerch
       }}
     >
       { children }
