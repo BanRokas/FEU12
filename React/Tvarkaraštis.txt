@@ -16,7 +16,7 @@
   57 paskaita - 03.12 - ReactRouter
   58 paskaita - 03.13 - ReactRouter
   59 paskaita - 03.14 - Formik ir Yup
-  60 paskaita - 03.15 - Formik ir Yup
+  60 paskaita - 03.15 - Praktika
 5 savaitė:
   61 paskaita - 03.18 - Vartotojų verifikacija ir validacija
   62 paskaita - 03.19 - Vartotojų verifikacija ir validacija
