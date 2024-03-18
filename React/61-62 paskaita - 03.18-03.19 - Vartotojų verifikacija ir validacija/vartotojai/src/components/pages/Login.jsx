@@ -18,6 +18,7 @@ const StyledSection = styled.section`
   > form{
     display: flex;
     flex-direction: column;
+    gap: 5px;
 
     > div {
       display: grid;
