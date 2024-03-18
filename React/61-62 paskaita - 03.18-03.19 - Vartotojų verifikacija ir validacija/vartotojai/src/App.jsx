@@ -5,6 +5,7 @@ import Register from './components/pages/Register';
 import Home from './components/pages/Home';
 import Cards from './components/pages/Cards';
 import Header from './components/UI/Header';
+import Footer from './components/UI/Footer';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           </Route>
         </Routes>
       </main>
+      <Footer />
     </>
   );
 }
