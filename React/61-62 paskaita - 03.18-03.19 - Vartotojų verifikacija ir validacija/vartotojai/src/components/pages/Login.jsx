@@ -5,6 +5,36 @@ import { useNavigate } from "react-router-dom";
 import * as Yup from 'yup';
 import styled from 'styled-components';
 
+const StyledSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+
+  > h1{
+    font-size: 3rem;
+  }
+
+  > form{
+    display: flex;
+    flex-direction: column;
+
+    > div {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+
+      > p{
+        grid-column: span 3;
+        color: red;
+        text-align: center;
+      }
+    }
+    +p{
+      color: red;
+    }
+  }
+`;
+
 const Login = () => {
 
   const navigate = useNavigate();
@@ -37,7 +67,7 @@ const Login = () => {
   });
 
   return (
-    <section>
+    <StyledSection>
       <h1>Login</h1>
       <form onSubmit={formik.handleSubmit}>
         <div>
@@ -75,7 +105,7 @@ const Login = () => {
       {
         wrongCredentials && <p>No user with such username or password combination</p>
       }
-    </section>
+    </StyledSection>
   );
 }
  
