@@ -1,0 +1,38 @@
+{
+  "users":[
+    {
+      "id":"0",
+      "userName":"MrAdmin",
+      "password":"darNeHashintas0",
+      "role":"admin"
+    },{
+      "id":"1",
+      "userName":"Edd",
+      "password":"darNeHashintas123",
+      "role":"user"
+    }
+  ],
+  "cards":[
+    {
+      "id":"0",
+      "userId":"1",
+      "title":"Title0",
+      "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto."
+    },{
+      "id":"1",
+      "userId":"1",
+      "title":"Title1",
+      "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto."
+    },{
+      "id":"2",
+      "userId":"0",
+      "title":"Title2",
+      "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto."
+    },{
+      "id":"3",
+      "userId":"1",
+      "title":"Title3",
+      "description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto."
+    }
+  ]
+}
