@@ -5,6 +5,9 @@ import UsersContext from "../../contexts/UsersContext";
 import CardsContext from "../../contexts/CardsContext";
 import { CardsActionTypes } from "../../contexts/CardsContext";
 import Comment from "../UI/Comment";
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
+import { v4 as uuid } from 'uuid';
 
 const StyledSection = styled.section`
   padding-top: 50px;
@@ -43,6 +46,33 @@ const OneCardPage = () => {
   //     .then(data => setCard(data));
   // },[id]);
 
+  const formik = useFormik({
+    initialValues: {
+      text: ''
+    },
+    validationSchema: Yup.object({
+      text: Yup.string()
+      .min(10, 'Comment must be at least 10 symbols length')
+      .max(500, "Comment can't be longer than 500 symbols")
+      .required('This field must be filled')
+      .trim()
+    }),
+    onSubmit: (values) => {
+      const newComment = {
+        text: values.text,
+        id: uuid(),
+        authorId: loggedInUser.id
+      }
+      // console.log(newComment);
+      setCards({
+        type: CardsActionTypes.addComment,
+        comment: newComment,
+        cardId: card.id
+      });
+      formik.resetForm();
+    }
+  });
+
   return (
     <StyledSection>
       {
@@ -75,9 +105,24 @@ const OneCardPage = () => {
               )
             }
           </div>
-          { loggedInUser &&
-            <form>
-              {/* komentaru pridejimui */}
+          {
+            loggedInUser &&
+            <form onSubmit={formik.handleSubmit}>
+              <div>
+                <label htmlFor="text">Comment:</label>
+                <textarea
+                  name="text" id="text"
+                  placeholder="Write your comment..."
+                  value={formik.values.text}
+                  onBlur={formik.handleBlur}
+                  onChange={formik.handleChange}
+                />
+                {
+                  formik.touched.text && formik.errors.text &&
+                  <p>{formik.errors.text}</p>
+                }
+              </div>
+              <input type="submit" value="Comment" />
             </form>
           }
         </>

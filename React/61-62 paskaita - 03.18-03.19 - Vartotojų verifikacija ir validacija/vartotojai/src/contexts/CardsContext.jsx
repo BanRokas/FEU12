@@ -6,6 +6,7 @@ export const CardsActionTypes = {
   getAll: 'fetches all data on initial load',
   addNew: 'adds new card to the data',
   delete: 'delete one specific card',
+  addComment: 'add new comment to a specific card',
   deleteComment: 'delete one specific comment from a card'
 }
 
@@ -25,6 +26,26 @@ const reducer = (state, action) => {
     case CardsActionTypes.delete:
       fetch(`http://localhost:8080/cards/${action.id}`,{ method: "DELETE" });
       return state.filter(el => el.id !== action.id);
+    case CardsActionTypes.addComment:
+      const cardToAddComment = state.find(el => el.id === action.cardId);
+      const commentedCard = {
+        ...cardToAddComment,
+        comments: cardToAddComment.comments ? [...cardToAddComment.comments, action.comment] : [action.comment]
+      };
+      fetch(`http://localhost:8080/cards/${action.cardId}`,{
+        method: "PUT",
+        headers:{
+          "Content-Type":"application/json"
+        },
+        body: JSON.stringify(commentedCard)
+      });
+      return state.map(el => {
+        if(el.id === action.cardId){
+          return commentedCard;
+        } else {
+          return el;
+        }
+      });
     case CardsActionTypes.deleteComment:
       const cardToChange = state.find(el => el.id === action.cardId);
       const changedCard = {

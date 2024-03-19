@@ -12,7 +12,7 @@ const Comment = ({ comment, cardId }) => {
   return (
     <>
       {
-      users.length && 
+        users.length && 
         <div>
           <p>Comment by: {author.userName}</p>
           <p>{comment.text}</p>
