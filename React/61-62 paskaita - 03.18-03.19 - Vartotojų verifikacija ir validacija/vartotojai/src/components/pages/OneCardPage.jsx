@@ -4,6 +4,7 @@ import { useEffect, useState, useContext } from "react";
 import UsersContext from "../../contexts/UsersContext";
 import CardsContext from "../../contexts/CardsContext";
 import { CardsActionTypes } from "../../contexts/CardsContext";
+import Comment from "../UI/Comment";
 
 const StyledSection = styled.section`
   padding-top: 50px;
@@ -59,6 +60,21 @@ const OneCardPage = () => {
           >Delete</button>
         }
       </div>
+      <div>
+        {
+          card.comments?.map(comment => 
+            <Comment
+              key={comment.id}
+              comment={comment}
+            />
+          )
+        }
+      </div>
+      { loggedInUser &&
+        <form>
+          {/* komentaru pridejimui */}
+        </form>
+      }
     </StyledSection>
   );
 }

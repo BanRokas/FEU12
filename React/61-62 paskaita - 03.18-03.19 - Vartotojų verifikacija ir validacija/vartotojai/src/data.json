@@ -40,7 +40,18 @@
       "id": "2",
       "userId": "0",
       "title": "Title2",
-      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto."
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, iusto.",
+      "comments":[
+        {
+          "id":"0",
+          "authorId": "0",
+          "text": "That's the smartest thing I've seen today."
+        },{
+          "id":"1",
+          "authorId": "1",
+          "text": "Is that Latin?"
+        }
+      ]
     },
     {
       "id": "3",
@@ -64,7 +75,18 @@
       "id": "df3b4a1c-2881-433e-adf7-09ec971b72cc",
       "userId": "0",
       "title": "Nauja korta",
-      "description": "All hail admins"
+      "description": "All hail admins",
+      "comments":[
+        {
+          "id":"0",
+          "authorId": "0",
+          "text": "Yes, very smart idea"
+        },{
+          "id":"1",
+          "authorId": "670a432b-ffbf-40dc-919c-7479b2d4a005",
+          "text": "NOOOO!!! Fight the system!!!"
+        }
+      ]
     }
   ]
 }
