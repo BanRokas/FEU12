@@ -1,0 +1,55 @@
+Užduotis - sukurti IMDB puslapį su Header'iu, Footer'iu ir Content dalimi.
+  Header'yje:
+    Logo(Home page link)
+    Menu(inactive)
+    Search(inactive, extra galima įgalinti search'ą pagal pavadinimą ar dar ką nors)
+    IMDbPro(inactive)
+    Watchlist(neprisijungusiems nukelia į logIn puslapį, prisijungusiems nukelia į vartotojo puslapį, prisijungusiems admin'ams nerodo)
+    AddNewMovie(rodomas TIK prisijungusiems admin'ams (vietoj Watchlist))
+    SignIn/Register (jei neprisijungęs) | UserAvatar+Name (jei prisijungęs)
+    Night/Day theme mode mygtukas vietoj kalbos keitimo dropdown'o.
+  Footer'yje:
+    Atkartoti tokį koks yra IMDB puslapyje, be "Sign in for more access" mygtuko ir "an amazon company" paveiksliuko.
+    Nuorodas ant ikonų sudėti į IMDB soc tinklų puslapius.
+    Nuorodų ant likusių dalių nereikia.
+  Content dalyje:
+    Home page (patekti gali visi):
+      Atvaizduojamos visos filmų kortelės (nereikia karuselės) (viena kortelė atrodo kaip pavaizduota imdbCard.PNG)
+    LogIn page (patekti gali tik neprisijungę):
+      Forma su pilnu validavimu (formik/react-hook-form... + yup/joi...), kuri prijungia vartotoją ir nukreips į Home page, jeigu įvesti duomenys atitinka kažkurį iš registruotų vartotojų.
+    Register page (patekti gali tik neprisijungę):
+      Forma su pilnu validavimu (formik/react-hook-form... + yup/joi...), kuri sukurs naują vartotoją ir jį iškart prijungs ir nukreips į Home page, jeigu įvesti duomenys atitiks validaciją.
+    SpecificCard page (patekti gali visi):
+      Platesnė informacija apie kortelę (puslapis atrodo taip, kaip pavaizduota imdbCardPage.PNG. Kas be ko yra Header'is ir Footer'is)
+      Galimybė ištrinti kortelę (tik admin)
+      Galimybė redaguoti kortelę (tik admin) (paspaudus ant edit mygtuko - atidaromas naujas puslapis su redagavimo forma, kurioje yra tos kortelės duomenys)
+    AddNewMovie page (tik admin):
+      Forma su pilnu validavimu (formik/react-hook-form... + yup/joi...), kuri sukurs naują filmą ir nukreips į Home page, jeigu įvesti duomenys atitiks validaciją.
+    EditMovie page (tik admin):
+      Forma su pilnu validavimu (formik/react-hook-form... + yup/joi...), kurioje jau iš karto automatiškai suvesti redaguojamo filmo duomenys(nebūtinai visi visi visi). Pateikus formą redaguos filmą ir nukreips į to filmo puslapį, jeigu įvesti duomenys atitiks validaciją.
+    User page (patekti tik prisijungęs vartotojas):
+      Atvaizduojamos prisijungusio vartotojo pamėgtų filmų kortelės.
+    MovieCredits page (patekti gali visi) (SpecificCard page'e paspaudus ant "Stars"):
+      Atvaizduojami visi "castAndCrew" (atrodo kaip pavaizduota imdbCard_castAndCrew.PNG)
+
+  Darbo taisyklės:
+    Kortelių informacija saugoma Context'e, kuriame duomenys saugomi ir jų funkcionalumai yra aprašyti naudojant useReducer'į.
+    Vartotojų informacija saugoma Context'e, kuriame duomenys saugomi ir jų funkcionalumai yra aprašyti naudojant useReducer'į.
+    Duomenys saugojami ir keičiami JSON serveryje ir lokaliai.
+    Puslapiai kuriami naudojant react-router-dom.
+    Svetainės spalvų temos kuriamos ir keičiamos naudojant Context'ą ir saugojant pasirinktą temą tiek localStorage tiek Context'e.
+    Duomenis (tiek filmų tiek vartotojų) galima papildyti/pakoreguoti ranka JSON faile.
+
+  Kiti funkcionalumai:
+    Paspaudus ant kortelės "+" (watchlist) ženkliuko - kortelė yra pridedama prie prisijungusio vartotojo pamėgtų filmų sąrašo.
+    Paspaudus ant kortelės informacijos ikonos, būtų atvaizduojamas tos kortelės modalas su šiek tiek daugiau informacijos (atrodo kaip pavaizduota imdbCardModal.PNG)
+
+EXTRA:
+  Papildyti korteles galimybe įvertinti filmą:
+    Paspaudus ant kortelės žvaigždutės ikonos, būtų atidaromas modalas, kuriame prisijungęs vartotojas galėtų suteikti savo norimą balą filmui tik vieną kartą per vartotoją.
+  Papildyti korteles komentarais:
+    Komentarus gali palikti tik prisijungę vartotojai. Komentarą gali redaguoti tik tas vartotojas, kuris jį sukūrė. Komentarą gali trinti tik tas vartotojas, kuris jį sukūrė arba admin'as.
+  Papildyti kortelių komentarus balų sistema:
+    Kiekvienas prisijungęs vartotojas gali upVote'inti arba downVote'inti kiekvieną komentarą po vieną kartą. (panaši sistema į stackoverflow).
+  Papildyti puslapio spalvų temas daugiau negu dvejomis spalvomis ir pridėti galimybę keisti puslapio šriftų dydžius.
+  Papildyti Home page'ą kažkokiu extra filtravimu.
